@@ -18,18 +18,17 @@
 # Silero Models
 
 Silero Models: pre-trained enterprise-grade STT models and benchmarks.
-Enterprise-grade STT made stupidly and refreshingly simple (no seriously, see [bechmarks](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks)).
+Enterprise-grade STT made refreshingly simple (seriously, see [bechmarks](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks)).
 We provide quality comparable to Google's STT (and sometimes even better) and we are not Google.
 
 As a bonus:
 
-- No compilation required;
 - No Kaldi;
-- No convoluted 20-step instructions;
+- No compilation;
+- No 20-step instructions;
 
 ## Getting started
 
-Getting started is stupidly simple.
 All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file.
 Any meta-data and newer versions will be added there.
 
@@ -37,9 +36,9 @@ Currently we provide the following checkpoints:
 
 |                 | PyTorch            | ONNX               | TensorFlow         | Quantization | Quality | Colab | Example |
 |-----------------|--------------------|--------------------|--------------------|--------------|---------|-------| --------|
-| English (en_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks#latest)   | TBD | [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
-| German (de_v1)  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks#latest)   | TBD |  [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
-| Spanish (es_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks#latest)   | TBD |  [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
+| English (en_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks#latest)   | :hourglass: | [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
+| German (de_v1)  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks#latest)   | :hourglass: |  [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
+| Spanish (es_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks#latest)   | :hourglass: |  [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
 
 ### PyTorch
 
@@ -84,6 +83,8 @@ import tempfile
 import onnxruntime
 from omegaconf import OmegaConf
 
+models = OmegaConf.load('models.yml')
+
 with tempfile.NamedTemporaryFile('wb', suffix='.json') as f:
     torch.hub.download_url_to_file(models.stt_models.en.latest.labels,
                                f.name,
@@ -121,8 +122,8 @@ Also check out our [wiki](https://github.com/snakers4/silero-models/wiki).
 
 ## Get in Touch
 
-Try our models, create an issues, join our chat, email us.
+Try our models, create an [issue](https://github.com/snakers4/silero-models/issues/new), join our [chat](https://t.me/joinchat/Bv9tjhpdXTI22OUgpOIIDg), [email](mailto:hello@silero.ai) us.
 
 ## Commercial Inquiries
 
-Please see our [tiers](https://github.com/snakers4/silero-models/wiki/Licesing,-Community-Edition-and-Enterprise-Edition) and email us.
+Please see our [tiers](https://github.com/snakers4/silero-models/wiki/Licensing,-Community-Edition-and-Enterprise-Edition) and [email](mailto:hello@silero.ai) us.
