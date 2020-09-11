@@ -3,8 +3,126 @@
 
 ![header)](https://user-images.githubusercontent.com/12515440/89997349-b3523080-dc94-11ea-9906-ca2e8bc50535.png)
 
+
+- [Silero Models](#silero-models)
+  - [Getting started](#getting-started)
+    - [PyTorch](#pytorch)
+    - [ONNX](#onnx)
+    - [TensorFlow](#tensorflow)
+  - [Examples](#examples)
+  - [Wiki](#wiki)
+  - [Get in Touch](#get-in-touch)
+  - [Commercial Inquiries](#commercial-inquiries)
+
+
 # Silero Models
 
-Silero Models: pre-trained STT models and benchmarks.
-Full description coming soon!
+Silero Models: pre-trained enterprise-grade STT models and benchmarks.
+Enterprise-grade STT made stupidly and refreshingly simple (no seriously, see [bechmarks](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks)).
+We provide quality comparable to Google's STT (and sometimes even better) and we are not Google.
 
+As a bonus:
+
+- No compilation required;
+- No Kaldi;
+- No convoluted 20-step instructions;
+
+## Getting started
+
+Getting started is stupidly simple.
+All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file.
+Any meta-data and newer versions will be added there.
+
+Currently we provide the following checkpoints:
+
+|                 | PyTorch            | ONNX               | TensorFlow         | Quantization | Quality | Colab | Example |
+|-----------------|--------------------|--------------------|--------------------|--------------|---------|-------| --------|
+| English (en_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks#latest)   | TBD | [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
+| German (de_v1)  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks#latest)   | TBD |  [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
+| Spanish (es_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks#latest)   | TBD |  [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
+
+### PyTorch
+
+**Dependencies:**
+
+- PyTorch 1.6+
+- TorchAudio 0.7+ (you can use your own data loaders)
+- omegaconf (or any similar library to work with yaml files)
+
+
+**Loading a model is as easy as cloning this repository and:**
+
+```python
+import torch
+from omegaconf import OmegaConf
+
+models = OmegaConf.load('models.yml')
+device = torch.device('cpu')   # you can use any pytorch device
+model, decoder = init_jit_model(models.stt_models.en.latest.jit, device=device)
+```
+
+We provide our models as TorchScript packages, so you can use the deployment options PyTorch itself provides (C++, Java). See details in the [example](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) notebook.
+
+### ONNX
+
+You can run our model everywhere, where you can import the ONNX model or run ONNX runtime.
+
+**Dependencies:**
+
+- PyTorch 1.6+ (used for utilities only)
+- omegaconf (or any similar library to work with yaml files)
+- onnx
+- onnxruntime
+
+**Just clone the repo and**:
+
+```python
+import json
+import onnx
+import torch
+import tempfile
+import onnxruntime
+from omegaconf import OmegaConf
+
+with tempfile.NamedTemporaryFile('wb', suffix='.json') as f:
+    torch.hub.download_url_to_file(models.stt_models.en.latest.labels,
+                               f.name,
+                               progress=True)
+    with open(f.name) as f:
+        labels = json.load(f)
+        decoder = Decoder(labels)
+
+with tempfile.NamedTemporaryFile('wb', suffix='.model') as f:
+    torch.hub.download_url_to_file(models.stt_models.en.latest.onnx,
+                                   f.name,
+                                   progress=True)
+    onnx_model = onnx.load(f.name)
+    onnx.checker.check_model(onnx_model)
+    ort_session = onnxruntime.InferenceSession(f.name)
+```
+
+See details in the [example](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) notebook.
+
+### TensorFlow
+
+We provide tensorflow checkpoints, but we do not provide any related utilities.
+
+## Examples
+
+Colab notebooks and interactive demos are on the way.
+Please refer to this [notebook](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) in the meantime for:
+
+- PyTorch example
+- ONNX example
+
+## Wiki
+
+Also check out our [wiki](https://github.com/snakers4/silero-models/wiki).
+
+## Get in Touch
+
+Try our models, create an issues, join our chat, email us.
+
+## Commercial Inquiries
+
+Please see our [tiers](https://github.com/snakers4/silero-models/wiki/Licesing,-Community-Edition-and-Enterprise-Edition) and email us.
