@@ -1,0 +1,26 @@
+# pre-trained STT models
+stt_models:
+  en:
+    latest:
+      meta:
+        name: "en_v1"
+      labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_labels.json"
+      jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_jit.model"
+      onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_batchless.onnx"
+      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_batchless.pb"
+  de:
+    latest:
+      meta: 
+        name: "de_v1"
+      labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_labels.json"
+      jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_jit.model"
+      onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_batchless.onnx"
+      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_batchless.pb"        
+  es:
+    latest:
+      meta:
+        name: "de_v1"          
+      labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_labels.json"
+      jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/en_v1_jit.model"
+      onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_batchless.onnx"
+      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_batchless.pb"      
