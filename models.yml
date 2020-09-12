@@ -21,6 +21,6 @@ stt_models:
       meta:
         name: "de_v1"          
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_labels.json"
-      jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/en_v1_jit.model"
+      jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_jit.model"
       onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_batchless.onnx"
       tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_batchless.pb"      
