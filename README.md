@@ -36,11 +36,11 @@ Any meta-data and newer versions will be added there.
 
 Currently we provide the following checkpoints:
 
-|                 | PyTorch            | ONNX               | TensorFlow         | Quantization | Quality | Colab | Example |
-|-----------------|--------------------|--------------------|--------------------|--------------|---------|-------| --------|
-| English (en_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#latest)   | :hourglass: | [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
-| German (de_v1)  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#latest)   | :hourglass: |  [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
-| Spanish (es_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#latest)   | :hourglass: |  [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
+|                 | PyTorch            | ONNX               | TensorFlow         | Quantization | Quality | Colab | 
+|-----------------|--------------------|--------------------|--------------------|--------------|---------|-------| 
+| English (en_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#latest) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples.ipynb) |
+| German (de_v1)  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#latest) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples.ipynb) |
+| Spanish (es_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#latest) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples.ipynb) |
 
 ### PyTorch
 
@@ -125,6 +125,12 @@ Please refer to this [notebook](https://github.com/snakers4/silero-models/blob/m
 ## Wiki
 
 Also check out our [wiki](https://github.com/snakers4/silero-models/wiki).
+
+## Performance
+
+TBD, here will be a link and a summary of model sizes and performance metrics.
+
+TLDR for now: our models work ok on CPUs with RTF < 1. Each model weighs about ~200MB. We have succeeded in compressing our models up to 50MB with some loss of quality. Our aspirational goal is first to achieve 50 MB w/o quality loss and then scale to 10-20MB or even provide some compact variants of our EE models. 
 
 ## Get in Touch
 
