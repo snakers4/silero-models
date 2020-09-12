@@ -18,7 +18,7 @@
 # Silero Models
 
 Silero Models: pre-trained enterprise-grade STT models and benchmarks.
-Enterprise-grade STT made refreshingly simple (seriously, see [bechmarks](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks)).
+Enterprise-grade STT made refreshingly simple (seriously, see [bechmarks](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks)).
 We provide quality comparable to Google's STT (and sometimes even better) and we are not Google.
 
 As a bonus:
@@ -36,9 +36,9 @@ Currently we provide the following checkpoints:
 
 |                 | PyTorch            | ONNX               | TensorFlow         | Quantization | Quality | Colab | Example |
 |-----------------|--------------------|--------------------|--------------------|--------------|---------|-------| --------|
-| English (en_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks#latest)   | :hourglass: | [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
-| German (de_v1)  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks#latest)   | :hourglass: |  [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
-| Spanish (es_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/STT-Benchmarks#latest)   | :hourglass: |  [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
+| English (en_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#latest)   | :hourglass: | [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
+| German (de_v1)  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#latest)   | :hourglass: |  [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
+| Spanish (es_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#latest)   | :hourglass: |  [link](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) |
 
 ### PyTorch
 
@@ -126,4 +126,4 @@ Try our models, create an [issue](https://github.com/snakers4/silero-models/issu
 
 ## Commercial Inquiries
 
-Please see our [tiers](https://github.com/snakers4/silero-models/wiki/Licensing,-Community-Edition-and-Enterprise-Edition) and [email](mailto:hello@silero.ai) us.
+Please see our [tiers](https://github.com/snakers4/silero-models/wiki/Licensing-and-Tiers) and [email](mailto:hello@silero.ai) us.
