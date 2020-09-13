@@ -15,7 +15,7 @@ def read_batch(audio_paths: List[str]):
             in audio_paths]
 
 
-def split_into_batches(lst: List[torch.Tensor],
+def split_into_batches(lst: List[str],
                        batch_size: int = 10):
     return [lst[i:i + batch_size]
             for i in
