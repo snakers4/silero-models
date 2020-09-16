@@ -128,9 +128,7 @@ Also check out our [wiki](https://github.com/snakers4/silero-models/wiki).
 
 ## Performance
 
-TBD, here will be a link and a summary of model sizes and performance metrics.
-
-TLDR for now: our models work ok on CPUs with RTF < 1. Each model weighs about ~200MB. We have succeeded in compressing our models up to 50MB with some loss of quality. Our aspirational goal is first to achieve 50 MB w/o quality loss and then scale to 10-20MB or even provide some compact variants of our EE models. 
+Please refer to this wiki [section](https://github.com/snakers4/silero-models/wiki/Performance-Benchmarks).
 
 ## Get in Touch
 
