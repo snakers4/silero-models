@@ -138,4 +138,4 @@ Try our models, create an [issue](https://github.com/snakers4/silero-models/issu
 
 ## Commercial Inquiries
 
-Please see our [tiers](https://github.com/snakers4/silero-models/wiki/Licensing-and-Tiers) and [email](mailto:hello@silero.ai) us.
+Pleasee see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers](https://github.com/snakers4/silero-models/wiki/Licensing-and-Tiers) for relevant information and [email](mailto:hello@silero.ai) us.
