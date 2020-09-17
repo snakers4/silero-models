@@ -21,7 +21,7 @@ def silero_stt(language='en', **kwargs):
     available_languages = list(models.stt_models.keys())
     assert language in available_languages
 
-    model, decoder = init_jit_model(model_url=models.stt_models.get('en').latest.jit,
+    model, decoder = init_jit_model(model_url=models.stt_models.get(language).latest.jit,
                                     **kwargs)
     utils = (read_batch,
              split_into_batches,
