@@ -20,7 +20,7 @@
 # Silero Models
 
 Silero Models: pre-trained enterprise-grade STT models and benchmarks.
-Enterprise-grade STT made refreshingly simple (seriously, see [bechmarks](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks)).
+Enterprise-grade STT made refreshingly simple (seriously, see [benchmarks](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks)).
 We provide quality comparable to Google's STT (and sometimes even better) and we are not Google.
 
 As a bonus:
@@ -128,9 +128,7 @@ Also check out our [wiki](https://github.com/snakers4/silero-models/wiki).
 
 ## Performance
 
-TBD, here will be a link and a summary of model sizes and performance metrics.
-
-TLDR for now: our models work ok on CPUs with RTF < 1. Each model weighs about ~200MB. We have succeeded in compressing our models up to 50MB with some loss of quality. Our aspirational goal is first to achieve 50 MB w/o quality loss and then scale to 10-20MB or even provide some compact variants of our EE models. 
+Please refer to this wiki [section](https://github.com/snakers4/silero-models/wiki/Performance-Benchmarks).
 
 ## Get in Touch
 
@@ -138,4 +136,4 @@ Try our models, create an [issue](https://github.com/snakers4/silero-models/issu
 
 ## Commercial Inquiries
 
-Please see our [tiers](https://github.com/snakers4/silero-models/wiki/Licensing-and-Tiers) and [email](mailto:hello@silero.ai) us.
+Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers](https://github.com/snakers4/silero-models/wiki/Licensing-and-Tiers) for relevant information and [email](mailto:hello@silero.ai) us.
