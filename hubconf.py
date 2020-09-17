@@ -2,9 +2,10 @@ dependencies = ['torch', 'omegaconf', 'torchaudio']
 import torch
 from omegaconf import OmegaConf
 from utils import (init_jit_model,
+                   read_audio,
                    read_batch,
                    split_into_batches,
-                   read_audio)
+                   prepare_model_input)
 
 
 def silero_stt(language='en', **kwargs):
@@ -24,6 +25,7 @@ def silero_stt(language='en', **kwargs):
                                     **kwargs)
     utils = (read_batch,
              split_into_batches,
-             read_audio)
+             read_audio,
+             prepare_model_input)
 
     return model, decoder, utils
