@@ -20,7 +20,7 @@
 # Silero Models
 
 Silero Models: pre-trained enterprise-grade STT models and benchmarks.
-Enterprise-grade STT made refreshingly simple (seriously, see [bechmarks](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks)).
+Enterprise-grade STT made refreshingly simple (seriously, see [benchmarks](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks)).
 We provide quality comparable to Google's STT (and sometimes even better) and we are not Google.
 
 As a bonus:
@@ -136,4 +136,4 @@ Try our models, create an [issue](https://github.com/snakers4/silero-models/issu
 
 ## Commercial Inquiries
 
-Pleasee see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers](https://github.com/snakers4/silero-models/wiki/Licensing-and-Tiers) for relevant information and [email](mailto:hello@silero.ai) us.
+Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers](https://github.com/snakers4/silero-models/wiki/Licensing-and-Tiers) for relevant information and [email](mailto:hello@silero.ai) us.
