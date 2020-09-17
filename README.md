@@ -64,7 +64,28 @@ device = torch.device('cpu')   # you can use any pytorch device
 model, decoder = init_jit_model(models.stt_models.en.latest.jit, device=device)
 ```
 
+**Or you can just use TorchHub:**
+
+`torch.hub` clones the repo for you behind the scenes.
+
+```python
+import torch
+
+device = torch.device('cpu')  # gpu also works, but our models are fast enough for CPU
+model, decoder, utils = torch.hub.load(github='snakers4/silero-models',
+                                       model='silero_stt',
+                                       device=device,
+                                       force_reload=True,
+                                       language='de')
+
+(read_batch,
+ split_into_batches,
+ read_audio,
+ prepare_model_input) = utils  # see function signatures for details
+```
+
 We provide our models as TorchScript packages, so you can use the deployment options PyTorch itself provides (C++, Java). See details in the [example](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) notebook.
+
 
 ### ONNX
 
