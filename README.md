@@ -114,8 +114,8 @@ models = OmegaConf.load('models.yml')
 
 with tempfile.NamedTemporaryFile('wb', suffix='.json') as f:
     torch.hub.download_url_to_file(models.stt_models.en.latest.labels,
-                               f.name,
-                               progress=True)
+                                   f.name,
+                                   progress=True)
     with open(f.name) as f:
         labels = json.load(f)
         decoder = Decoder(labels)
