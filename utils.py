@@ -31,7 +31,7 @@ def read_audio(path: str,
                               channels_first=True)
 
     if wav.size(0) > 1:
-        wav = wav.mean(dime=1, keepdim=True)
+        wav = wav.mean(dim=1, keepdim=True)
 
     if sr != target_sr:
         transform = torchaudio.transforms.Resample(orig_freq=sr,
