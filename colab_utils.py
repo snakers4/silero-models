@@ -68,6 +68,4 @@ def upload_audio(normalize_db: Optional[float] = None):
     fnames = list(audio_files.keys())
     if len(fnames) == 0:
         return None
-
-    return audio_bytes_to_np(audio_files[fnames[0]],
-                             normalize_db=normalize_db)
+    return read_audio(fnames[0])
