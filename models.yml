@@ -17,9 +17,7 @@ stt_models:
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_labels.json"
       jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_jit.model"
       onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_batchless.onnx"
-      tf: "coming soon"
-      tf_js: "coming soon" 
-      tf_js_int8: "coming soon" 
+      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/tf_de_v1.tar"
   es:
     latest:
       meta:
@@ -27,6 +25,4 @@ stt_models:
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_labels.json"
       jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_jit.model"
       onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_batchless.onnx"
-      tf: "coming soon"
-      tf_js: "coming soon" 
-      tf_js_int8: "coming soon"       
+      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/tf_es_v1.tar"
