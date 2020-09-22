@@ -7,20 +7,26 @@ stt_models:
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_labels.json"
       jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_jit.model"
       onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_batchless.onnx"
-      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_batchless.pb"
+      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/tf_en_v1.tar"
+      tf_js: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/tf_js_en_v1.tar"
+      tf_js_int8: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/tf_js_int8_en_v1.tar"
   de:
     latest:
-      meta: 
+      meta:
         name: "de_v1"
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_labels.json"
       jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_jit.model"
       onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_batchless.onnx"
-      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_batchless.pb"        
+      tf: "coming soon"
+      tf_js: "coming soon" 
+      tf_js_int8: "coming soon" 
   es:
     latest:
       meta:
-        name: "de_v1"          
+        name: "de_v1"
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_labels.json"
       jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_jit.model"
       onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_batchless.onnx"
-      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_batchless.pb"      
+      tf: "coming soon"
+      tf_js: "coming soon" 
+      tf_js_int8: "coming soon"       
