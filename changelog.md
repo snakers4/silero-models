@@ -1,5 +1,6 @@
 - [Plans](#plans)
 - [Updates](#updates)
+  - [2020-09-22 Tensorflow SavedModels, Colab VAD, tf.js](#2020-09-22-tensorflow-savedmodels-colab-vad-tfjs)
   - [2020-09-19 Fx Minor Bugs](#2020-09-19-fx-minor-bugs)
   - [2020-09-17 TorchHub](#2020-09-17-torchhub)
   - [2020-09-16 V1 Release](#2020-09-16-v1-release)
@@ -18,6 +19,12 @@ General plans w/o any set dates:
 - Add quantized models (x2 speed)
 
 # Updates
+
+## 2020-09-22 Tensorflow SavedModels, Colab VAD, tf.js
+
+- Add VAD to colab example
+- Add proper SavedModel Tensorflow checkpoints for all of the languages
+- Add experimental tf.js checkpoints for English 
 
 ## 2020-09-19 Fx Minor Bugs
 
