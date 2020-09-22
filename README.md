@@ -13,6 +13,7 @@
     - [TensorFlow](#tensorflow)
   - [Examples](#examples)
   - [Wiki](#wiki)
+  - [Performance](#performance)
   - [Get in Touch](#get-in-touch)
   - [Commercial Inquiries](#commercial-inquiries)
 
@@ -133,7 +134,50 @@ See details in the [example](https://github.com/snakers4/silero-models/blob/mast
 
 ### TensorFlow
 
-We provide tensorflow checkpoints, but we do not provide any related utilities.
+(Experimental) We provide several types of Tensorflow checkpoints:
+
+- Tensorflow SavedModel
+- `tf-js` float32 model
+- `tf-js` int8 model
+
+Loading a SavedModel:
+
+```python
+import os
+import torch
+import tensorflow as tf
+
+
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'  # maybe there is a more proper way for TF
+tf_model = tf.saved_model.load("tf_models/tf_en_v1/saved_model")
+
+device = torch.device('cpu')  # gpu also works, but our models are fast enough for CPU
+model, decoder, utils = torch.hub.load(github='snakers4/silero-models',
+                                       model='silero_stt',
+                                       device=device,
+                                       force_reload=True,
+                                       language='en')
+(read_batch,
+ split_into_batches,
+ read_audio,
+ prepare_model_input) = utils
+
+wav_paths = random.sample(en_val_files, k=1)
+_batch = [read_audio(wav_path) for wav_path in wav_paths]
+batches = split_into_batches(_batch, batch_size=1)
+
+# PyTorch inference
+inputs = get_model_input(random.sample(batches, k=1)[0])
+out_sm = model(inputs)
+decoded = decoder(out_sm[0])
+print(decoded)
+
+# TF inference
+res = tf_model.signatures["serving_default"](tf.constant(inputs.numpy()[0]))['output_0']
+print(decoder(torch.Tensor(res.numpy())))
+
+```
+
 
 ## Examples
 
