@@ -1,5 +1,6 @@
 - [Plans](#plans)
 - [Updates](#updates)
+  - [2020-09-23 Silero Models now on Torch Hub](#2020-09-23-silero-models-now-on-torch-hub)
   - [2020-09-22 Tensorflow SavedModels, Colab VAD, tf.js](#2020-09-22-tensorflow-savedmodels-colab-vad-tfjs)
   - [2020-09-19 Fx Minor Bugs](#2020-09-19-fx-minor-bugs)
   - [2020-09-17 TorchHub](#2020-09-17-torchhub)
@@ -19,6 +20,10 @@ General plans w/o any set dates:
 - Add quantized models (x2 speed)
 
 # Updates
+
+## 2020-09-23 Silero Models now on Torch Hub
+
+- https://pytorch.org/hub/snakers4_silero-models_stt/
 
 ## 2020-09-22 Tensorflow SavedModels, Colab VAD, tf.js
 
