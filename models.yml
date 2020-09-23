@@ -21,7 +21,7 @@ stt_models:
   es:
     latest:
       meta:
-        name: "de_v1"
+        name: "es_v1"
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_labels.json"
       jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_jit.model"
       onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_batchless.onnx"
