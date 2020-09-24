@@ -1,5 +1,6 @@
 - [Plans](#plans)
 - [Updates](#updates)
+  - [2020-09-23 Fixed broken TF Model Archives](#2020-09-23-fixed-broken-tf-model-archives)
   - [2020-09-23 Silero Models now on Torch Hub](#2020-09-23-silero-models-now-on-torch-hub)
   - [2020-09-22 Tensorflow SavedModels, Colab VAD, tf.js](#2020-09-22-tensorflow-savedmodels-colab-vad-tfjs)
   - [2020-09-19 Fx Minor Bugs](#2020-09-19-fx-minor-bugs)
@@ -20,6 +21,10 @@ General plans w/o any set dates:
 - Add quantized models (x2 speed)
 
 # Updates
+
+## 2020-09-23 Fixed broken TF Model Archives 
+
+- Fixed weird archiving issue for Windows, purged CDN cache
 
 ## 2020-09-23 Silero Models now on Torch Hub
 
