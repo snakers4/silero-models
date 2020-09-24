@@ -8,13 +8,13 @@
 
 
 - [Silero Models](#silero-models)
-  - [Getting started](#getting-started)
+  - [Getting Started](#getting-started)
     - [PyTorch](#pytorch)
     - [ONNX](#onnx)
     - [TensorFlow](#tensorflow)
-  - [Examples](#examples)
   - [Wiki](#wiki)
-  - [Performance](#performance)
+  - [Performance and Quality](#performance-and-quality)
+  - [Adding new Languages](#adding-new-languages)  
   - [Get in Touch](#get-in-touch)
   - [Commercial Inquiries](#commercial-inquiries)
 
@@ -31,7 +31,7 @@ As a bonus:
 - No compilation;
 - No 20-step instructions;
 
-## Getting started
+## Getting Started
 
 All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file.
 Any meta-data and newer versions will be added there.
@@ -181,22 +181,20 @@ print(decoder(torch.Tensor(res.numpy())))
 
 ```
 
-
-## Examples
-
-Colab notebooks and interactive demos are on the way.
-Please refer to this [notebook](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) in the meantime for:
-
-- PyTorch example
-- ONNX example
-
 ## Wiki
 
 Also check out our [wiki](https://github.com/snakers4/silero-models/wiki).
 
-## Performance
+## Performance and Quality
 
-Please refer to this wiki [section](https://github.com/snakers4/silero-models/wiki/Performance-Benchmarks).
+Please refer to this wiki sections:
+
+- [Quality Benchmarks](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks)
+- [Performance Benchmarks](https://github.com/snakers4/silero-models/wiki/Performance-Benchmarks)
+
+## Adding new Languages
+
+Please refer [here](https://github.com/snakers4/silero-models/wiki/Adding-New-Languages).
 
 ## Get in Touch
 
