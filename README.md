@@ -27,9 +27,9 @@ We provide quality comparable to Google's STT (and sometimes even better) and we
 
 As a bonus:
 
-- No Kaldi;
-- No compilation;
-- No 20-step instructions;
+- No Kaldi.
+- No compilation.
+- No 20-step instructions.
 
 ## Getting Started
 
