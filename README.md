@@ -142,6 +142,8 @@ print(decoded)
 
 ### TensorFlow
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples.ipynb)
+
 We provide several types of Tensorflow checkpoints:
 
 - Tensorflow SavedModel
