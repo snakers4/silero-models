@@ -6,17 +6,19 @@
 
 ![header)](https://user-images.githubusercontent.com/12515440/89997349-b3523080-dc94-11ea-9906-ca2e8bc50535.png)
 
-
 - [Silero Models](#silero-models)
   - [Getting Started](#getting-started)
+    - [Dependencies](#dependencies)
     - [PyTorch](#pytorch)
     - [ONNX](#onnx)
     - [TensorFlow](#tensorflow)
-  - [Wiki](#wiki)
-  - [Performance and Quality](#performance-and-quality)
-  - [Adding new Languages](#adding-new-languages)  
-  - [Get in Touch](#get-in-touch)
-  - [Commercial Inquiries](#commercial-inquiries)
+  - [FAQ](#faq)
+    - [Wiki](#wiki)
+    - [Performance and Quality](#performance-and-quality)
+    - [Adding new Languages](#adding-new-languages)
+  - [Contact](#contact)
+    - [Get in Touch](#get-in-touch)
+    - [Commercial Inquiries](#commercial-inquiries)
 
 
 # Silero Models
@@ -44,52 +46,54 @@ Currently we provide the following checkpoints:
 | German (de_v1)  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#latest) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples.ipynb) |
 | Spanish (es_v1) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :hourglass:  | [link](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#latest) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples.ipynb) |
 
+### Dependencies
+
+- All examples:
+  - torch (used to clone the repo in tf and onnx examples)
+  - torchaudio
+  - soundfile
+  - omegaconf
+- Additional for ONNX examples:
+  - onnx 
+  - onnxruntime
+- Additional for TensorFlow examples:
+  - tensorflow
+  - tensorflow_hub
+
+Please see the provided Colab for details for each example below.
+
 ### PyTorch
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples.ipynb)
 
-**Dependencies:**
-
-- PyTorch 1.6+
-- TorchAudio 0.7+ (you can use your own data loaders)
-- omegaconf (or any similar library to work with yaml files)
-
-
-**Loading a model is as easy as cloning this repository and:**
-
-```python
-import torch
-from omegaconf import OmegaConf
-
-models = OmegaConf.load('models.yml')
-device = torch.device('cpu')   # you can use any pytorch device
-model, decoder = init_jit_model(models.stt_models.en.latest.jit, device=device)
-```
-
-**Or you can just use TorchHub:**
-
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/Torch-Open%20in%20Hub-red?logo=pytorch&style=for-the-badge)](https://pytorch.org/hub/snakers4_silero-models_stt/)
 
-`torch.hub` clones the repo for you behind the scenes.
-
 ```python
 import torch
+import zipfile
+import torchaudio
+from glob import glob
 
 device = torch.device('cpu')  # gpu also works, but our models are fast enough for CPU
 model, decoder, utils = torch.hub.load(github='snakers4/silero-models',
                                        model='silero_stt',
-                                       device=device,
-                                       force_reload=True,
-                                       language='de')
+                                       language='en', # also available 'de', 'es'
+                                       device=device)
+(read_batch, split_into_batches,
+ read_audio, prepare_model_input) = utils  # see function signature for details
 
-(read_batch,
- split_into_batches,
- read_audio,
- prepare_model_input) = utils  # see function signatures for details
+# download a single file, any format compatible with TorchAudio (soundfile backend)
+torch.hub.download_url_to_file('https://opus-codec.org/static/examples/samples/speech_orig.wav',
+                               dst ='speech_orig.wav', progress=True)
+test_files = glob('speech_orig.wav') 
+batches = split_into_batches(test_files, batch_size=10)
+input = prepare_model_input(read_batch(batches[0]),
+                            device=device)
+
+output = model(input)
+for example in output:
+    print(decoder(example.cpu()))
 ```
-
-We provide our models as TorchScript packages, so you can use the deployment options PyTorch itself provides (C++, Java). See details in the [example](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) notebook.
-
 
 ### ONNX
 
@@ -97,109 +101,111 @@ We provide our models as TorchScript packages, so you can use the deployment opt
 
 You can run our model everywhere, where you can import the ONNX model or run ONNX runtime.
 
-**Dependencies:**
-
-- PyTorch 1.6+ (used for utilities only)
-- omegaconf (or any similar library to work with yaml files)
-- onnx
-- onnxruntime
-
-**Just clone the repo and**:
-
 ```python
-import json
 import onnx
 import torch
-import tempfile
 import onnxruntime
 from omegaconf import OmegaConf
 
+language = 'en' # also available 'de', 'es'
+
+# load provided utils
+_, decoder, utils = torch.hub.load(github='snakers4/silero-models', model='silero_stt', language=language)
+(read_batch, split_into_batches,
+ read_audio, prepare_model_input) = utils
+
+# see available models
+torch.hub.download_url_to_file('https://raw.githubusercontent.com/snakers4/silero-models/master/models.yml', 'models.yml')
 models = OmegaConf.load('models.yml')
+available_languages = list(models.stt_models.keys())
+assert language in available_languages
 
-with tempfile.NamedTemporaryFile('wb', suffix='.json') as f:
-    torch.hub.download_url_to_file(models.stt_models.en.latest.labels,
-                                   f.name,
-                                   progress=True)
-    with open(f.name) as f:
-        labels = json.load(f)
-        decoder = Decoder(labels)
+# load the actual ONNX model
+torch.hub.download_url_to_file(models.stt_models.en.latest.onnx, 'model.onnx', progress=True)
+onnx_model = onnx.load('model.onnx')
+onnx.checker.check_model(onnx_model)
+ort_session = onnxruntime.InferenceSession('model.onnx')
 
-with tempfile.NamedTemporaryFile('wb', suffix='.model') as f:
-    torch.hub.download_url_to_file(models.stt_models.en.latest.onnx,
-                                   f.name,
-                                   progress=True)
-    onnx_model = onnx.load(f.name)
-    onnx.checker.check_model(onnx_model)
-    ort_session = onnxruntime.InferenceSession(f.name)
+# download a single file, any format compatible with TorchAudio (soundfile backend)
+torch.hub.download_url_to_file('https://opus-codec.org/static/examples/samples/speech_orig.wav', dst ='speech_orig.wav', progress=True)
+test_files = ['speech_orig.wav']
+batches = split_into_batches(test_files, batch_size=10)
+input = prepare_model_input(read_batch(batches[0]))
+
+# actual onnx inference and decoding
+onnx_input = input.detach().cpu().numpy()[0]
+ort_inputs = {'input': onnx_input}
+ort_outs = ort_session.run(None, ort_inputs)
+decoded = decoder(torch.Tensor(ort_outs[0]))
+print(decoded)
 ```
-
-See details in the [example](https://github.com/snakers4/silero-models/blob/master/examples.ipynb) notebook.
 
 ### TensorFlow
 
-(Experimental) We provide several types of Tensorflow checkpoints:
+We provide several types of Tensorflow checkpoints:
 
 - Tensorflow SavedModel
 - `tf-js` float32 model
 - `tf-js` int8 model
 
-Loading a SavedModel:
+**SavedModel example**
 
 ```python
 import os
 import torch
 import tensorflow as tf
+import tensorflow_hub as tf_hub
+from omegaconf import OmegaConf
 
+language = 'en' # also available 'de', 'es'
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '-1'  # maybe there is a more proper way for TF
-tf_model = tf.saved_model.load("tf_models/tf_en_v1/saved_model")
+# load provided utils using torch.hub for brevity
+_, decoder, utils = torch.hub.load(github='snakers4/silero-models', model='silero_stt', language=language)
+(read_batch, split_into_batches,
+ read_audio, prepare_model_input) = utils
 
-device = torch.device('cpu')  # gpu also works, but our models are fast enough for CPU
-model, decoder, utils = torch.hub.load(github='snakers4/silero-models',
-                                       model='silero_stt',
-                                       device=device,
-                                       force_reload=True,
-                                       language='en')
-(read_batch,
- split_into_batches,
- read_audio,
- prepare_model_input) = utils
+# see available models
+torch.hub.download_url_to_file('https://raw.githubusercontent.com/snakers4/silero-models/master/models.yml', 'models.yml')
+models = OmegaConf.load('models.yml')
+available_languages = list(models.stt_models.keys())
+assert language in available_languages
 
-wav_paths = random.sample(en_val_files, k=1)
-_batch = [read_audio(wav_path) for wav_path in wav_paths]
-batches = split_into_batches(_batch, batch_size=1)
+# load the actual tf model
+tf_model = tf_hub.load(models.stt_models.en.latest.tf)
 
-# PyTorch inference
-inputs = get_model_input(random.sample(batches, k=1)[0])
-out_sm = model(inputs)
-decoded = decoder(out_sm[0])
-print(decoded)
+# download a single file, any format compatible with TorchAudio (soundfile backend)
+torch.hub.download_url_to_file('https://opus-codec.org/static/examples/samples/speech_orig.wav', dst ='speech_orig.wav', progress=True)
+test_files = ['speech_orig.wav']
+batches = split_into_batches(test_files, batch_size=10)
+input = prepare_model_input(read_batch(batches[0]))
 
-# TF inference
-res = tf_model.signatures["serving_default"](tf.constant(inputs.numpy()[0]))['output_0']
+# tf inference
+res = tf_model.signatures["serving_default"](tf.constant(input.numpy()[0]))['output_0']
 print(decoder(torch.Tensor(res.numpy())))
-
 ```
+## FAQ
 
-## Wiki
+### Wiki
 
 Also check out our [wiki](https://github.com/snakers4/silero-models/wiki).
 
-## Performance and Quality
+### Performance and Quality
 
 Please refer to this wiki sections:
 
 - [Quality Benchmarks](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks)
 - [Performance Benchmarks](https://github.com/snakers4/silero-models/wiki/Performance-Benchmarks)
 
-## Adding new Languages
+### Adding new Languages
 
 Please refer [here](https://github.com/snakers4/silero-models/wiki/Adding-New-Languages).
 
-## Get in Touch
+## Contact
+
+### Get in Touch
 
 Try our models, create an [issue](https://github.com/snakers4/silero-models/issues/new), join our [chat](https://t.me/joinchat/Bv9tjhpdXTI22OUgpOIIDg), [email](mailto:hello@silero.ai) us.
 
-## Commercial Inquiries
+### Commercial Inquiries
 
 Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers](https://github.com/snakers4/silero-models/wiki/Licensing-and-Tiers) for relevant information and [email](mailto:hello@silero.ai) us.
