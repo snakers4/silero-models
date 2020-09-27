@@ -1,5 +1,6 @@
 - [Plans](#plans)
 - [Updates](#updates)
+  - [2020-09-27 Examples, Usability, TF Example](#2020-09-27-examples-usability-tf-example)
   - [2020-09-23 Fixed broken TF Model Archives](#2020-09-23-fixed-broken-tf-model-archives)
   - [2020-09-23 Silero Models now on Torch Hub](#2020-09-23-silero-models-now-on-torch-hub)
   - [2020-09-22 Tensorflow SavedModels, Colab VAD, tf.js](#2020-09-22-tensorflow-savedmodels-colab-vad-tfjs)
@@ -21,6 +22,15 @@ General plans w/o any set dates:
 - Add quantized models (x2 speed)
 
 # Updates
+
+## 2020-09-27 Examples, Usability, TF Example 
+
+- Polish and simplify the main readme
+- Remove folders from inside of TF archives
+- Polish model url naming, purge CDN cache
+- Add TF Colab example
+- Remove old ONNX example
+- Submit to TF and ONNX hub
 
 ## 2020-09-23 Fixed broken TF Model Archives 
 
