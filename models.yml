@@ -7,7 +7,7 @@ stt_models:
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_labels.json"
       jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_jit.model"
       onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_batchless.onnx"
-      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_tf.tar"
+      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_tf.tar.gz"
       tf_js: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_tfjs.tar"
       tf_js_int8: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_tfjs_int8.tar"
   de:
