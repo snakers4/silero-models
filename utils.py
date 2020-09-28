@@ -126,7 +126,7 @@ def init_jit_model(model_url: str,
     with tempfile.NamedTemporaryFile('wb', suffix='.model') as f:
         torch.hub.download_url_to_file(model_url,
                                        f.name,
-                                       progress=False)
+                                       progress=True)
         model = torch.jit.load(f.name, map_location=device)
         model.eval()
     return model, Decoder(model.labels)
