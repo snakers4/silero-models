@@ -25,6 +25,10 @@ General plans w/o any set dates:
 
 # Updates
 
+## 2020-09-29 Update English benchmarks
+
+new pruned double-lm [quality benchmarks](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#en-v1)
+
 ## 2020-09-29 Published on TF Hub 
 
 - https://tfhub.dev/silero
