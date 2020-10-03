@@ -1,5 +1,6 @@
 - [Plans](#plans)
 - [Updates](#updates)
+  - [2020-10-03 Batched ONNX and TF Models](#2020-10-03-batched-onnx-and-tf-models)
   - [2020-09-27 Examples, Usability, TF Example](#2020-09-27-examples-usability-tf-example)
   - [2020-09-23 Fixed broken TF Model Archives](#2020-09-23-fixed-broken-tf-model-archives)
   - [2020-09-23 Silero Models now on Torch Hub](#2020-09-23-silero-models-now-on-torch-hub)
@@ -22,6 +23,13 @@ General plans w/o any set dates:
 - Add quantized models (x2 speed)
 
 # Updates
+
+## 2020-10-03 Batched ONNX and TF Models
+
+- Extensively clean up and simplify ONNX and TF model code
+- Add batch support to TF and ONNX models
+- Update examples
+- (pending) Submit new models to TF Hub and update examples there
 
 ## 2020-09-27 Examples, Usability, TF Example 
 

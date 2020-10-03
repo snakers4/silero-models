@@ -6,23 +6,21 @@ stt_models:
         name: "en_v1"
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_labels.json"
       jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_jit.model"
-      onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_batchless.onnx"
+      onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1.onnx"
       tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_tf.tar.gz"
-      tf_js: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_tfjs.tar"
-      tf_js_int8: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_tfjs_int8.tar"
   de:
     latest:
       meta:
         name: "de_v1"
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_labels.json"
       jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_jit.model"
-      onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_batchless.onnx"
-      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_tf.tar"
+      onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1.onnx"
+      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_tf.tar.gz"
   es:
     latest:
       meta:
         name: "es_v1"
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_labels.json"
       jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_jit.model"
-      onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_batchless.onnx"
-      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_tf.tar"
+      onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1.onnx"
+      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_tf.tar.gz"

@@ -133,22 +133,16 @@ batches = split_into_batches(test_files, batch_size=10)
 input = prepare_model_input(read_batch(batches[0]))
 
 # actual onnx inference and decoding
-onnx_input = input.detach().cpu().numpy()[0]
+onnx_input = input.detach().cpu().numpy()
 ort_inputs = {'input': onnx_input}
 ort_outs = ort_session.run(None, ort_inputs)
-decoded = decoder(torch.Tensor(ort_outs[0]))
+decoded = decoder(torch.Tensor(ort_outs[0])[0])
 print(decoded)
 ```
 
 ### TensorFlow
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples.ipynb)
-
-We provide several types of Tensorflow checkpoints:
-
-- Tensorflow SavedModel
-- `tf-js` float32 model
-- `tf-js` int8 model
 
 **SavedModel example**
 
@@ -182,8 +176,8 @@ batches = split_into_batches(test_files, batch_size=10)
 input = prepare_model_input(read_batch(batches[0]))
 
 # tf inference
-res = tf_model.signatures["serving_default"](tf.constant(input.numpy()[0]))['output_0']
-print(decoder(torch.Tensor(res.numpy())))
+res = tf_model.signatures["serving_default"](tf.constant(input.numpy()))['output_0']
+print(decoder(torch.Tensor(res.numpy())[0]))
 ```
 ## FAQ
 
