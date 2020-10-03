@@ -1,6 +1,9 @@
 - [Plans](#plans)
 - [Updates](#updates)
   - [2020-10-03 Batched ONNX and TF Models](#2020-10-03-batched-onnx-and-tf-models)
+  - [2020-09-29 Update English benchmarks](#2020-09-29-update-english-benchmarks)
+  - [2020-09-29 Published on TF Hub](#2020-09-29-published-on-tf-hub)
+  - [2020-09-28 Added Timestamps To Decoder](#2020-09-28-added-timestamps-to-decoder)
   - [2020-09-27 Examples, Usability, TF Example](#2020-09-27-examples-usability-tf-example)
   - [2020-09-23 Fixed broken TF Model Archives](#2020-09-23-fixed-broken-tf-model-archives)
   - [2020-09-23 Silero Models now on Torch Hub](#2020-09-23-silero-models-now-on-torch-hub)
@@ -30,6 +33,21 @@ General plans w/o any set dates:
 - Add batch support to TF and ONNX models
 - Update examples
 - (pending) Submit new models to TF Hub and update examples there
+
+## 2020-09-29 Update English benchmarks
+
+new pruned double-lm [quality benchmarks](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#en-v1)
+
+## 2020-09-29 Published on TF Hub 
+
+- https://tfhub.dev/silero
+- https://tfhub.dev/silero/silero-stt/en/1
+- https://tfhub.dev/silero/collections/silero-stt/1
+
+## 2020-09-28 Added Timestamps To Decoder
+
+- Now standard decoder has an option to return word timestamps
+- Please see Colab examples for PyTorch
 
 ## 2020-09-27 Examples, Usability, TF Example 
 
