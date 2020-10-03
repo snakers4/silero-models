@@ -4,7 +4,7 @@ stt_models:
     latest:
       meta:
         name: "en_v1"
-        sample: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en_sample.wav'"
+        sample: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en_sample.wav"
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_labels.json"
       jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_jit.model"
       onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1.onnx"
@@ -13,7 +13,7 @@ stt_models:
     latest:
       meta:
         name: "de_v1"
-        sample: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de_sample.wav'"
+        sample: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de_sample.wav"
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_labels.json"
       jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1_jit.model"
       onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/de/de_v1.onnx"
@@ -22,7 +22,7 @@ stt_models:
     latest:
       meta:
         name: "es_v1"
-        sample: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es_sample.wav'"
+        sample: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es_sample.wav"
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_labels.json"
       jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1_jit.model"
       onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/es/es_v1.onnx"
