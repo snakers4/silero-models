@@ -1,6 +1,6 @@
 - [Plans](#plans)
 - [Updates](#updates)
-  - [2020-10-19 Update wiki](#2020-10-19 Update wiki)
+  - [2020-10-19 Update wiki](#2020-10-19-update-wiki)
   - [2020-10-03 Batched ONNX and TF Models](#2020-10-03-batched-onnx-and-tf-models)
   - [2020-09-29 Update English benchmarks](#2020-09-29-update-english-benchmarks)
   - [2020-09-29 Published on TF Hub](#2020-09-29-published-on-tf-hub)
