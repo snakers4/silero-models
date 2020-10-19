@@ -29,7 +29,7 @@ General plans w/o any set dates:
 # Updates
 
 ## 2020-10-19 Update wiki
-- Add article on methodology, update wiki
+- Add article on [Methodology](https://github.com/snakers4/silero-models/wiki/Methodology), update wiki
 
 ## 2020-10-03 Batched ONNX and TF Models
 
