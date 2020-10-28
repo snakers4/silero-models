@@ -28,6 +28,9 @@ General plans w/o any set dates:
 
 # Updates
 
+## 2020-10-28 Minor PyTorch 1.7 fix
+- torch.hub.load signature was changed
+
 ## 2020-10-19 Update wiki
 - Add article on [Methodology](https://github.com/snakers4/silero-models/wiki/Methodology), update wiki
 
