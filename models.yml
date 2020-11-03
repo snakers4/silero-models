@@ -3,6 +3,22 @@ stt_models:
   en:
     latest:
       meta:
+        name: "en_v2"
+        sample: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en_sample.wav'"
+      labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_labels.json"
+      jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v2_jit.model"
+      onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v2.onnx"
+      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v2_tf.tar.gz"
+    v2:
+      meta:
+        name: "en_v2"
+        sample: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en_sample.wav'"
+      labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_labels.json"
+      jit: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v2_jit.model"
+      onnx: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v2.onnx"
+      tf: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v2_tf.tar.gz"      
+    v1:
+      meta:
         name: "en_v1"
         sample: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en_sample.wav'"
       labels: "https://silero-models.ams3.cdn.digitaloceanspaces.com/models/en/en_v1_labels.json"
