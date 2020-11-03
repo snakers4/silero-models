@@ -75,7 +75,7 @@ import torchaudio
 from glob import glob
 
 device = torch.device('cpu')  # gpu also works, but our models are fast enough for CPU
-model, decoder, utils = torch.hub.load(github='snakers4/silero-models',
+model, decoder, utils = torch.hub.load(repo_or_dir='snakers4/silero-models',
                                        model='silero_stt',
                                        language='en', # also available 'de', 'es'
                                        device=device)
@@ -110,7 +110,7 @@ from omegaconf import OmegaConf
 language = 'en' # also available 'de', 'es'
 
 # load provided utils
-_, decoder, utils = torch.hub.load(github='snakers4/silero-models', model='silero_stt', language=language)
+_, decoder, utils = torch.hub.load(repo_or_dir='snakers4/silero-models', model='silero_stt', language=language)
 (read_batch, split_into_batches,
  read_audio, prepare_model_input) = utils
 
@@ -158,7 +158,7 @@ from omegaconf import OmegaConf
 language = 'en' # also available 'de', 'es'
 
 # load provided utils using torch.hub for brevity
-_, decoder, utils = torch.hub.load(github='snakers4/silero-models', model='silero_stt', language=language)
+_, decoder, utils = torch.hub.load(repo_or_dir='snakers4/silero-models', model='silero_stt', language=language)
 (read_batch, split_into_batches,
  read_audio, prepare_model_input) = utils
 

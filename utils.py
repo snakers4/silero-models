@@ -26,9 +26,7 @@ def read_audio(path: str,
                target_sr: int = 16000):
 
     assert torchaudio.get_audio_backend() == 'soundfile'
-    wav, sr = torchaudio.load(path,
-                              normalization=True,
-                              channels_first=True)
+    wav, sr = torchaudio.load(path)
 
     if wav.size(0) > 1:
         wav = wav.mean(dim=0, keepdim=True)
