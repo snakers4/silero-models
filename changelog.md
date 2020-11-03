@@ -1,6 +1,7 @@
 - [Plans](#plans)
 - [Updates](#updates)
-  - [2020-10-28 Minor PyTorch 1.7 fix](#2020-10-28-minor-pytorch-1.7-fix)
+  - [2020-11-03 English Model V2 Released](#2020-11-03-english-model-v2-released)
+  - [2020-10-28 Minor PyTorch 1.7 fix](#2020-10-28-minor-pytorch-17-fix)
   - [2020-10-19 Update wiki](#2020-10-19-update-wiki)
   - [2020-10-03 Batched ONNX and TF Models](#2020-10-03-batched-onnx-and-tf-models)
   - [2020-09-29 Update English benchmarks](#2020-09-29-update-english-benchmarks)
@@ -21,15 +22,22 @@
 
 General plans w/o any set dates:
 
-- Cover remaning popular Internet languages for CE and EE editions
-- Reduce CE model size to 10-20 MB w/o quality degradation
+- Cover remaning popular Internet languages for CE and EE editions (in progress)
+- Reduce CE model size to 10-20 MB w/o quality degradation (research and refactoring is done)
 - Add some non-core languages only as CE edition
-- Add denoising
-- Add quantized models (x2 speed)
+- Add denoising (in progress)
+- Add quantized models (x2 speed) (research and refactoring is done)
 
 # Updates
 
+## 2020-11-03 English Model V2 Released
+
+- A minor release, i.e. other models not affected
+- English model was made much more robust to certain dialects
+- Performance metrics coming soon 
+
 ## 2020-10-28 Minor PyTorch 1.7 fix
+
 - torch.hub.load signature was changed
 
 ## 2020-10-19 Update wiki
