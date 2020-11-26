@@ -151,6 +151,7 @@ print(decoded)
 ```python
 import os
 import torch
+import subprocess
 import tensorflow as tf
 import tensorflow_hub as tf_hub
 from omegaconf import OmegaConf
@@ -169,7 +170,9 @@ available_languages = list(models.stt_models.keys())
 assert language in available_languages
 
 # load the actual tf model
-tf_model = tf_hub.load(models.stt_models.en.latest.tf)
+torch.hub.download_url_to_file(models.stt_models.en.latest.tf, 'tf_model.tar.gz')
+subprocess.run('rm -rf tf_model && mkdir tf_model && tar xzfv tf_model.tar.gz -C tf_model',  shell=True, check=True)
+tf_model = tf.saved_model.load('tf_model')
 
 # download a single file, any format compatible with TorchAudio (soundfile backend)
 torch.hub.download_url_to_file('https://opus-codec.org/static/examples/samples/speech_orig.wav', dst ='speech_orig.wav', progress=True)

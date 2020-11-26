@@ -1,5 +1,6 @@
 - [Plans](#plans)
 - [Updates](#updates)
+  - [2020-11-26 Fix TensorFlow Examples](#2020-11-26-fix-tensorflow-examples)
   - [2020-11-03 [Experimental] Ukrainian Model V1 Released](#2020-11-03-experimental-ukrainian-model-v1-released)
   - [2020-11-03 English Model V2 Released](#2020-11-03-english-model-v2-released)
   - [2020-10-28 Minor PyTorch 1.7 fix](#2020-10-28-minor-pytorch-17-fix)
@@ -30,6 +31,8 @@ General plans w/o any set dates:
 - Add quantized models (x2 speed) (research and refactoring is done)
 
 # Updates
+
+## 2020-11-26 Fix TensorFlow Examples
 
 ## 2020-11-03 [Experimental] Ukrainian Model V1 Released
 
