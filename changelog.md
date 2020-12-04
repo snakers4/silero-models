@@ -1,5 +1,6 @@
 - [Plans](#plans)
 - [Updates](#updates)
+  - [2020-12-04 Fix Add EE Distro Sizing and New Speed Metrics](#2020-12-04-add-ee-distro-sizing-and-new-speed-metrics)
   - [2020-11-26 Fix TensorFlow Examples](#2020-11-26-fix-tensorflow-examples)
   - [2020-11-03 [Experimental] Ukrainian Model V1 Released](#2020-11-03-experimental-ukrainian-model-v1-released)
   - [2020-11-03 English Model V2 Released](#2020-11-03-english-model-v2-released)
@@ -31,6 +32,10 @@ General plans w/o any set dates:
 - Add quantized models (x2 speed) (research and refactoring is done)
 
 # Updates
+
+## 2020-12-04 Add EE Distro Sizing and New Speed Metrics
+
+- https://github.com/snakers4/silero-models/wiki/Performance-Benchmarks
 
 ## 2020-11-26 Fix TensorFlow Examples
 
