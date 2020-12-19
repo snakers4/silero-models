@@ -1,3 +1,4 @@
+import os
 import torch
 import tempfile
 import warnings
@@ -121,10 +122,16 @@ class Decoder():
 def init_jit_model(model_url: str,
                    device: torch.device = torch.device('cpu')):
     torch.set_grad_enabled(False)
-    with tempfile.NamedTemporaryFile('wb', suffix='.model') as f:
+
+    model_dir = os.path.join(os.path.dirname(__file__), "model")
+    os.makedirs(model_dir, exist_ok=True)
+    model_path = os.path.join(model_dir, os.path.basename(model_url))
+
+    if not os.path.isfile(model_path):
         torch.hub.download_url_to_file(model_url,
-                                       f.name,
+                                       model_path,
                                        progress=True)
-        model = torch.jit.load(f.name, map_location=device)
-        model.eval()
+
+    model = torch.jit.load(model_path, map_location=device)
+    model.eval()
     return model, Decoder(model.labels)
