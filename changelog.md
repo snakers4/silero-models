@@ -1,6 +1,9 @@
 - [Plans](#plans)
 - [Updates](#updates)
-  - [2020-12-04 Fix Add EE Distro Sizing and New Speed Metrics](#2020-12-04-add-ee-distro-sizing-and-new-speed-metrics)
+  - [2021-03-03 Add `xxsmall` Speed Metrics](#2021-03-03-add-xxsmall-speed-metrics)
+  - [2021-03-03 Ukrainian Model V3 Released](#2021-03-03-ukrainian-model-v3-released)
+  - [2021-02-15 Some Organizational Issues](#2021-02-15-some-organizational-issues)
+  - [2020-12-04 Add EE Distro Sizing and New Speed Metrics](#2020-12-04-add-ee-distro-sizing-and-new-speed-metrics)
   - [2020-11-26 Fix TensorFlow Examples](#2020-11-26-fix-tensorflow-examples)
   - [2020-11-03 [Experimental] Ukrainian Model V1 Released](#2020-11-03-experimental-ukrainian-model-v1-released)
   - [2020-11-03 English Model V2 Released](#2020-11-03-english-model-v2-released)
@@ -23,15 +26,44 @@
 
 # Plans
 
-General plans w/o any set dates:
+Current plans w/o any set dates:
 
-- Cover remaning popular Internet languages for CE and EE editions (in progress)
-- Reduce CE model size to 10-20 MB w/o quality degradation (research and refactoring is done)
-- Add some non-core languages only as CE edition
-- Add denoising (in progress)
-- Add quantized models (x2 speed) (research and refactoring is done)
+- Languages
+  - Focus on huge English model update
+  - Cover remaning popular Internet languages for CE and EE editions (in progress) - now thinking only about adding French and updating the existing languages
+  - We decided not to pursue the following languages: Italian, Portugese, Polish, Czech for now
+  - Add some non-core languages only as CE edition - added Ukrainian v1 and v3
+- Speed
+  - Reduce CE model size to 10-20 MB w/o quality degradation - final size is about 30M w/o losing quality, going lower is still possible with losing quality
+  - Add quantized models (x2 speed) - total speed up for smaller models is between 2x and 3x for a `small` models, for `xxsmall` - around 3x
+- New products
+  - Add denoising - still in progress
+  - Add a large number of production grade TTS models - close to finish, soon to be released
 
 # Updates
+
+## 2021-03-03 Add `xxsmall` Speed Metrics 
+
+- See metrics [here](https://github.com/snakers4/silero-models/wiki/Performance-Benchmarks#speed-benchmarks)
+- Note that this is only an acoustic model, full end-to-end system metrics differ, though `xxsmall` metrics trickle down for CPU systems
+
+## 2021-03-03 Ukrainian Model V3 Released
+
+- Fine tuned from a commercial production Russian model
+- Trained on a larger corpus (around 1,000 hours)
+- Model flavors: `jit` (CPU or GPU), `jit_q` (quantized and CPU only) and `onnx` (ONNX)
+- Huge model speed improvements for CPU inference (!roughly 3x faster!) compared to the previous one, comparable with `xxsmall` from [here](https://github.com/snakers4/silero-models/wiki/Performance-Benchmarks#speed-benchmarks)
+- Will be dropping TF support altogether
+- No proper quality benchmarks for an experimental model though
+
+## 2021-02-15 Some Organizational Issues
+
+- Migrate to our own model hosting
+- Solve large parasite traffic / DDOS issue, source still unknown
+- Remove the CDN
+- Some community / answers tidying up
+- Major progress on [silero-vad](https://github.com/snakers4/silero-vad)
+- Major progress on TTS, preparing for a release
 
 ## 2020-12-04 Add EE Distro Sizing and New Speed Metrics
 
