@@ -46,6 +46,28 @@ stt_models:
   ua:
     latest:
       meta:
+        name: "ua_v3"
+        sample: "https://models.silero.ai/examples/ua_sample.wav"
+        credits:
+          datasets:
+            speech-recognition-uk: https://github.com/egorsmkv/speech-recognition-uk
+      labels: "https://models.silero.ai/models/ua/ua_v1_labels.json"
+      jit: "https://models.silero.ai/models/ua/ua_v3_jit.model"
+      jit_q: "https://models.silero.ai/models/ua/ua_v3_jit_q.model"
+      onnx: "https://models.silero.ai/models/ua/ua_v3.onnx"      
+    v3:
+      meta:
+        name: "ua_v3"
+        sample: "https://models.silero.ai/examples/ua_sample.wav"
+        credits:
+          datasets:
+            speech-recognition-uk: https://github.com/egorsmkv/speech-recognition-uk
+      labels: "https://models.silero.ai/models/ua/ua_v1_labels.json"
+      jit: "https://models.silero.ai/models/ua/ua_v3_jit.model"
+      jit_q: "https://models.silero.ai/models/ua/ua_v3_jit_q.model"
+      onnx: "https://models.silero.ai/models/ua/ua_v3.onnx"        
+    v1:
+      meta:
         name: "ua_v1"
         sample: "https://models.silero.ai/examples/ua_sample.wav"
         credits:
