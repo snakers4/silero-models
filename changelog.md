@@ -1,5 +1,6 @@
 - [Plans](#plans)
 - [Updates](#updates)
+  - [2021-03-29 Add `v1` TTS Models](#2021-03-29-add-v1-tts-models)
   - [2021-03-03 Add `xxsmall` Speed Metrics](#2021-03-03-add-xxsmall-speed-metrics)
   - [2021-03-03 Ukrainian Model V3 Released](#2021-03-03-ukrainian-model-v3-released)
   - [2021-02-15 Some Organizational Issues](#2021-02-15-some-organizational-issues)
@@ -32,17 +33,24 @@ Current plans w/o any set dates:
   - Focus on huge English model update
   - Cover remaning popular Internet languages for CE and EE editions (in progress) - now thinking only about adding French and updating the existing languages
   - We decided not to pursue the following languages: Italian, Portugese, Polish, Czech for now
-  - Add some non-core languages only as CE edition - added Ukrainian v1 and v3
+  - ~~Add some non-core languages only as CE edition~~ Added Ukrainian v1 and v3
 - Speed
-  - Reduce CE model size to 10-20 MB w/o quality degradation - final size is about 30M w/o losing quality, going lower is still possible with losing quality
+  - ~~Reduce CE model size to 10-20 MB w/o quality degradation~~ Final size is about 30M w/o losing quality, going lower is still possible with losing quality
   - Add quantized models (x2 speed) - total speed up for smaller models is between 2x and 3x for a `small` models, for `xxsmall` - around 3x
 - New products
   - Add denoising - still in progress
-  - Add a large number of production grade TTS models - close to finish, soon to be released
+  - ~~Add a large number of production grade TTS models - close to finish, soon to be released~~ Added Silero TTS models `v1`
 
 # Updates
 
-## 2021-03-03 Add `xxsmall` Speed Metrics 
+## 2021-03-29 Add `v1` TTS Models
+
+- Added `v1` TTS [models](https://github.com/snakers4/silero-models#text-to-speech);
+- Add TTS [performance benchmarks](https://github.com/snakers4/silero-models/wiki/Performance-Benchmarks#tts);
+- Polish existing [wiki](https://github.com/snakers4/silero-models/wiki/Performance-Benchmarks);
+- Progress on an additional method of [model compression](https://t.me/snakers4/2689);
+
+## 2021-03-03 Add `xxsmall` Speed Metrics
 
 - See metrics [here](https://github.com/snakers4/silero-models/wiki/Performance-Benchmarks#speed-benchmarks)
 - Note that this is only an acoustic model, full end-to-end system metrics differ, though `xxsmall` metrics trickle down for CPU systems
@@ -76,15 +84,15 @@ Current plans w/o any set dates:
 - An experimental model
 - Trained from a small community contributed [corpus](https://github.com/snakers4/silero-models/issues/30)
 - **New** Full model size reduced to 85 MB
-- **New** - quantized model is ony 25 MB 
+- **New** - quantized model is ony 25 MB
 - No TF or ONNX models
-- Will be re-released a fine-tuned model from a larger Russian corpus upon V3 release 
+- Will be re-released a fine-tuned model from a larger Russian corpus upon V3 release
 
 ## 2020-11-03 English Model V2 Released
 
 - A minor release, i.e. other models not affected
 - English model was made much more robust to certain dialects
-- Performance metrics coming soon 
+- Performance metrics coming soon
 
 ## 2020-10-28 Minor PyTorch 1.7 fix
 
@@ -104,7 +112,7 @@ Current plans w/o any set dates:
 
 new pruned double-lm [quality benchmarks](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#en-v1)
 
-## 2020-09-29 Published on TF Hub 
+## 2020-09-29 Published on TF Hub
 
 - https://tfhub.dev/silero
 - https://tfhub.dev/silero/silero-stt/en/1
@@ -115,7 +123,7 @@ new pruned double-lm [quality benchmarks](https://github.com/snakers4/silero-mod
 - Now standard decoder has an option to return word timestamps
 - Please see Colab examples for PyTorch
 
-## 2020-09-27 Examples, Usability, TF Example 
+## 2020-09-27 Examples, Usability, TF Example
 
 - Polish and simplify the main readme
 - Remove folders from inside of TF archives
@@ -124,7 +132,7 @@ new pruned double-lm [quality benchmarks](https://github.com/snakers4/silero-mod
 - Remove old ONNX example
 - Submit to TF and ONNX hub
 
-## 2020-09-23 Fixed broken TF Model Archives 
+## 2020-09-23 Fixed broken TF Model Archives
 
 - Fixed weird archiving issue for Windows, purged CDN cache
 
@@ -136,7 +144,7 @@ new pruned double-lm [quality benchmarks](https://github.com/snakers4/silero-mod
 
 - Add VAD to colab example
 - Add proper SavedModel Tensorflow checkpoints for all of the languages
-- Add experimental tf.js checkpoints for English 
+- Add experimental tf.js checkpoints for English
 
 ## 2020-09-19 Fx Minor Bugs
 
