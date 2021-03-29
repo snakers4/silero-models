@@ -80,97 +80,97 @@ tts_models:
   ru:
     aidar_8khz:
       latest:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_aidar_8000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_aidar_8000.jit'
     aidar_16khz:
       latest:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_aidar_16000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_aidar_16000.jit'
     baya_8khz:
         latest:
-          tokenset: ''
+          tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
           example: ''
           jit: 'https://models.silero.ai/models/tts/ru/v1_baya_8000.jit'
         v1:
-          tokenset: ''
+          tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
           example: ''
           jit: 'https://models.silero.ai/models/tts/ru/v1_baya_8000.jit'
     baya_16khz:
         latest:
-          tokenset: ''
+          tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
           example: ''
           jit: 'https://models.silero.ai/models/tts/ru/v1_baya_16000.jit'
         v1:
-          tokenset: ''
+          tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
           example: ''
           jit: 'https://models.silero.ai/models/tts/ru/v1_baya_16000.jit'
     irina_8khz:
       latest:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_irina_8000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_irina_8000.jit'
     irina_16khz:
       latest:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_irina_16000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_irina_16000.jit'
     kseniya_8khz:
       latest:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_kseniya_8000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_kseniya_8000.jit'
     kseniya_16khz:
       latest:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_kseniya_16000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_kseniya_16000.jit'
     natasha_8khz:
       latest:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_natasha_8000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_natasha_8000.jit'
     natasha_16khz:
       latest:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_natasha_16000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_natasha_16000.jit'
     ruslan_8khz:
       latest:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_ruslan_8000.jit'
       v1:
@@ -179,86 +179,86 @@ tts_models:
         jit: 'https://models.silero.ai/models/tts/ru/v1_ruslan_8000.jit'
     ruslan_16khz:
       latest:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_ruslan_16000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/ru/v1_ruslan_16000.jit'
   en:
     lj_8khz:
       latest:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyz .,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/en/v1_lj_8000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyz .,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/en/v1_lj_8000.jit'
     lj_16khz:
       latest:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyz .,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/en/v1_lj_16000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyz .,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/en/v1_lj_16000.jit'
   de:
     thorsten_8khz:
       latest:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyzäöüß .,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/de/v1_thorsten_8000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyzäöüß .,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/de/v1_thorsten_8000.jit'
     thorsten_16khz:
       latest:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyzäöüß .,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/de/v1_thorsten_16000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyzäöüß .,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/de/v1_thorsten_16000.jit'
   es:
     tux_8khz:
       latest:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyzáéíñóú .,!?…:;–¡¿'
         example: ''
         jit: 'https://models.silero.ai/models/tts/es/v1_tux_8000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyzáéíñóú .,!?…:;–¡¿'
         example: ''
         jit: 'https://models.silero.ai/models/tts/es/v1_tux_8000.jit'
     tux_16khz:
       latest:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyzáéíñóú .,!?…:;–¡¿'
         example: ''
         jit: 'https://models.silero.ai/models/tts/es/v1_tux_16000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyzáéíñóú .,!?…:;–¡¿'
         example: ''
         jit: 'https://models.silero.ai/models/tts/es/v1_tux_16000.jit'
   fr:
     gilles_8khz:
       latest:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyzéàèùâêîôûç .,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/fr/v1_gilles_8000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyzéàèùâêîôûç .,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/fr/v1_gilles_8000.jit'
     gilles_16khz:
       latest:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyzéàèùâêîôûç .,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/fr/v1_gilles_16000.jit'
       v1:
-        tokenset: ''
+        tokenset: '_~abcdefghijklmnopqrstuvwxyzéàèùâêîôûç .,!?…:;–'
         example: ''
         jit: 'https://models.silero.ai/models/tts/fr/v1_gilles_16000.jit'
