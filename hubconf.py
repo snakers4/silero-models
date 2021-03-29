@@ -55,7 +55,7 @@ def silero_tts(language='en',
         for _ in speakers:
             speaker_language[_] = lang
     assert speaker in available_speakers, f'Speaker not in the supported list {available_speakers}'
-    assert language == speaker_language[speaker], f'Incorrect language {language} for this speaker, please specify {speaker_language[speaker]}'
+    assert language == speaker_language[speaker], f"Incorrect language '{language}' for this speaker, please specify '{speaker_language[speaker]}'"
 
     model_conf = models.tts_models[language][speaker].latest
     model = init_jit_model_tts(model_conf.jit)
