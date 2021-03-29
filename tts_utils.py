@@ -79,3 +79,14 @@ def process_tts_model_output(out, out_lens, orig_ids, sample_rate):
     for i, out_len in enumerate(orig_out_lens):
         proc_outs.append(orig_out[i][:out_len*srf])
     return proc_outs
+
+
+def apply_tts(texts: list,
+              model: torch.nn.Module,
+              sample_rate: int,
+              symbols: str):
+    device = model.device
+    text_padded, orig_ids = prepare_tts_model_input(texts, symbols=symbols)
+    out, out_lens = model(text_padded.to(device))
+    audios = process_tts_model_output(out, out_lens, orig_ids, sample_rate)
+    return audios

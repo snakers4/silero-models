@@ -81,184 +81,224 @@ tts_models:
     aidar_8khz:
       latest:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_aidar_8000.jit'
+        sample_rate: 8000
       v1:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_aidar_8000.jit'
+        sample_rate: 8000
     aidar_16khz:
       latest:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_aidar_16000.jit'
+        sample_rate: 16000
       v1:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_aidar_16000.jit'
+        sample_rate: 16000
     baya_8khz:
-        latest:
-          tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-          example: ''
-          jit: 'https://models.silero.ai/models/tts/ru/v1_baya_8000.jit'
-        v1:
-          tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-          example: ''
-          jit: 'https://models.silero.ai/models/tts/ru/v1_baya_8000.jit'
+      latest:
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
+        jit: 'https://models.silero.ai/models/tts/ru/v1_baya_8000.jit'
+        sample_rate: 8000
+      v1:
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
+        jit: 'https://models.silero.ai/models/tts/ru/v1_baya_8000.jit'
+        sample_rate: 8000
     baya_16khz:
-        latest:
-          tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-          example: ''
-          jit: 'https://models.silero.ai/models/tts/ru/v1_baya_16000.jit'
-        v1:
-          tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-          example: ''
-          jit: 'https://models.silero.ai/models/tts/ru/v1_baya_16000.jit'
+      latest:
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
+        jit: 'https://models.silero.ai/models/tts/ru/v1_baya_16000.jit'
+        sample_rate: 16000
+      v1:
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
+        jit: 'https://models.silero.ai/models/tts/ru/v1_baya_16000.jit'
+        sample_rate: 16000
     irina_8khz:
       latest:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_irina_8000.jit'
+        sample_rate: 8000
       v1:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_irina_8000.jit'
+        sample_rate: 8000
     irina_16khz:
       latest:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_irina_16000.jit'
+        sample_rate: 16000
       v1:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_irina_16000.jit'
+        sample_rate: 16000
     kseniya_8khz:
       latest:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_kseniya_8000.jit'
+        sample_rate: 8000
       v1:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_kseniya_8000.jit'
+        sample_rate: 8000
     kseniya_16khz:
       latest:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_kseniya_16000.jit'
+        sample_rate: 16000
       v1:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_kseniya_16000.jit'
+        sample_rate: 16000
     natasha_8khz:
       latest:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_natasha_8000.jit'
+        sample_rate: 8000
       v1:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_natasha_8000.jit'
+        sample_rate: 8000
     natasha_16khz:
       latest:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_natasha_16000.jit'
+        sample_rate: 16000
       v1:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_natasha_16000.jit'
+        sample_rate: 16000
     ruslan_8khz:
       latest:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_ruslan_8000.jit'
+        sample_rate: 8000
       v1:
-        tokenset: ''
-        example: ''
+        tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_ruslan_8000.jit'
+        sample_rate: 8000
     ruslan_16khz:
       latest:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_ruslan_16000.jit'
+        sample_rate: 16000
       v1:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
-        example: ''
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         jit: 'https://models.silero.ai/models/tts/ru/v1_ruslan_16000.jit'
+        sample_rate: 16000
   en:
     lj_8khz:
       latest:
         tokenset: '_~abcdefghijklmnopqrstuvwxyz .,!?…:;–'
-        example: ''
+        example: 'Can you can a canned can into an un-canned can like a canner can can a canned can into an un-canned can?'
         jit: 'https://models.silero.ai/models/tts/en/v1_lj_8000.jit'
+        sample_rate: 8000
       v1:
         tokenset: '_~abcdefghijklmnopqrstuvwxyz .,!?…:;–'
-        example: ''
+        example: 'Can you can a canned can into an un-canned can like a canner can can a canned can into an un-canned can?'
         jit: 'https://models.silero.ai/models/tts/en/v1_lj_8000.jit'
+        sample_rate: 8000
     lj_16khz:
       latest:
         tokenset: '_~abcdefghijklmnopqrstuvwxyz .,!?…:;–'
-        example: ''
+        example: 'Can you can a canned can into an un-canned can like a canner can can a canned can into an un-canned can?'
         jit: 'https://models.silero.ai/models/tts/en/v1_lj_16000.jit'
+        sample_rate: 16000
       v1:
         tokenset: '_~abcdefghijklmnopqrstuvwxyz .,!?…:;–'
-        example: ''
+        example: 'Can you can a canned can into an un-canned can like a canner can can a canned can into an un-canned can?'
         jit: 'https://models.silero.ai/models/tts/en/v1_lj_16000.jit'
+        sample_rate: 16000
   de:
     thorsten_8khz:
       latest:
         tokenset: '_~abcdefghijklmnopqrstuvwxyzäöüß .,!?…:;–'
-        example: ''
+        example: 'Fischers Fritze fischt frische Fische, Frische Fische fischt Fischers Fritze.'
         jit: 'https://models.silero.ai/models/tts/de/v1_thorsten_8000.jit'
+        sample_rate: 8000
       v1:
         tokenset: '_~abcdefghijklmnopqrstuvwxyzäöüß .,!?…:;–'
-        example: ''
+        example: 'Fischers Fritze fischt frische Fische, Frische Fische fischt Fischers Fritze.'
         jit: 'https://models.silero.ai/models/tts/de/v1_thorsten_8000.jit'
+        sample_rate: 8000
     thorsten_16khz:
       latest:
         tokenset: '_~abcdefghijklmnopqrstuvwxyzäöüß .,!?…:;–'
-        example: ''
+        example: 'Fischers Fritze fischt frische Fische, Frische Fische fischt Fischers Fritze.'
         jit: 'https://models.silero.ai/models/tts/de/v1_thorsten_16000.jit'
+        sample_rate: 16000
       v1:
         tokenset: '_~abcdefghijklmnopqrstuvwxyzäöüß .,!?…:;–'
-        example: ''
+        example: 'Fischers Fritze fischt frische Fische, Frische Fische fischt Fischers Fritze.'
         jit: 'https://models.silero.ai/models/tts/de/v1_thorsten_16000.jit'
+        sample_rate: 16000
   es:
     tux_8khz:
       latest:
         tokenset: '_~abcdefghijklmnopqrstuvwxyzáéíñóú .,!?…:;–¡¿'
-        example: ''
+        example: 'Hoy ya es ayer y ayer ya es hoy, ya llegó el día, y hoy es hoy.'
         jit: 'https://models.silero.ai/models/tts/es/v1_tux_8000.jit'
+        sample_rate: 8000
       v1:
         tokenset: '_~abcdefghijklmnopqrstuvwxyzáéíñóú .,!?…:;–¡¿'
-        example: ''
+        example: 'Hoy ya es ayer y ayer ya es hoy, ya llegó el día, y hoy es hoy.'
         jit: 'https://models.silero.ai/models/tts/es/v1_tux_8000.jit'
+        sample_rate: 8000
     tux_16khz:
       latest:
         tokenset: '_~abcdefghijklmnopqrstuvwxyzáéíñóú .,!?…:;–¡¿'
-        example: ''
+        example: 'Hoy ya es ayer y ayer ya es hoy, ya llegó el día, y hoy es hoy.'
         jit: 'https://models.silero.ai/models/tts/es/v1_tux_16000.jit'
+        sample_rate: 16000
       v1:
         tokenset: '_~abcdefghijklmnopqrstuvwxyzáéíñóú .,!?…:;–¡¿'
-        example: ''
+        example: 'Hoy ya es ayer y ayer ya es hoy, ya llegó el día, y hoy es hoy.'
         jit: 'https://models.silero.ai/models/tts/es/v1_tux_16000.jit'
+        sample_rate: 16000
   fr:
     gilles_8khz:
       latest:
         tokenset: '_~abcdefghijklmnopqrstuvwxyzéàèùâêîôûç .,!?…:;–'
-        example: ''
+        example: 'Je suis ce que je suis, et si je suis ce que je suis, qu’est ce que je suis.'
         jit: 'https://models.silero.ai/models/tts/fr/v1_gilles_8000.jit'
+        sample_rate: 8000
       v1:
         tokenset: '_~abcdefghijklmnopqrstuvwxyzéàèùâêîôûç .,!?…:;–'
-        example: ''
+        example: 'Je suis ce que je suis, et si je suis ce que je suis, qu’est ce que je suis.'
         jit: 'https://models.silero.ai/models/tts/fr/v1_gilles_8000.jit'
+        sample_rate: 8000
     gilles_16khz:
       latest:
         tokenset: '_~abcdefghijklmnopqrstuvwxyzéàèùâêîôûç .,!?…:;–'
-        example: ''
+        example: 'Je suis ce que je suis, et si je suis ce que je suis, qu’est ce que je suis.'
         jit: 'https://models.silero.ai/models/tts/fr/v1_gilles_16000.jit'
+        sample_rate: 16000
       v1:
         tokenset: '_~abcdefghijklmnopqrstuvwxyzéàèùâêîôûç .,!?…:;–'
-        example: ''
+        example: 'Je suis ce que je suis, et si je suis ce que je suis, qu’est ce que je suis.'
         jit: 'https://models.silero.ai/models/tts/fr/v1_gilles_16000.jit'
+        sample_rate: 16000

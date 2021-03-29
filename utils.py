@@ -1,6 +1,5 @@
 import os
 import torch
-import tempfile
 import warnings
 import torchaudio
 from typing import List
@@ -84,11 +83,11 @@ class Decoder():
                     align_list.append([])
                 else:
                     align_list[-1].append(j)
-                
+
         string = ''.join([x[0] for x in groupby(for_string)]).replace('$', '').strip()
-        
+
         align_list = list(filter(lambda x: x, align_list))
-        
+
         if align_list and wav_len and word_align:
             align_dicts = []
             linear_align_coeff = wav_len / len(argm)
@@ -103,12 +102,12 @@ class Decoder():
                 else:
                     to_move = min(1.5, (align_list[i+1][0] - align_word[-1]) / 2)
                     align_word[-1] = align_word[-1] + to_move
-                    
+
             for word, timing in zip(string.split(), align_list):
                 align_dicts.append({'word': word,
                                     'start_ts': round(timing[0] * linear_align_coeff, 2),
                                     'end_ts': round(timing[-1] * linear_align_coeff, 2)})
-                
+
             return string, align_dicts
         return string
 
