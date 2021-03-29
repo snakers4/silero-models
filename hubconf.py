@@ -58,7 +58,7 @@ def silero_tts(language='en',
     assert language == speaker_language[speaker], f'Incorrect language {language} for this speaker, please specify {speaker_language[speaker]}'
 
     model_conf = models.tts_models[language][speaker].latest
-    model = init_jit_model(model_conf.jit)
+    model = init_jit_model_tts(model_conf.jit)
     symbols = model_conf.tokenset
     example_text = model_conf.example
     sample_rate = model_conf.sample_rate
