@@ -84,8 +84,8 @@ def process_tts_model_output(out, out_lens, orig_ids, sample_rate):
 def apply_tts(texts: list,
               model: torch.nn.Module,
               sample_rate: int,
-              symbols: str):
-    device = model.device
+              symbols: str,
+              device: torch.device):
     text_padded, orig_ids = prepare_tts_model_input(texts, symbols=symbols)
     out, out_lens = model(text_padded.to(device))
     audios = process_tts_model_output(out, out_lens, orig_ids, sample_rate)
