@@ -1,12 +1,17 @@
 import os
+import sys
 import torch
 import warnings
 import torchaudio
 from typing import List
 from itertools import groupby
 
+if sys.platform.startswith('linux'):
+    audio_backend_name = "sox_io"
+else:
+    audio_backend_name = "soundfile"
 
-torchaudio.set_audio_backend("soundfile")  # switch backend
+torchaudio.set_audio_backend(audio_backend_name)  # switch backend
 
 
 def read_batch(audio_paths: List[str]):
@@ -25,7 +30,7 @@ def split_into_batches(lst: List[str],
 def read_audio(path: str,
                target_sr: int = 16000):
 
-    assert torchaudio.get_audio_backend() == 'soundfile'
+    assert torchaudio.get_audio_backend() == audio_backend_name
     wav, sr = torchaudio.load(path)
 
     if wav.size(0) > 1:
