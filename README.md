@@ -22,11 +22,13 @@
   - [Contact](#contact)
     - [Get in Touch](#get-in-touch)
     - [Commercial Inquiries](#commercial-inquiries)
+  - [Citations](#citations)
 
 
 # Silero Models
 
-Silero Models: pre-trained enterprise-grade STT models and benchmarks.
+Silero Models: pre-trained enterprise-grade STT / TTS models and benchmarks.
+
 Enterprise-grade STT made refreshingly simple (seriously, see [benchmarks](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks)).
 We provide quality comparable to Google's STT (and sometimes even better) and we are not Google.
 
@@ -35,6 +37,17 @@ As a bonus:
 - No Kaldi;
 - No compilation;
 - No 20-step instructions;
+
+Also we have published TTS models that satisfy the following criteria:
+
+- One-line usage;
+- A large library of voices;
+- A fully end-to-end pipeline;
+- Naturally sounding speech;
+- No GPU or training required;
+- Minimalism and lack of dependencies;
+- Faster than real-time on one CPU thread (!!!);
+- Support for 16kHz and 8kHz out of the box;
 
 ## Speech-To-Text
 
@@ -277,3 +290,18 @@ Try our models, create an [issue](https://github.com/snakers4/silero-models/issu
 ### Commercial Inquiries
 
 Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers](https://github.com/snakers4/silero-models/wiki/Licensing-and-Tiers) for relevant information and [email](mailto:hello@silero.ai) us.
+
+## Citations
+
+```
+@misc{Silero Models,
+  author = {Silero Team},
+  title = {Silero Models: pre-trained enterprise-grade STT / TTS models and benchmarks},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/snakers4/silero-models}},
+  commit = {insert_some_commit_here},
+  email = {hello@silero.ai}
+}
+```
