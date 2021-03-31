@@ -6,9 +6,6 @@ from typing import List
 from itertools import groupby
 
 
-torchaudio.set_audio_backend("soundfile")  # switch backend
-
-
 def read_batch(audio_paths: List[str]):
     return [read_audio(audio_path)
             for audio_path
@@ -25,7 +22,6 @@ def split_into_batches(lst: List[str],
 def read_audio(path: str,
                target_sr: int = 16000):
 
-    assert torchaudio.get_audio_backend() == 'soundfile'
     wav, sr = torchaudio.load(path)
 
     if wav.size(0) > 1:
