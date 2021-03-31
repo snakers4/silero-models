@@ -68,7 +68,6 @@ Currently we provide the following checkpoints:
 - All examples:
   - torch (used to clone the repo in tf and onnx examples)
   - torchaudio
-  - soundfile
   - omegaconf
 - Additional for ONNX examples:
   - onnx 
@@ -77,7 +76,7 @@ Currently we provide the following checkpoints:
   - tensorflow
   - tensorflow_hub
 
-Please see the provided Colab for details for each example below.
+Please see the provided Colab for details for each example below. All examples are maintained to work with the latest major packaged versions of the installed libraries.
 
 ### PyTorch
 
@@ -99,7 +98,7 @@ model, decoder, utils = torch.hub.load(repo_or_dir='snakers4/silero-models',
 (read_batch, split_into_batches,
  read_audio, prepare_model_input) = utils  # see function signature for details
 
-# download a single file, any format compatible with TorchAudio (soundfile backend)
+# download a single file, any format compatible with TorchAudio
 torch.hub.download_url_to_file('https://opus-codec.org/static/examples/samples/speech_orig.wav',
                                dst ='speech_orig.wav', progress=True)
 test_files = glob('speech_orig.wav') 
@@ -143,7 +142,7 @@ onnx_model = onnx.load('model.onnx')
 onnx.checker.check_model(onnx_model)
 ort_session = onnxruntime.InferenceSession('model.onnx')
 
-# download a single file, any format compatible with TorchAudio (soundfile backend)
+# download a single file, any format compatible with TorchAudio
 torch.hub.download_url_to_file('https://opus-codec.org/static/examples/samples/speech_orig.wav', dst ='speech_orig.wav', progress=True)
 test_files = ['speech_orig.wav']
 batches = split_into_batches(test_files, batch_size=10)
@@ -191,7 +190,7 @@ torch.hub.download_url_to_file(models.stt_models.en.latest.tf, 'tf_model.tar.gz'
 subprocess.run('rm -rf tf_model && mkdir tf_model && tar xzfv tf_model.tar.gz -C tf_model',  shell=True, check=True)
 tf_model = tf.saved_model.load('tf_model')
 
-# download a single file, any format compatible with TorchAudio (soundfile backend)
+# download a single file, any format compatible with TorchAudio
 torch.hub.download_url_to_file('https://opus-codec.org/static/examples/samples/speech_orig.wav', dst ='speech_orig.wav', progress=True)
 test_files = ['speech_orig.wav']
 batches = split_into_batches(test_files, batch_size=10)
@@ -237,7 +236,7 @@ Currently we provide the following speakers:
 Basic dependencies (see colab):
 
 - torch
-- omegaconf
+- omegaconf (can be remove as well, if you do not load all of the configs)
 - torchaudio (required only because models are hosted together with STT, not required for work)
 
 ### PyTorch
