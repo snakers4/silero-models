@@ -66,10 +66,11 @@ def prepare_tts_model_input(text: str or list, symbols: str):
     return text_padded, ids_sorted_decreasing
 
 
-def process_tts_model_output(out, out_lens, orig_ids, sample_rate):
+def process_tts_model_output(out, out_lens, ids, sample_rate):
     assert sample_rate in [8000, 16000]
     out = out.to('cpu')
     out_lens = out_lens.to('cpu')
+    _, orig_ids = ids.sort()
 
     proc_outs = []
     srf = 2 if sample_rate == 16000 else 1
