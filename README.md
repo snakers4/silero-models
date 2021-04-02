@@ -66,15 +66,15 @@ Currently we provide the following checkpoints:
 ### Dependencies
 
 - All examples:
-  - torch (used to clone the repo in tf and onnx examples)
-  - torchaudio
-  - omegaconf
+  - `torch`, 1.8+ (used to clone the repo in tf and onnx examples), breaking changes for version older than 1.6
+  - `torchaudio`, latest version bound to PyTorch should work
+  - `omegaconf`, latest just should work
 - Additional for ONNX examples:
-  - onnx 
-  - onnxruntime
+  - `onnx`, latest just should work
+  - `onnxruntime`, latest just should work
 - Additional for TensorFlow examples:
-  - tensorflow
-  - tensorflow_hub
+  - `tensorflow`, latest just should work
+  - `tensorflow_hub`, latest just should work
 
 Please see the provided Colab for details for each example below. All examples are maintained to work with the latest major packaged versions of the installed libraries.
 
@@ -235,9 +235,9 @@ Currently we provide the following speakers:
 
 Basic dependencies (see colab):
 
-- torch
-- omegaconf (can be remove as well, if you do not load all of the configs)
-- torchaudio (required only because models are hosted together with STT, not required for work)
+- `torch`, 1.8+ (used to clone the repo in tf and onnx examples), breaking changes for version older than 1.6
+- `torchaudio`, latest version bound to PyTorch should work (required only because models are hosted together with STT, not required for work) 
+- `omegaconf`,  latest (can be removed as well, if you do not load all of the configs)
 
 ### PyTorch
 
