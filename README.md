@@ -23,6 +23,7 @@
     - [Get in Touch](#get-in-touch)
     - [Commercial Inquiries](#commercial-inquiries)
   - [Citations](#citations)
+  - [Further Reading](#further-reading) 
 
 
 # Silero Models
@@ -304,3 +305,40 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
   email = {hello@silero.ai}
 }
 ```
+
+## **Further reading**
+
+### **English**
+
+- STT:
+  - Towards an Imagenet Moment For Speech-To-Text - https://thegradient.pub/towards-an-imagenet-moment-for-speech-to-text/
+  - A Speech-To-Text Practitioners Criticisms of Industry and Academia - https://thegradient.pub/a-speech-to-text-practitioners-criticisms-of-industry-and-academia/
+  - Modern Google-level STT Models Released - https://habr.com/ru/post/519562/
+
+- TTS:
+  - High-Quality Text-to-Speech Made Accessible, Simple and Fast - https://habr.com/ru/post/549482/
+ 
+ - VAD:
+   - Modern Portable Voice Activity Detector Released - https://habr.com/ru/post/537276/ 
+
+### **Chinese**
+
+STT:
+  - 迈向语音识别领域的 ImageNet 时刻 - https://www.infoq.cn/article/4u58WcFCs0RdpoXev1E2
+  - 语音领域学术界和工业界的七宗罪 - https://www.infoq.cn/article/lEe6GCRjF1CNToVITvNw
+
+### **Russian**
+
+- STT
+  - Мы опубликовали современные STT модели сравнимые по качеству с Google - https://habr.com/ru/post/519564/
+  - Понижаем барьеры на вход в распознавание речи - https://habr.com/ru/post/494006/
+  - Огромный открытый датасет русской речи версия 1.0 - https://habr.com/ru/post/474462/
+  - Насколько Быстрой Можно Сделать Систему STT? - https://habr.com/ru/post/531524/
+  - Наша система Speech-To-Text - https://www.silero.ai/tag/our-speech-to-text/
+  - Speech To Text - https://www.silero.ai/tag/speech-to-text/
+
+- TTS:
+  - Мы Опубликовали Качественный, Простой, Доступный и Быстрый Синтез Речи - https://habr.com/ru/post/549480/
+ 
+ - VAD:
+   - Мы опубликовали современный Voice Activity Detector и не только - https://habr.com/ru/post/537274/ 
