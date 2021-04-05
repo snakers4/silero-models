@@ -23,7 +23,8 @@
     - [Get in Touch](#get-in-touch)
     - [Commercial Inquiries](#commercial-inquiries)
   - [Citations](#citations)
-  - [Further Reading](#further-reading) 
+  - [Further Reading](#further-reading)
+  - [Donations](#donations) 
 
 
 # Silero Models
@@ -342,3 +343,7 @@ STT:
  
  - VAD:
    - Мы опубликовали современный Voice Activity Detector и не только - https://habr.com/ru/post/537274/ 
+
+## Donations
+
+Please use the "sponsor" button.
