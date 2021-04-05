@@ -1,8 +1,8 @@
  [![Mailing list : test](http://img.shields.io/badge/Email-gray.svg?style=for-the-badge&logo=gmail)](mailto:hello@silero.ai) [![Mailing list : test](http://img.shields.io/badge/Telegram-blue.svg?style=for-the-badge&logo=telegram)](https://t.me/silero_speech) [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-GNU%20AGPL%203.0-lightgrey.svg?style=for-the-badge)](https://github.com/snakers4/silero-models/blob/master/LICENSE) 
  
- [![Open on Torch Hub](https://img.shields.io/badge/Torch-Hub-red?logo=pytorch&style=for-the-badge)](https://pytorch.org/hub/snakers4_silero-models_stt/) [![Open on TF Hub](https://img.shields.io/badge/TF-Hub-yellow?logo=tensorflow&style=for-the-badge)](https://tfhub.dev/silero/collections/silero-stt/1)
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples.ipynb)
+[![Donations](https://opencollective.com/open_stt/tiers/donation/badge.svg?label=donations&color=brightgreen)](https://opencollective.com/open_stt)
+[![Backers](https://opencollective.com/open_stt/tiers/backer/badge.svg?label=backers&color=brightgreen)](https://opencollective.com/open_stt)
+[![Sponsors](https://opencollective.com/open_stt/tiers/sponsor/badge.svg?label=sponsors&color=brightgreen)](https://opencollective.com/open_stt)
 
 ![header)](https://user-images.githubusercontent.com/12515440/89997349-b3523080-dc94-11ea-9906-ca2e8bc50535.png)
 
@@ -25,7 +25,6 @@
   - [Citations](#citations)
   - [Further Reading](#further-reading)
   - [Donations](#donations) 
-
 
 # Silero Models
 
@@ -161,8 +160,6 @@ print(decoded)
 ### TensorFlow
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples.ipynb)
-
-[![Open on TF Hub](https://img.shields.io/badge/TF-Hub-yellow?logo=tensorflow&style=for-the-badge)](https://tfhub.dev/silero/collections/silero-stt/1)
 
 **SavedModel example**
 
