@@ -9,6 +9,17 @@ stt_models:
       jit: "https://models.silero.ai/models/en/en_v2_jit.model"
       onnx: "https://models.silero.ai/models/en/en_v2.onnx"
       tf: "https://models.silero.ai/models/en/en_v2_tf.tar.gz"
+    v3:
+      meta:
+        name: "en_v3"
+        sample: "https://models.silero.ai/examples/en_sample.wav"
+      labels: "https://models.silero.ai/models/en/en_v1_labels.json"
+      jit: "https://models.silero.ai/models/en/en_v3_jit.model"
+      onnx: "https://models.silero.ai/models/en/en_v3.onnx"
+      jit_q: "https://models.silero.ai/models/en/en_v3_jit_q.model"
+      jit_skip: "https://models.silero.ai/models/en/en_v3_jit_skips.model"
+      jit_large: "https://models.silero.ai/models/en/en_v3_jit_large.model"
+      onnx_large: "https://models.silero.ai/models/en/en_v3_large.onnx"
     v2:
       meta:
         name: "en_v2"
