@@ -1,5 +1,6 @@
 - [Plans](#plans)
 - [Updates](#updates)
+  - [2021-04-20 Add `v3` STT English Models](#2021-04-20-add-v3-stt-english-models) 
   - [2021-03-29 Add `v1` TTS Models](#2021-03-29-add-v1-tts-models)
   - [2021-03-03 Add `xxsmall` Speed Metrics](#2021-03-03-add-xxsmall-speed-metrics)
   - [2021-03-03 Ukrainian Model V3 Released](#2021-03-03-ukrainian-model-v3-released)
@@ -42,6 +43,20 @@ Current plans w/o any set dates:
   - ~~Add a large number of production grade TTS models - close to finish, soon to be released~~ Added Silero TTS models `v1`
 
 # Updates
+
+## 2021-04-20 Add `v3` STT English Models
+
+Huge update for English!
+
+- Default model (`jit` or `onnx`) size is reduced almost by 50% without sacrificing quality (!);
+- New model flavours: `jit_q` (smaller quantized model), `jit_skip` (with exposed skip connections), `jit_large` (higher quality model), `onnx_large` (!);
+- New smallest model `jit_q` is only 40M in size (!);
+- Tensorflow checkpoints discontinued;
+- New performance [benchmarks](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#en-v3) - default models are on par with previous models and Google, large models mostly outperform Google (!);
+- Even more quality improvements coming soon (!);
+- CE benchmarks coming soon;
+- `xsmall` model was created (2x smaller than the default), but I could not quantize it. I am looking into creating a `xxsmall` model;
+- Still working on making EE models fully JIT-traceable;
 
 ## 2021-03-29 Add `v1` TTS Models
 
