@@ -1,6 +1,7 @@
 - [Plans](#plans)
 - [Updates](#updates)
-  - [2021-04-20 Add `v3` STT English Models](#2021-04-20-add-v3-stt-english-models) 
+  - [2021-04-21 Add `v3` xsmall STT English Models](#2021-04-21-add-v3-xsmall-stt-english-models)
+  - [2021-04-20 Add `v3` STT English Models](#2021-04-20-add-v3-stt-english-models)
   - [2021-03-29 Add `v1` TTS Models](#2021-03-29-add-v1-tts-models)
   - [2021-03-03 Add `xxsmall` Speed Metrics](#2021-03-03-add-xxsmall-speed-metrics)
   - [2021-03-03 Ukrainian Model V3 Released](#2021-03-03-ukrainian-model-v3-released)
@@ -43,6 +44,14 @@ Current plans w/o any set dates:
   - ~~Add a large number of production grade TTS models - close to finish, soon to be released~~ Added Silero TTS models `v1`
 
 # Updates
+
+## 2021-04-21 Add `v3` xsmall STT English Models
+
+Huge update for English!
+
+- Polish docs;
+- Add `xsmall` and `xsmall_q` model flavours for `en_v3`;
+- Polish performance benchmarks page a bit;
 
 ## 2021-04-20 Add `v3` STT English Models
 
@@ -114,6 +123,7 @@ Huge update for English!
 - torch.hub.load signature was changed
 
 ## 2020-10-19 Update wiki
+
 - Add article on [Methodology](https://github.com/snakers4/silero-models/wiki/Methodology), update wiki
 
 ## 2020-10-03 Batched ONNX and TF Models
