@@ -24,9 +24,9 @@
     - [Commercial Inquiries](#commercial-inquiries)
   - [Citations](#citations)
   - [Further reading](#further-reading)
-    - [**English**](#english)
-    - [**Chinese**](#chinese)
-    - [**Russian**](#russian)
+    - [English](#english)
+    - [Chinese](#chinese)
+    - [Russian](#russian)
   - [Donations](#donations)
 
 # Silero Models
