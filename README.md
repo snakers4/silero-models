@@ -23,7 +23,7 @@
     - [Get in Touch](#get-in-touch)
     - [Commercial Inquiries](#commercial-inquiries)
   - [Citations](#citations)
-  - [**Further reading**](#further-reading)
+  - [Further reading](#further-reading)
     - [**English**](#english)
     - [**Chinese**](#chinese)
     - [**Russian**](#russian)
@@ -316,9 +316,9 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
 }
 ```
 
-## **Further reading**
+## Further reading
 
-### **English**
+### English
 
 - STT:
   - Towards an Imagenet Moment For Speech-To-Text - [link](https://thegradient.pub/towards-an-imagenet-moment-for-speech-to-text/)
@@ -331,13 +331,13 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
 - VAD:
   - Modern Portable Voice Activity Detector Released - [link](https://habr.com/ru/post/537276/)
 
-### **Chinese**
+### Chinese
 
 - STT:
   - 迈向语音识别领域的 ImageNet 时刻 - [link](https://www.infoq.cn/article/4u58WcFCs0RdpoXev1E2)
   - 语音领域学术界和工业界的七宗罪 - [link](https://www.infoq.cn/article/lEe6GCRjF1CNToVITvNw)
 
-### **Russian**
+### Russian
 
 - STT
   - Мы опубликовали современные STT модели сравнимые по качеству с Google - [link](https://habr.com/ru/post/519564/)
