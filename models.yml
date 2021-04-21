@@ -12,6 +12,9 @@ stt_models:
       jit_skip: "https://models.silero.ai/models/en/en_v3_jit_skips.model"
       jit_large: "https://models.silero.ai/models/en/en_v3_jit_large.model"
       onnx_large: "https://models.silero.ai/models/en/en_v3_large.onnx"
+      jit_xsmall: "https://models.silero.ai/models/en/en_v3_jit_xsmall.model"
+      jit_q_xsmall: "https://models.silero.ai/models/en/en_v3_jit_q_xsmall.model"
+      onnx_xsmall: "https://models.silero.ai/models/en/en_v3_xsmall.onnx"      
     v3:
       meta:
         name: "en_v3"
@@ -23,6 +26,9 @@ stt_models:
       jit_skip: "https://models.silero.ai/models/en/en_v3_jit_skips.model"
       jit_large: "https://models.silero.ai/models/en/en_v3_jit_large.model"
       onnx_large: "https://models.silero.ai/models/en/en_v3_large.onnx"
+      jit_xsmall: "https://models.silero.ai/models/en/en_v3_jit_xsmall.model"
+      jit_q_xsmall: "https://models.silero.ai/models/en/en_v3_jit_q_xsmall.model"
+      onnx_xsmall: "https://models.silero.ai/models/en/en_v3_xsmall.onnx"
     v2:
       meta:
         name: "en_v2"
