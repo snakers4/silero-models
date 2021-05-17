@@ -32,6 +32,8 @@ def prepare_text_input(text, symbols, symbol_to_id=None):
     text = text.lower()
     text = re.sub(r'[^{}]'.format(symbols[2:]), '', text)
     text = re.sub(r'\s+', ' ', text).strip()
+    if text[-1] not in ['.', '!', '?']:
+        text = text + '.'
     text = text + symbols[1]
 
     text_ohe = [symbol_to_id[s] for s in text if s in symbols]
