@@ -14,7 +14,14 @@ stt_models:
       onnx_large: "https://models.silero.ai/models/en/en_v3_large.onnx"
       jit_xsmall: "https://models.silero.ai/models/en/en_v3_jit_xsmall.model"
       jit_q_xsmall: "https://models.silero.ai/models/en/en_v3_jit_q_xsmall.model"
-      onnx_xsmall: "https://models.silero.ai/models/en/en_v3_xsmall.onnx"      
+      onnx_xsmall: "https://models.silero.ai/models/en/en_v3_xsmall.onnx"
+    v4_0:
+      meta:
+        name: "en_v4_0"
+        sample: "https://models.silero.ai/examples/en_sample.wav"
+      labels: "https://models.silero.ai/models/en/en_v1_labels.json"
+      jit_large: "https://models.silero.ai/models/en/en_v4_0_jit_large.model"
+      onnx_large: "https://models.silero.ai/models/en/en_v4_0_large.onnx"
     v3:
       meta:
         name: "en_v3"
