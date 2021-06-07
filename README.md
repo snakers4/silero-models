@@ -72,6 +72,7 @@ Model flavours:
 |                    | jit                | jit                | jit                | jit_q              | jit_q              | onnx               | onnx               | onnx               |
 | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
 |                    | xsmall             | small              | large              | xsmall             | small              | xsmall             | small              | large              |
+| English (`en_v4_0`)  |  |  | :heavy_check_mark: | |  |  |  | :heavy_check_mark: |
 | English (`en_v3`)  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | German (`de_v1`)   |                    | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |                    |                    |
 | Spanish (`es_v1`)  |                    | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |                    |                    |
