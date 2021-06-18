@@ -1,6 +1,7 @@
 - [Plans](#plans)
 - [Updates](#updates)
-  - [2021-04-21 Add `v3` xsmall STT English Models](#2021-04-21-add-v3-xsmall-stt-english-models)
+  - [2021-06-18 Large V2 TTS release, v4_0 Large English STT Model](#2021-06-18-large-v2-tts-release-v4_0-large-english-stt-model)
+  - [2021-04-21 Large V2 TTS release, v4_0 Large English STT Model](#2021-04-21-large-v2-tts-release-v4_0-large-english-stt-model)
   - [2021-04-20 Add `v3` STT English Models](#2021-04-20-add-v3-stt-english-models)
   - [2021-03-29 Add `v1` TTS Models](#2021-03-29-add-v1-tts-models)
   - [2021-03-03 Add `xxsmall` Speed Metrics](#2021-03-03-add-xxsmall-speed-metrics)
@@ -45,7 +46,14 @@ Current plans w/o any set dates:
 
 # Updates
 
-## 2021-04-21 Add `v3` xsmall STT English Models
+## 2021-06-18 Large V2 TTS release, v4_0 Large English STT Model
+
+- Added v4_0 large English model with metrics;
+- V2 TTS models with x4 faster vocoder;
+- Russian models now feature automatic stress and `ё`, homonyms are not handled yet;
+- A multi-language multi-speaker model;
+
+## 2021-04-21 Large V2 TTS release, v4_0 Large English STT Model
 
 Huge update for English!
 

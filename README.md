@@ -4,7 +4,7 @@
 [![Backers](https://opencollective.com/open_stt/tiers/backer/badge.svg?label=backers&color=brightgreen)](https://opencollective.com/open_stt)
 [![Sponsors](https://opencollective.com/open_stt/tiers/sponsor/badge.svg?label=sponsors&color=brightgreen)](https://opencollective.com/open_stt)
 
-![header)](https://user-images.githubusercontent.com/12515440/89997349-b3523080-dc94-11ea-9906-ca2e8bc50535.png)
+![header](https://user-images.githubusercontent.com/12515440/89997349-b3523080-dc94-11ea-9906-ca2e8bc50535.png)
 
 - [Silero Models](#silero-models)
   - [Speech-To-Text](#speech-to-text)
@@ -226,19 +226,19 @@ Currently we provide the following speakers:
 
 | Speaker       | Auto-stress | Language                           | SR          | Colab                                                                          |
 | ------------- | ----------- | ---------------------------------- | ----------- | ------------------------------------------------------------------------------ |
-| `aidar_v2`    | yes         | `ru`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `baya_v2`     | yes         | `ru`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `irina_v2`    | yes         | `ru`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `kseniya_v2`  | yes         | `ru`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `natasha_v2`  | yes         | `ru`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `ruslan_v2`   | yes         | `ru`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `lj_v2`       | no          | `en`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `thorsten_v2` | no          | `de`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `tux_v2`      | no          | `es`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `gilles_v2`   | no          | `fr`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `multi_v2`    | no          | `ru`, `en`, `de`, `es`, `fr`, `tt` | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `aidar_v2`    | yes         | `ru`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `baya_v2`     | yes         | `ru`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `irina_v2`    | yes         | `ru`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `kseniya_v2`  | yes         | `ru`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `natasha_v2`  | yes         | `ru`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `ruslan_v2`   | yes         | `ru`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `lj_v2`       | no          | `en`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `thorsten_v2` | no          | `de`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `tux_v2`      | no          | `es`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `gilles_v2`   | no          | `fr`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `multi_v2`    | no          | `ru`, `en`, `de`, `es`, `fr`, `tt` | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 
-In `multi_v2` all speakers can speak all of langauges (with various levels of fidelity).
+(!!!) In `multi_v2` all speakers can speak all of langauges (with various levels of fidelity).
 
 ### Dependencies
 
