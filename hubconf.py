@@ -58,9 +58,19 @@ def silero_tts(language='en',
     assert language == speaker_language[speaker], f"Incorrect language '{language}' for this speaker, please specify '{speaker_language[speaker]}'"
 
     model_conf = models.tts_models[language][speaker].latest
-    model = init_jit_model_tts(model_conf.jit)
-    symbols = model_conf.tokenset
-    example_text = model_conf.example
-    sample_rate = model_conf.sample_rate
-
-    return model, symbols, sample_rate, example_text, apply_tts
+    if '_v2' in speaker:
+        from torch import package
+        imp = package.PackageImporter(model_conf.package)
+        model = imp.load_pickle("tts_models", "model")
+        if speaker == 'multi_v2':
+            avail_speakers = model_conf.speakers
+            return model, avail_speakers
+        else:
+            example_text = model_conf.example
+            return model, example_text
+    else:
+        model = init_jit_model_tts(model_conf.jit)
+        symbols = model_conf.tokenset
+        example_text = model_conf.example
+        sample_rate = model_conf.sample_rate
+        return model, symbols, sample_rate, example_text, apply_tts
