@@ -1,4 +1,5 @@
 dependencies = ['torch', 'omegaconf', 'torchaudio']
+import os
 import torch
 from omegaconf import OmegaConf
 from utils import (init_jit_model,
@@ -60,7 +61,15 @@ def silero_tts(language='en',
     model_conf = models.tts_models[language][speaker].latest
     if '_v2' in speaker:
         from torch import package
-        imp = package.PackageImporter(model_conf.package)
+        model_url = model_conf.package
+        model_dir = os.path.join(os.path.dirname(__file__), "model")
+        os.makedirs(model_dir, exist_ok=True)
+        model_path = os.path.join(model_dir, os.path.basename(model_url))
+        if not os.path.isfile(model_path):
+            torch.hub.download_url_to_file(model_url,
+                                           model_path,
+                                           progress=True)
+        imp = package.PackageImporter(model_path)
         model = imp.load_pickle("tts_models", "model")
         if speaker == 'multi_v2':
             avail_speakers = model_conf.speakers
