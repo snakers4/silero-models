@@ -380,9 +380,41 @@ tts_models:
         jit: 'https://models.silero.ai/models/tts/fr/v1_gilles_16000.jit'
         sample_rate: 16000
   multi:
-    speakers_11:
+    multi_11speakers:
       latest:
-        example: 'Съ+ешьте ещ+ё +этих м+ягких франц+узских б+улочек, д+а в+ыпейте ч+аю.'
         package: 'https://models.silero.ai/models/tts/multi/v2_multi.pt'
         sample_rate: [8000, 16000]
-        speakers: ['aidar', 'baya', 'kseniya', 'irina', 'ruslan', 'natasha', 'thorsten', 'tux', 'gilles', 'lj', 'tatar']
+        speakers: 
+          aidar:
+            lang: 'ru'
+            example: 'Съ+ешьте ещ+ё +этих м+ягких франц+узских б+улочек, д+а в+ыпейте ч+аю.'
+          baya:
+            lang: 'ru'
+            example: 'Съ+ешьте ещ+ё +этих м+ягких франц+узских б+улочек, д+а в+ыпейте ч+аю.'
+          kseniya:
+            lang: 'ru'
+            example: 'Съ+ешьте ещ+ё +этих м+ягких франц+узских б+улочек, д+а в+ыпейте ч+аю.'
+          irina:
+            lang: 'ru'
+            example: 'Съ+ешьте ещ+ё +этих м+ягких франц+узских б+улочек, д+а в+ыпейте ч+аю.'
+          ruslan:
+            lang: 'ru'
+            example: 'Съ+ешьте ещ+ё +этих м+ягких франц+узских б+улочек, д+а в+ыпейте ч+аю.'
+          natasha:
+            lang: 'ru'
+            example: 'Съ+ешьте ещ+ё +этих м+ягких франц+узских б+улочек, д+а в+ыпейте ч+аю.'
+          thorsten:
+            lang: 'de'
+            example: 'Fischers Fritze fischt frische Fische, Frische Fische fischt Fischers Fritze.'
+          tux:
+            lang: 'es'
+            example: 'Hoy ya es ayer y ayer ya es hoy, ya llegó el día, y hoy es hoy.'
+          gilles:
+            lang: 'fr'
+            example: 'Je suis ce que je suis, et si je suis ce que je suis, qu’est ce que je suis.'
+          lj:
+            lang: 'en'
+            example: 'Can you can a canned can into an un-canned can like a canner can can a canned can into an un-canned can?'
+          dilyara:
+            lang: 'tt'
+            example: 'Пес+и пес+и песик+әй, борыннар+ы бәләк+әй.'
