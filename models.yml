@@ -380,7 +380,7 @@ tts_models:
         jit: 'https://models.silero.ai/models/tts/fr/v1_gilles_16000.jit'
         sample_rate: 16000
   multi:
-    multi_11speakers:
+    multi_v2:
       latest:
         package: 'https://models.silero.ai/models/tts/multi/v2_multi.pt'
         sample_rate: [8000, 16000]
