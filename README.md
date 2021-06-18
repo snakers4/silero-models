@@ -13,8 +13,10 @@
     - [ONNX](#onnx)
     - [TensorFlow](#tensorflow)
   - [Text-To-Speech](#text-to-speech)
+    - [Models and Speakers](#models-and-speakers)
     - [Dependencies](#dependencies-1)
     - [PyTorch](#pytorch-1)
+    - [Standalone Use](#standalone-use)
   - [FAQ](#faq)
     - [Wiki](#wiki)
     - [Performance and Quality](#performance-and-quality)
@@ -69,14 +71,14 @@ Currently we provide the following checkpoints:
 
 Model flavours:
 
-|                    | jit                | jit                | jit                | jit_q              | jit_q              | onnx               | onnx               | onnx               |
-| ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
-|                    | xsmall             | small              | large              | xsmall             | small              | xsmall             | small              | large              |
-| English (`en_v4_0`)  |  |  | :heavy_check_mark: | |  |  |  | :heavy_check_mark: |
-| English (`en_v3`)  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| German (`de_v1`)   |                    | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |                    |                    |
-| Spanish (`es_v1`)  |                    | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |                    |                    |
-| Ukrainian (`ua_v3` |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |                    |
+|                     | jit                | jit                | jit                | jit_q              | jit_q              | onnx               | onnx               | onnx               |
+| ------------------- | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
+|                     | xsmall             | small              | large              | xsmall             | small              | xsmall             | small              | large              |
+| English (`en_v4_0`) |                    |                    | :heavy_check_mark: |                    |                    |                    |                    | :heavy_check_mark: |
+| English (`en_v3`)   | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| German (`de_v1`)    |                    | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |                    |                    |
+| Spanish (`es_v1`)   |                    | :heavy_check_mark: |                    |                    |                    | :heavy_check_mark: |                    |                    |
+| Ukrainian (`ua_v3`  |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |                    |
 
 ### Dependencies
 
@@ -216,40 +218,35 @@ print(decoder(torch.Tensor(res.numpy())[0]))
 
 ## Text-To-Speech
 
+### Models and Speakers
+
 All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file. Any meta-data and newer versions will be added there.
 
 Currently we provide the following speakers:
 
-| Speaker          | Stress | Language | SR    | PyTorch            | Colab                                                                                                                                                                        |
-| ---------------- | ------ | -------- | ----- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `aidar_8khz`     | yes    | `ru`     | 8000  | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `baya_8khz`      | yes    | `ru`     | 8000  | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `ksenia_8khz`    | yes    | `ru`     | 8000  | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `irina_8khz`     | yes    | `ru`     | 8000  | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `natasha_8khz`   | yes    | `ru`     | 8000  | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `ruslan_8khz`    | yes    | `ru`     | 8000  | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `lj_8khz`        | no     | `en`     | 8000  | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `thorsten_8khz`  | no     | `de`     | 8000  | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `gilles_8khz`    | no     | `fr`     | 8000  | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `tux_8khz`       | no     | `es`     | 8000  | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `aidar_16khz`    | yes    | `ru`     | 16000 | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `baya_16khz`     | yes    | `ru`     | 16000 | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `ksenia_16khz`   | yes    | `ru`     | 16000 | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `irina_16khz`    | yes    | `ru`     | 16000 | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `natasha_16khz`  | yes    | `ru`     | 16000 | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `ruslan_16khz`   | yes    | `ru`     | 16000 | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `lj_16khz`       | no     | `en`     | 16000 | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `thorsten_16khz` | no     | `de`     | 16000 | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `gilles_16khz`   | no     | `fr`     | 16000 | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `tux_16khz`      | no     | `es`     | 16000 | :heavy_check_mark: | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| Speaker       | Auto-stress | Language                           | SR          | Colab                                                                          |
+| ------------- | ----------- | ---------------------------------- | ----------- | ------------------------------------------------------------------------------ |
+| `aidar_v2`    | yes         | `ru`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `baya_v2`     | yes         | `ru`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `irina_v2`    | yes         | `ru`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `kseniya_v2`  | yes         | `ru`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `natasha_v2`  | yes         | `ru`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `ruslan_v2`   | yes         | `ru`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `lj_v2`       | no          | `en`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `thorsten_v2` | no          | `de`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `tux_v2`      | no          | `es`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `gilles_v2`   | no          | `fr`                               | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `multi_v2`    | no          | `ru`, `en`, `de`, `es`, `fr`, `tt` | 8000, 16000 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+
+In `multi_v2` all speakers can speak all of langauges (with various levels of fidelity).
 
 ### Dependencies
 
-Basic dependencies (see colab):
+Basic dependencies for colab examples:
 
-- `torch`, 1.8+ (used to clone the repo in tf and onnx examples), breaking changes for version older than 1.6
-- `torchaudio`, latest version bound to PyTorch should work (required only because models are hosted together with STT, not required for work)
-- `omegaconf`,  latest (can be removed as well, if you do not load all of the configs)
+- `torch`, 1.9+;
+- `torchaudio`, latest version bound to PyTorch should work (required only because models are hosted together with STT, not required for work);
+- `omegaconf`,  latest (can be removed as well, if you do not load all of the configs);
 
 ### PyTorch
 
@@ -261,18 +258,47 @@ Basic dependencies (see colab):
 import torch
 
 language = 'ru'
-speaker = 'kseniya_16khz'
+speaker = 'kseniya_v2'
+sample_rate = 16000
 device = torch.device('cpu')
-model, symbols, sample_rate, example_text, apply_tts = torch.hub.load(repo_or_dir='snakers4/silero-models',
-                                                                      model='silero_tts',
-                                                                      language=language,
-                                                                      speaker=speaker)
-model = model.to(device)  # gpu or cpu
-audio = apply_tts(texts=[example_text],
-                  model=model,
-                  sample_rate=sample_rate,
-                  symbols=symbols,
-                  device=device)
+
+model, example_text = torch.hub.load(repo_or_dir='snakers4/silero-models',
+                                     model='silero_tts',
+                                     language=language,
+                                     speaker=speaker)
+model.to(device)  # gpu or cpu
+
+audio = model.apply_tts(texts=[example_text],
+                        sample_rate=sample_rate)
+```
+
+### Standalone Use
+
+- Standalone usage just requires PyTorch 1.9+ and python standard library;
+- Please see the detailed examples in Colab;
+
+```python
+import os
+import torch
+
+device = torch.device('cpu')
+torch.set_num_threads(4)
+local_file = 'model.pt'
+
+if not os.path.isfile(local_file):
+    torch.hub.download_url_to_file('https://models.silero.ai/models/tts/ru/v2_kseniya.pt',
+                                   local_file)  
+
+model = torch.package.PackageImporter(local_file).load_pickle("tts_models", "model")
+model.to(device)
+
+example_batch = ['В недрах тундры выдры в г+етрах т+ырят в вёдра ядра кедров.',
+                 'Котики - это жидкость!',
+                 'М+ама М+илу м+ыла с м+ылом.']
+sample_rate = 16000
+
+audio = model.apply_tts(texts=example_batch,
+                        sample_rate=sample_rate)
 ```
 
 ## FAQ
