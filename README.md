@@ -297,8 +297,8 @@ example_batch = ['В недрах тундры выдры в г+етрах т+ы
                  'М+ама М+илу м+ыла с м+ылом.']
 sample_rate = 16000
 
-audio = model.apply_tts(texts=example_batch,
-                        sample_rate=sample_rate)
+audio_paths = model.save_wav(texts=example_batch,
+                             sample_rate=sample_rate)
 ```
 
 ## FAQ
