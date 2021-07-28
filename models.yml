@@ -379,6 +379,30 @@ tts_models:
         example: 'Je suis ce que je suis, et si je suis ce que je suis, qu’est ce que je suis.'
         jit: 'https://models.silero.ai/models/tts/fr/v1_gilles_16000.jit'
         sample_rate: 16000
+  bashkir:
+    aigul_v2:
+      latest:
+        example: 'Салауат Юлаевтың тормошо һәм яҙмышы хаҡындағы документтарҙың һәм шиғри әҫәрҙәренең бик аҙ өлөшө генә һаҡланған.'
+        package: 
+        sample_rate: [8000, 16000]
+  kalmyk:
+    erdni_v2:
+      latest:
+        example: 'Һорвн, дөрвн күн ирәд, һазань чиңгнв. Байн Цецн хаана һорвн көвүн күүндҗәнә.'
+        package: 
+        sample_rate: [8000, 16000]
+  tatar:
+    dilyara_v2:
+      latest:
+        example: 'Ис+әнмесез, с+аумысез, нишл+әп кәҗәгезн+е с+аумыйсыз, әтәчег+ез күк+әй салг+ан, нишл+әп чыг+ып +алмыйсыз.'
+        package: 
+        sample_rate: [8000, 16000]
+  uzbek:
+    dilnavoz_v2:
+      latest:
+        example: 'Tanishganimdan xursandman.'
+        package: 
+        sample_rate: [8000, 16000]
   multi:
     multi_v2:
       latest:
