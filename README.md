@@ -237,6 +237,10 @@ Currently we provide the following speakers:
 | `tux_v2`      | no          | `es`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `gilles_v2`   | no          | `fr`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `multi_v2`    | no          | `ru`, `en`, `de`, `es`, `fr`, `tt` | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `aigul_v2`   | no          | `bashkir`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `erdni_v2`   | no          | `kalmyk`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `dilyara_v2`   | no          | `tatar`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `dilnavoz_v2`   | no          | `uzbek`                               | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 
 (!!!) In `multi_v2` all speakers can speak all of langauges (with various levels of fidelity).
 
