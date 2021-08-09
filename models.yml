@@ -61,6 +61,20 @@ stt_models:
       jit: "https://models.silero.ai/models/de/de_v1_jit.model"
       onnx: "https://models.silero.ai/models/de/de_v1.onnx"
       tf: "https://models.silero.ai/models/de/de_v1_tf.tar.gz"
+    v1:
+      meta:
+        name: "de_v1"
+        sample: "https://models.silero.ai/examples/de_sample.wav"
+      labels: "https://models.silero.ai/models/de/de_v1_labels.json"
+      jit_large: "https://models.silero.ai/models/de/de_v1_jit.model"
+      onnx: "https://models.silero.ai/models/de/de_v1.onnx"
+      tf: "https://models.silero.ai/models/de/de_v1_tf.tar.gz"
+    v3:
+      meta:
+        name: "de_v3"
+        sample: "https://models.silero.ai/examples/de_sample.wav"
+      labels: "https://models.silero.ai/models/de/de_v1_labels.json"
+      jit_large: "https://models.silero.ai/models/de/de_v3_large.jit"
   es:
     latest:
       meta:
@@ -136,7 +150,7 @@ tts_models:
       latest:
         example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         package: 'https://models.silero.ai/models/tts/ru/v2_baya.pt'
-        sample_rate: [8000, 16000] 
+        sample_rate: [8000, 16000]
     baya_8khz:
       latest:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
@@ -163,7 +177,7 @@ tts_models:
       latest:
         example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         package: 'https://models.silero.ai/models/tts/ru/v2_irina.pt'
-        sample_rate: [8000, 16000] 
+        sample_rate: [8000, 16000]
     irina_8khz:
       latest:
         tokenset: '_~абвгдеёжзийклмнопрстуфхцчшщъыьэюя +.,!?…:;–'
@@ -412,7 +426,7 @@ tts_models:
       latest:
         package: 'https://models.silero.ai/models/tts/multi/v2_multi.pt'
         sample_rate: [8000, 16000]
-        speakers: 
+        speakers:
           aidar:
             lang: 'ru'
             example: 'Съ+ешьте ещ+ё +этих м+ягких франц+узских б+улочек, д+а в+ыпейте ч+аю.'
