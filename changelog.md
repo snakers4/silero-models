@@ -1,5 +1,6 @@
 - [Plans](#plans)
 - [Updates](#updates)
+  - [2021-08-09 German V3 Large Model](#2021-08-09-german-v3-large-model)
   - [2021-06-18 Large V2 TTS release, v4_0 Large English STT Model](#2021-06-18-large-v2-tts-release-v4_0-large-english-stt-model)
   - [2021-04-21 Large V2 TTS release, v4_0 Large English STT Model](#2021-04-21-large-v2-tts-release-v4_0-large-english-stt-model)
   - [2021-04-20 Add `v3` STT English Models](#2021-04-20-add-v3-stt-english-models)
@@ -45,6 +46,11 @@ Current plans w/o any set dates:
   - ~~Add a large number of production grade TTS models - close to finish, soon to be released~~ Added Silero TTS models `v1`
 
 # Updates
+
+## 2021-08-09 German V3 Large Model
+
+- German V3 Large `jit` model trained on more data - large quality improvement;
+- Metrics coming soon;
 
 ## 2021-06-18 Large V2 TTS release, v4_0 Large English STT Model
 
