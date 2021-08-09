@@ -13,6 +13,7 @@ from tts_utils import init_jit_model as init_jit_model_tts
 
 def silero_stt(language='en',
                version='latest',
+               jit_model='jit',
                **kwargs):
     """ Silero Speech-To-Text Model(s)
     language (str): language of the model, now available are ['en', 'de', 'es']
@@ -26,7 +27,7 @@ def silero_stt(language='en',
     available_languages = list(models.stt_models.keys())
     assert language in available_languages
 
-    model, decoder = init_jit_model(model_url=models.stt_models.get(language).get(version).jit,
+    model, decoder = init_jit_model(model_url=models.stt_models.get(language).get(version).get(jit_model),
                                     **kwargs)
     utils = (read_batch,
              split_into_batches,
