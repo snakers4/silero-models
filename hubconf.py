@@ -11,7 +11,9 @@ from tts_utils import apply_tts
 from tts_utils import init_jit_model as init_jit_model_tts
 
 
-def silero_stt(language='en', **kwargs):
+def silero_stt(language='en',
+               version='latest',
+               **kwargs):
     """ Silero Speech-To-Text Model(s)
     language (str): language of the model, now available are ['en', 'de', 'es']
     Returns a model, decoder object and a set of utils
@@ -24,7 +26,7 @@ def silero_stt(language='en', **kwargs):
     available_languages = list(models.stt_models.keys())
     assert language in available_languages
 
-    model, decoder = init_jit_model(model_url=models.stt_models.get(language).latest.jit,
+    model, decoder = init_jit_model(model_url=models.stt_models.get(language).get(version).jit,
                                     **kwargs)
     utils = (read_batch,
              split_into_batches,
