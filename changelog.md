@@ -1,5 +1,6 @@
 - [Plans](#plans)
 - [Updates](#updates)
+  - [2021-09-03 German V4 and English V5 Models](#2021-09-03-german-v4-and-english-v5-models)
   - [2021-08-09 German V3 Large Model](#2021-08-09-german-v3-large-model)
   - [2021-06-18 Large V2 TTS release, v4_0 Large English STT Model](#2021-06-18-large-v2-tts-release-v4_0-large-english-stt-model)
   - [2021-04-21 Large V2 TTS release, v4_0 Large English STT Model](#2021-04-21-large-v2-tts-release-v4_0-large-english-stt-model)
@@ -34,18 +35,26 @@
 Current plans w/o any set dates:
 
 - Languages
-  - Focus on huge English model update
+  - ~~Focus on huge English model update~~
   - Cover remaning popular Internet languages for CE and EE editions (in progress) - now thinking only about adding French and updating the existing languages
   - We decided not to pursue the following languages: Italian, Portugese, Polish, Czech for now
   - ~~Add some non-core languages only as CE edition~~ Added Ukrainian v1 and v3
 - Speed
   - ~~Reduce CE model size to 10-20 MB w/o quality degradation~~ Final size is about 30M w/o losing quality, going lower is still possible with losing quality
-  - Add quantized models (x2 speed) - total speed up for smaller models is between 2x and 3x for a `small` models, for `xxsmall` - around 3x
+  - ~~Add quantized models (x2 speed)~~ Total speed up for smaller models is between 2x and 3x for a `small` models, for `xxsmall` - around 3x
 - New products
-  - Add denoising - still in progress
+  - Add denoising
+  - Add text capitalization and punctuation models
   - ~~Add a large number of production grade TTS models - close to finish, soon to be released~~ Added Silero TTS models `v1`
 
 # Updates
+
+## 2021-09-03 German V4 and English V5 Models
+
+- German V4 large `jit` and `onnx` models;
+- English V5 `small` (`jit` and `onnx`), `small_q` (only `jit`) and `xlarge`  (`jit` and `onnx`) models;
+- Vast quality improvements (metrics to be added shortly);
+- English `xsmall` models coming soon (`jit` and `onnx`);
 
 ## 2021-08-09 German V3 Large Model
 
