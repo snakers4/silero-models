@@ -53,7 +53,7 @@ Current plans w/o any set dates:
 
 - German V4 large `jit` and `onnx` models;
 - English V5 `small` (`jit` and `onnx`), `small_q` (only `jit`) and `xlarge`  (`jit` and `onnx`) models;
-- Vast quality improvements (metrics to be added shortly);
+- Vast quality improvements (metrics to be added shortly) on the majority of domains;
 - English `xsmall` models coming soon (`jit` and `onnx`);
 
 ## 2021-08-09 German V3 Large Model
