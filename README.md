@@ -60,6 +60,8 @@ Also we have published TTS models that satisfy the following criteria:
 All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file.
 Any meta-data and newer versions will be added there.
 
+![Screenshot_1](https://user-images.githubusercontent.com/36505480/132320823-f0c5b774-44f7-4375-9c46-3acbcc548b76.png)
+
 Currently we provide the following checkpoints:
 
 |                     | PyTorch            | ONNX               | Quantization       | Quality                                                                         | Colab                                                                                                                                                                    |
