@@ -1,5 +1,6 @@
 - [Plans](#plans)
 - [Updates](#updates)
+  - [2021-10-06 Text Recapitalization and Repunctuation Model for 4 Languages](#2021-10-06-text-recapitalization-and-repunctuation-model-for-4-languages)
   - [2021-09-03 German V4 and English V5 Models](#2021-09-03-german-v4-and-english-v5-models)
   - [2021-08-09 German V3 Large Model](#2021-08-09-german-v3-large-model)
   - [2021-06-18 Large V2 TTS release, v4_0 Large English STT Model](#2021-06-18-large-v2-tts-release-v4_0-large-english-stt-model)
@@ -48,6 +49,13 @@ Current plans w/o any set dates:
   - ~~Add a large number of production grade TTS models - close to finish, soon to be released~~ Added Silero TTS models `v1`
 
 # Updates
+
+## 2021-10-06 Text Recapitalization and Repunctuation Model for 4 Languages
+
+- Inserts capital letters and basic punctuation marks (dot, comma, hyphen, question mark, exclamation mark, dash for Russian);
+- Works for 4 languages (Russian, English, German, Spanish) and can be extended;
+- By design is domain agnostic and is not based on any hard-coded rules;
+- Has non-trivial metrics and succeeds in the task of improving text readability;
 
 ## 2021-09-03 German V4 and English V5 Models
 
