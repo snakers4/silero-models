@@ -17,6 +17,9 @@
     - [Dependencies](#dependencies-1)
     - [PyTorch](#pytorch-1)
     - [Standalone Use](#standalone-use)
+  - [Text-Enhancement](#text-enhancement)
+    - [Dependencies](#dependencies-2)
+    - [Standalone Use](#standalone-use-2)
   - [FAQ](#faq)
     - [Wiki](#wiki)
     - [Performance and Quality](#performance-and-quality)
@@ -311,6 +314,34 @@ sample_rate = 16000
 
 audio_paths = model.save_wav(texts=example_batch,
                              sample_rate=sample_rate)
+```
+
+## Text-Enhancement
+
+| Languages | Quantization  | Quality | Colab |
+| --------- | ------------- | ------- | ----- |
+| 'en', 'de', 'ru', 'es' | :heavy_check_mark: | [link](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#en-de-ru-es-v1) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_te.ipynb) |
+
+### Dependencies
+
+Basic dependencies for colab examples:
+
+- `torch`, 1.9+;
+- `pyyaml`, but it's installed with torch itself
+
+### Standalone Use
+
+- Standalone usage just requires PyTorch 1.9+ and python standard library;
+- Please see the detailed examples in [Colab](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_te.ipynb);
+
+```python
+import torch
+
+model, example_texts, languages, punct, apply_te = torch.hub.load(repo_or_dir='snakers4/silero-models',
+                                                                  model='silero_te')
+
+input_text = input('Enter input text\n')
+apply_te(input_text, lan='en')
 ```
 
 ## FAQ
