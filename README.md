@@ -58,6 +58,13 @@ Also we have published TTS models that satisfy the following criteria:
 - Faster than real-time on one CPU thread (!!!);
 - Support for 16kHz and 8kHz out of the box;
 
+Also we have published a model for text repunctuation and recapitalization that:
+
+- Inserts capital letters and basic punctuation marks (dot, comma, hyphen, question mark, exclamation mark, dash for Russian);
+- Works for 4 languages (Russian, English, German, Spanish) and can be extended;
+- By design is domain agnostic and is not based on any hard-coded rules;
+- Has non-trivial metrics and succeeds in the task of improving text readability;
+
 ## Speech-To-Text
 
 All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file.
