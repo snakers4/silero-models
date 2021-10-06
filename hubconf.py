@@ -1,7 +1,6 @@
-dependencies = ['torch', 'omegaconf', 'torchaudio']
+dependencies = ['torch']
 import os
 import torch
-from omegaconf import OmegaConf
 
 
 def silero_stt(language='en',
@@ -13,6 +12,7 @@ def silero_stt(language='en',
     Returns a model, decoder object and a set of utils
     Please see https://github.com/snakers4/silero-models for usage examples
     """
+    from omegaconf import OmegaConf    
     from utils import (init_jit_model,
                        read_audio,
                        read_batch,
@@ -43,6 +43,7 @@ def silero_tts(language='en',
     Returns a model and a set of utils
     Please see https://github.com/snakers4/silero-models for usage examples
     """
+    from omegaconf import OmegaConf      
     from tts_utils import apply_tts
     from tts_utils import init_jit_model as init_jit_model_tts
     torch.hub.download_url_to_file('https://raw.githubusercontent.com/snakers4/silero-models/master/models.yml',
