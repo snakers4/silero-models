@@ -86,3 +86,43 @@ def silero_tts(language='en',
         example_text = model_conf.example
         sample_rate = model_conf.sample_rate
         return model, symbols, sample_rate, example_text, apply_tts
+
+
+def silero_te():
+    """ Silero Texts Enhancing Models
+    Current model supports the following languages: ['en', 'de', 'ru', 'es']
+    Returns a model and a set of utils
+    Please see https://github.com/snakers4/silero-models for usage examples
+    """
+    torch.hub.download_url_to_file('https://raw.githubusercontent.com/snakers4/silero-models/master/models.yml',
+                                   'latest_silero_models.yml',
+                                   progress=False)
+
+    models = OmegaConf.load('latest_silero_models.yml')
+    model_conf = models.te_models.latest
+
+    from torch import package
+    model_url = model_conf.package
+    model_dir = os.path.join(os.path.dirname(__file__), "model")
+    os.makedirs(model_dir, exist_ok=True)
+    model_path = os.path.join(model_dir, os.path.basename(model_url))
+
+    if not os.path.isfile(model_path):
+        torch.hub.download_url_to_file(model_url,
+                                       model_path,
+                                       progress=True)
+
+    imp = package.PackageImporter(model_path)
+    model = imp.load_pickle("te_model", "model")
+    example_texts = model.examples
+    languages = model_conf.languages
+    punct = model_conf.punct
+
+    def apply_te(text, lan='en'):
+        return model.enhance_text(text, lan)
+
+    return (model,
+            example_texts,
+            languages,
+            punct,
+            apply_te)
