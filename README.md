@@ -18,7 +18,7 @@
     - [PyTorch](#pytorch-1)
     - [Standalone Use](#standalone-use)
   - [Text-Enhancement](#text-enhancement)
-    - [PyTorch](#pytorch-2)
+    - [Dependencies](#dependencies-2)
     - [Standalone Use](#standalone-use-2)
   - [FAQ](#faq)
     - [Wiki](#wiki)
@@ -318,14 +318,21 @@ audio_paths = model.save_wav(texts=example_batch,
 
 ## Text-Enhancement
 
-### PyTorch
+| Languages | Quantization  | Quality | Colab |
+| --------- | ------------- | ------- | ----- |
+| 'en', 'de', 'ru', 'es' | :heavy_check_mark: | [link](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#en-de-ru-es-v1) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_te.ipynb) |
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_te.ipynb)
+### Dependencies
+
+Basic dependencies for colab examples:
+
+- `torch`, 1.9+;
+- `pyyaml`, but it's installed with torch itself
 
 ### Standalone Use
 
 - Standalone usage just requires PyTorch 1.9+ and python standard library;
-- Please see the detailed examples in Colab;
+- Please see the detailed examples in [Colab](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_te.ipynb);
 
 ```python
 import torch
