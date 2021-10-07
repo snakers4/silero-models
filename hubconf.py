@@ -102,7 +102,7 @@ def silero_te():
                                    'latest_silero_models.yml',
                                    progress=False)
 
-    with open('latest_silero_models.yml', 'r') as yaml_file:
+    with open('latest_silero_models.yml', 'r', encoding='utf8') as yaml_file:
         models = yaml.load(yaml_file, Loader=yaml.SafeLoader)
     model_conf = models.get('te_models').get('latest')
 
