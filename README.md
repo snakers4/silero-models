@@ -408,6 +408,9 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
 - VAD:
   - Modern Portable Voice Activity Detector Released - [link](https://habr.com/ru/post/537276/)
 
+- Text Enhancement:
+  - We have published a model for text repunctuation and recapitalization for four languages - [link](https://habr.com/ru/post/581960/) 
+
 ### Chinese
 
 - STT:
@@ -417,18 +420,26 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
 ### Russian
 
 - STT
+  - Последние обновления моделей распознавания речи из Silero Models - [link](https://habr.com/ru/post/577630/) 
+  - Сжимаем трансформеры: простые, универсальные и прикладные способы cделать их компактными и быстрыми - [link](https://habr.com/ru/post/563778/)
+  - Ультимативное сравнение систем распознавания речи: Ashmanov, Google, Sber, Silero, Tinkoff, Yandex - [link](https://habr.com/ru/post/559640/)
   - Мы опубликовали современные STT модели сравнимые по качеству с Google - [link](https://habr.com/ru/post/519564/)
   - Понижаем барьеры на вход в распознавание речи - [link](https://habr.com/ru/post/494006/)
   - Огромный открытый датасет русской речи версия 1.0 - [link](https://habr.com/ru/post/474462/)
   - Насколько Быстрой Можно Сделать Систему STT? - [link](https://habr.com/ru/post/531524/)
   - Наша система Speech-To-Text - [link](https://www.silero.ai/tag/our-speech-to-text/)
-  - Speech To Text - [link](https://www.silero.ai/tag/speech-to-text/ )
+  - Speech To Text - [link](https://www.silero.ai/tag/speech-to-text/)
 
 - TTS:
+  - Мы сделали наш публичный синтез речи еще лучше - [link](https://habr.com/ru/post/563484/)
   - Мы Опубликовали Качественный, Простой, Доступный и Быстрый Синтез Речи - [link](https://habr.com/ru/post/549480/)
 
 - VAD:
+  - Модели для Детекции Речи, Чисел и Распознавания Языков - [link](https://www.silero.ai/vad-lang-classifier-number-detector/)
   - Мы опубликовали современный Voice Activity Detector и не только -[link](https://habr.com/ru/post/537274/)
+
+- Text Enahncement:
+  - Мы опубликовали модель, расставляющую знаки препинания и заглавные буквы в тексте на четырех языках - [link](https://habr.com/ru/post/581946/)
 
 ## Donations
 
