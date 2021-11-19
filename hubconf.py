@@ -18,10 +18,16 @@ def silero_stt(language='en',
                        read_batch,
                        split_into_batches,
                        prepare_model_input)
-    torch.hub.download_url_to_file('https://raw.githubusercontent.com/snakers4/silero-models/master/models.yml',
-                                   'latest_silero_models.yml',
-                                   progress=False)
-    models = OmegaConf.load('latest_silero_models.yml')
+
+    models_list_file = os.path.join(os.path.dirname(__file__), "models.yml")
+    if not os.path.exists(models_list_file):
+        models_list_file = 'latest_silero_models.yml'
+    if not os.path.exists(models_list_file):
+        torch.hub.download_url_to_file('https://raw.githubusercontent.com/snakers4/silero-models/master/models.yml',
+                                    'latest_silero_models.yml',
+                                    progress=False)
+    assert os.path.exists(models_list_file)
+    models = OmegaConf.load(models_list_file)
     available_languages = list(models.stt_models.keys())
     assert language in available_languages
 
@@ -46,10 +52,16 @@ def silero_tts(language='en',
     from omegaconf import OmegaConf      
     from tts_utils import apply_tts
     from tts_utils import init_jit_model as init_jit_model_tts
-    torch.hub.download_url_to_file('https://raw.githubusercontent.com/snakers4/silero-models/master/models.yml',
-                                   'latest_silero_models.yml',
-                                   progress=False)
-    models = OmegaConf.load('latest_silero_models.yml')
+
+    models_list_file = os.path.join(os.path.dirname(__file__), "models.yml")
+    if not os.path.exists(models_list_file):
+        models_list_file = 'latest_silero_models.yml'
+    if not os.path.exists(models_list_file):
+        torch.hub.download_url_to_file('https://raw.githubusercontent.com/snakers4/silero-models/master/models.yml',
+                                    'latest_silero_models.yml',
+                                    progress=False)
+    assert os.path.exists(models_list_file)
+    models = OmegaConf.load(models_list_file)
     available_languages = list(models.tts_models.keys())
     assert language in available_languages, f'Language not in the supported list {available_languages}'
     available_speakers = []
@@ -98,11 +110,16 @@ def silero_te():
     import yaml
     from torch import package
 
-    torch.hub.download_url_to_file('https://raw.githubusercontent.com/snakers4/silero-models/master/models.yml',
-                                   'latest_silero_models.yml',
-                                   progress=False)
+    models_list_file = os.path.join(os.path.dirname(__file__), "models.yml")
+    if not os.path.exists(models_list_file):
+        models_list_file = 'latest_silero_models.yml'
+    if not os.path.exists(models_list_file):
+        torch.hub.download_url_to_file('https://raw.githubusercontent.com/snakers4/silero-models/master/models.yml',
+                                    'latest_silero_models.yml',
+                                    progress=False)
 
-    with open('latest_silero_models.yml', 'r', encoding='utf8') as yaml_file:
+    assert os.path.exists(models_list_file)
+    with open(models_list_file, 'r', encoding='utf8') as yaml_file:
         models = yaml.load(yaml_file, Loader=yaml.SafeLoader)
     model_conf = models.get('te_models').get('latest')
 
