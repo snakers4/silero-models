@@ -477,6 +477,14 @@ tts_models:
             example: 'Пес+и пес+и песик+әй, борыннар+ы бәләк+әй.'
 te_models:
   latest:
+    package: "https://models.silero.ai/te_models/v2_4lang_q.pt"
+    languages: ['en', 'de', 'ru', 'es']
+    punct: '.,-!?—'
+  v2:
+    package: "https://models.silero.ai/te_models/v2_4lang_q.pt"
+    languages: ['en', 'de', 'ru', 'es']
+    punct: '.,-!?—'
+  v1:
     package: "https://models.silero.ai/te_models/v1_4lang_q.pt"
     languages: ['en', 'de', 'ru', 'es']
     punct: '.,-!?—'
