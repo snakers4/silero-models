@@ -484,11 +484,3 @@ te_models:
     package: "https://models.silero.ai/te_models/v2_4lang_q.pt"
     languages: ['en', 'de', 'ru', 'es']
     punct: '.,-!?—'
-  v1_upd:
-    package: "https://models.silero.ai/te_models/v1_upd_4lang_q.pt"
-    languages: ['en', 'de', 'ru', 'es']
-    punct: '.,-!?—'
-  v1:
-    package: "https://models.silero.ai/te_models/v1_4lang_q.pt"
-    languages: ['en', 'de', 'ru', 'es']
-    punct: '.,-!?—'
