@@ -1,5 +1,6 @@
 - [Plans](#plans)
 - [Updates](#updates)
+  - [2021-12-09 Improved Text Recapitalization and Repunctuation Model for 4 Languages](#2021-12-09-improved-text-recapitalization-and-repunctuation-model-for-4-languages)
   - [2021-10-06 Text Recapitalization and Repunctuation Model for 4 Languages](#2021-10-06-text-recapitalization-and-repunctuation-model-for-4-languages)
   - [2021-09-03 German V4 and English V5 Models](#2021-09-03-german-v4-and-english-v5-models)
   - [2021-08-09 German V3 Large Model](#2021-08-09-german-v3-large-model)
@@ -45,10 +46,25 @@ Current plans w/o any set dates:
   - ~~Add quantized models (x2 speed)~~ Total speed up for smaller models is between 2x and 3x for a `small` models, for `xxsmall` - around 3x
 - New products
   - Add denoising
-  - Add text capitalization and punctuation models
+  - ~~Add text capitalization and punctuation models~~
   - ~~Add a large number of production grade TTS models - close to finish, soon to be released~~ Added Silero TTS models `v1`
 
+New avenues:
+
+- We just made a huge leap with our VAD;
+- Better and even smaller models;
+- Huge improvements to TTS coming soon;
+
 # Updates
+
+## 2021-12-09 Improved Text Recapitalization and Repunctuation Model for 4 Languages
+
+- The model now can work with long inputs, 512 tokens or ca. 150 words;
+- Inputs longer than 150 words are automatically processed in chunks;
+- The bugs with newer PyTorch versions have been fixed;
+- Model was trained longer with larger batches;
+- Model size slightly reduced to 85 MB;
+- The rest of model optimizations were deemed too high maintenance;
 
 ## 2021-10-06 Text Recapitalization and Repunctuation Model for 4 Languages
 
