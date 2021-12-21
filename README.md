@@ -420,6 +420,8 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
 ### Russian
 
 - STT
+  - Telegram-бот Silero бесплатно переводит речь в текст - [link](https://habr.com/ru/post/591563/)
+  - Бесплатное распознавание речи для всех желающих - [link](https://habr.com/ru/post/587512/)
   - Последние обновления моделей распознавания речи из Silero Models - [link](https://habr.com/ru/post/577630/) 
   - Сжимаем трансформеры: простые, универсальные и прикладные способы cделать их компактными и быстрыми - [link](https://habr.com/ru/post/563778/)
   - Ультимативное сравнение систем распознавания речи: Ashmanov, Google, Sber, Silero, Tinkoff, Yandex - [link](https://habr.com/ru/post/559640/)
@@ -431,14 +433,17 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
   - Speech To Text - [link](https://www.silero.ai/tag/speech-to-text/)
 
 - TTS:
+  - Синтезируем голос бабушки, дедушки и Ленина + новости нашего публичного синтеза - [link](https://habr.com/ru/post/584750/) 
   - Мы сделали наш публичный синтез речи еще лучше - [link](https://habr.com/ru/post/563484/)
   - Мы Опубликовали Качественный, Простой, Доступный и Быстрый Синтез Речи - [link](https://habr.com/ru/post/549480/)
 
 - VAD:
+  - А ты используешь VAD? Что это такое и зачем он нужен - [link](https://habr.com/ru/post/594745/)
   - Модели для Детекции Речи, Чисел и Распознавания Языков - [link](https://www.silero.ai/vad-lang-classifier-number-detector/)
   - Мы опубликовали современный Voice Activity Detector и не только -[link](https://habr.com/ru/post/537274/)
 
 - Text Enhancement:
+  - Восстановление знаков пунктуации и заглавных букв — теперь и на длинных текстах - [link](https://habr.com/ru/post/594565/)    
   - Мы опубликовали модель, расставляющую знаки препинания и заглавные буквы в тексте на четырех языках - [link](https://habr.com/ru/post/581946/)
 
 ## Donations
