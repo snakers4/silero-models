@@ -436,6 +436,13 @@ tts_models:
         package: 'https://models.silero.ai/models/tts/uz/v2_dilnavoz.pt'
         sample_rate: [8000, 16000]
         language_name: 'uzbek'
+  ua:
+    mykyta:
+      latest:
+        example: 'Н+е ч+iпай л+ихо, д+оки вон+о т+ихо.'
+        package: 'https://models.silero.ai/models/tts/ua/v21_mykyta_48k.pt'
+        sample_rate: [8000, 24000, 48000]
+        language_name: 'ukrainian'
   multi:
     multi_v2:
       latest:
