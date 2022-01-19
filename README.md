@@ -259,6 +259,8 @@ Currently we provide the following speakers:
 | `erdni_v2`    | no          | `xal` (Kalmyk)                     | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `dilyara_v2`  | no          | `tt` (Tatar)                       | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `dilnavoz_v2` | no          | `uz` (Uzbek)                       | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `mykyta` | no          | `ua` (Ukrainian)                       | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+
 
 (!!!) In `multi_v2` all speakers can speak all of langauges (with various levels of fidelity).
 
