@@ -437,7 +437,7 @@ tts_models:
         sample_rate: [8000, 16000]
         language_name: 'uzbek'
   ua:
-    mykyta:
+    mykyta_v2:
       latest:
         example: 'Н+е ч+iпай л+ихо, д+оки вон+о т+ихо.'
         package: 'https://models.silero.ai/models/tts/ua/v21_mykyta_48k.pt'
