@@ -440,7 +440,7 @@ tts_models:
     mykyta_v2:
       latest:
         example: 'К+отики - пухн+асті жив+отики.'
-        package: 'https://models.silero.ai/models/tts/ua/v21_mykyta_48k.pt'
+        package: 'https://models.silero.ai/models/tts/ua/v22_mykyta_48k.pt'
         sample_rate: [8000, 24000, 48000]
         language_name: 'ukrainian'
   multi:
