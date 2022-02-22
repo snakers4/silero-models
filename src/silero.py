@@ -1,4 +1,3 @@
-dependencies = ['torch']
 import os
 import torch
 
@@ -13,7 +12,7 @@ def silero_stt(language='en',
     Please see https://github.com/snakers4/silero-models for usage examples
     """
     from omegaconf import OmegaConf    
-    from src.utils import (init_jit_model,
+    from utils import (init_jit_model,
                        read_audio,
                        read_batch,
                        split_into_batches,
@@ -50,8 +49,8 @@ def silero_tts(language='en',
     Please see https://github.com/snakers4/silero-models for usage examples
     """
     from omegaconf import OmegaConf      
-    from src.tts_utils import apply_tts
-    from src.tts_utils import init_jit_model as init_jit_model_tts
+    from tts_utils import apply_tts
+    from tts_utils import init_jit_model as init_jit_model_tts
 
     models_list_file = os.path.join(os.path.dirname(__file__), "models.yml")
     if not os.path.exists(models_list_file):
