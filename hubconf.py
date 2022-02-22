@@ -7,4 +7,10 @@ from src import (
     silero_te,
 )
 
+__all__ = [
+    "silero_stt",
+    "silero_tts",
+    "silero_te",
+]
+
 sys.path.append("src")
