@@ -3,14 +3,24 @@ stt_models:
   en:
     latest:
       meta:
-        name: "en_v5"
+        name: "en_v6"
         sample: "https://models.silero.ai/examples/en_sample.wav"
       labels: "https://models.silero.ai/models/en/en_v1_labels.json"
-      jit: "https://models.silero.ai/models/en/en_v5.jit"
+      jit: "https://models.silero.ai/models/en/en_v6.jit"
       onnx: "https://models.silero.ai/models/en/en_v5.onnx"
-      jit_q: "https://models.silero.ai/models/en/en_v5_q.jit"
-      jit_xlarge: "https://models.silero.ai/models/en/en_v5_xlarge.jit"
-      onnx_xlarge: "https://models.silero.ai/models/en/en_v5_xlarge.onnx"
+      jit_q: "https://models.silero.ai/models/en/en_v6_q.jit"
+      jit_xlarge: "https://models.silero.ai/models/en/en_v6_xlarge.jit"
+      onnx_xlarge: "https://models.silero.ai/models/en/en_v6_xlarge.onnx"
+    v6:
+      meta:
+        name: "en_v6"
+        sample: "https://models.silero.ai/examples/en_sample.wav"
+      labels: "https://models.silero.ai/models/en/en_v1_labels.json"
+      jit: "https://models.silero.ai/models/en/en_v6.jit"
+      onnx: "https://models.silero.ai/models/en/en_v5.onnx"
+      jit_q: "https://models.silero.ai/models/en/en_v6_q.jit"
+      jit_xlarge: "https://models.silero.ai/models/en/en_v6_xlarge.jit"
+      onnx_xlarge: "https://models.silero.ai/models/en/en_v6_xlarge.onnx"
     v5:
       meta:
         name: "en_v5"
