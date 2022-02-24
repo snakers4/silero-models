@@ -17,6 +17,9 @@
     - [Dependencies](#dependencies-1)
     - [PyTorch](#pytorch-1)
     - [Standalone Use](#standalone-use)
+  - [Text-Enhancement](#text-enhancement)
+    - [Dependencies](#dependencies-2)
+    - [Standalone Use](#standalone-use-2)
   - [FAQ](#faq)
     - [Wiki](#wiki)
     - [Performance and Quality](#performance-and-quality)
@@ -55,10 +58,19 @@ Also we have published TTS models that satisfy the following criteria:
 - Faster than real-time on one CPU thread (!!!);
 - Support for 16kHz and 8kHz out of the box;
 
+Also we have published a model for text repunctuation and recapitalization that:
+
+- Inserts capital letters and basic punctuation marks (dot, comma, hyphen, question mark, exclamation mark, dash for Russian);
+- Works for 4 languages (Russian, English, German, Spanish) and can be extended;
+- By design is domain agnostic and is not based on any hard-coded rules;
+- Has non-trivial metrics and succeeds in the task of improving text readability;
+
 ## Speech-To-Text
 
 All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file.
 Any meta-data and newer versions will be added there.
+
+![Screenshot_1](https://user-images.githubusercontent.com/36505480/132320823-f0c5b774-44f7-4375-9c46-3acbcc548b76.png)
 
 Currently we provide the following checkpoints:
 
@@ -249,6 +261,8 @@ Currently we provide the following speakers:
 | `erdni_v2`    | no          | `xal` (Kalmyk)                     | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `dilyara_v2`  | no          | `tt` (Tatar)                       | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `dilnavoz_v2` | no          | `uz` (Uzbek)                       | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `mykyta_v2` | no          | `ua` (Ukrainian)                       | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+
 
 (!!!) In `multi_v2` all speakers can speak all of langauges (with various levels of fidelity).
 
@@ -313,6 +327,34 @@ audio_paths = model.save_wav(texts=example_batch,
                              sample_rate=sample_rate)
 ```
 
+## Text-Enhancement
+
+| Languages | Quantization  | Quality | Colab |
+| --------- | ------------- | ------- | ----- |
+| 'en', 'de', 'ru', 'es' | :heavy_check_mark: | [link](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks#te-models) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_te.ipynb) |
+
+### Dependencies
+
+Basic dependencies for colab examples:
+
+- `torch`, 1.9+;
+- `pyyaml`, but it's installed with torch itself
+
+### Standalone Use
+
+- Standalone usage just requires PyTorch 1.9+ and python standard library;
+- Please see the detailed examples in [Colab](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_te.ipynb);
+
+```python
+import torch
+
+model, example_texts, languages, punct, apply_te = torch.hub.load(repo_or_dir='snakers4/silero-models',
+                                                                  model='silero_te')
+
+input_text = input('Enter input text\n')
+apply_te(input_text, lan='en')
+```
+
 ## FAQ
 
 ### Wiki
@@ -370,6 +412,9 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
 - VAD:
   - Modern Portable Voice Activity Detector Released - [link](https://habr.com/ru/post/537276/)
 
+- Text Enhancement:
+  - We have published a model for text repunctuation and recapitalization for four languages - [link](https://habr.com/ru/post/581960/) 
+
 ### Chinese
 
 - STT:
@@ -379,18 +424,31 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
 ### Russian
 
 - STT
+  - Telegram-бот Silero бесплатно переводит речь в текст - [link](https://habr.com/ru/post/591563/)
+  - Бесплатное распознавание речи для всех желающих - [link](https://habr.com/ru/post/587512/)
+  - Последние обновления моделей распознавания речи из Silero Models - [link](https://habr.com/ru/post/577630/) 
+  - Сжимаем трансформеры: простые, универсальные и прикладные способы cделать их компактными и быстрыми - [link](https://habr.com/ru/post/563778/)
+  - Ультимативное сравнение систем распознавания речи: Ashmanov, Google, Sber, Silero, Tinkoff, Yandex - [link](https://habr.com/ru/post/559640/)
   - Мы опубликовали современные STT модели сравнимые по качеству с Google - [link](https://habr.com/ru/post/519564/)
   - Понижаем барьеры на вход в распознавание речи - [link](https://habr.com/ru/post/494006/)
   - Огромный открытый датасет русской речи версия 1.0 - [link](https://habr.com/ru/post/474462/)
   - Насколько Быстрой Можно Сделать Систему STT? - [link](https://habr.com/ru/post/531524/)
   - Наша система Speech-To-Text - [link](https://www.silero.ai/tag/our-speech-to-text/)
-  - Speech To Text - [link](https://www.silero.ai/tag/speech-to-text/ )
+  - Speech To Text - [link](https://www.silero.ai/tag/speech-to-text/)
 
 - TTS:
+  - Синтезируем голос бабушки, дедушки и Ленина + новости нашего публичного синтеза - [link](https://habr.com/ru/post/584750/) 
+  - Мы сделали наш публичный синтез речи еще лучше - [link](https://habr.com/ru/post/563484/)
   - Мы Опубликовали Качественный, Простой, Доступный и Быстрый Синтез Речи - [link](https://habr.com/ru/post/549480/)
 
 - VAD:
+  - А ты используешь VAD? Что это такое и зачем он нужен - [link](https://habr.com/ru/post/594745/)
+  - Модели для Детекции Речи, Чисел и Распознавания Языков - [link](https://www.silero.ai/vad-lang-classifier-number-detector/)
   - Мы опубликовали современный Voice Activity Detector и не только -[link](https://habr.com/ru/post/537274/)
+
+- Text Enhancement:
+  - Восстановление знаков пунктуации и заглавных букв — теперь и на длинных текстах - [link](https://habr.com/ru/post/594565/)    
+  - Мы опубликовали модель, расставляющую знаки препинания и заглавные буквы в тексте на четырех языках - [link](https://habr.com/ru/post/581946/)
 
 ## Donations
 
