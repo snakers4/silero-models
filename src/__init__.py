@@ -1,7 +1,4 @@
-dependencies = ["torch"]
-
-import sys
-from src import (
+from .silero import (
     silero_stt,
     silero_tts,
     silero_te,
@@ -13,4 +10,5 @@ __all__ = [
     "silero_te",
 ]
 
-sys.path.append("src")
+__version__ = "0.1.0"
+__author__ = "Silero Team"
