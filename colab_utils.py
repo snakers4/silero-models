@@ -7,7 +7,7 @@ import io
 import base64
 import tempfile
 from typing import Optional
-from src.utils import read_audio
+from src.silero.utils import read_audio
 from pydub import AudioSegment
 from google.colab import files
 from google.colab import output
