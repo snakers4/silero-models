@@ -1,7 +1,7 @@
 name: Build and Deploy to PyPI
 
 on:
-  push:
+  create:
     tags:
       - "v*"
 
