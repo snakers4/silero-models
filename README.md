@@ -9,6 +9,7 @@
 ![header](https://user-images.githubusercontent.com/12515440/89997349-b3523080-dc94-11ea-9906-ca2e8bc50535.png)
 
 - [Silero Models](#silero-models)
+  - [Installation and Basics](#installation-and-basics)
   - [Speech-To-Text](#speech-to-text)
     - [Dependencies](#dependencies)
     - [PyTorch](#pytorch)
@@ -21,7 +22,7 @@
     - [Standalone Use](#standalone-use)
   - [Text-Enhancement](#text-enhancement)
     - [Dependencies](#dependencies-2)
-    - [Standalone Use](#standalone-use-2)
+    - [Standalone Use](#standalone-use-1)
   - [FAQ](#faq)
     - [Wiki](#wiki)
     - [Performance and Quality](#performance-and-quality)
@@ -66,6 +67,30 @@ Also we have published a model for text repunctuation and recapitalization that:
 - Works for 4 languages (Russian, English, German, Spanish) and can be extended;
 - By design is domain agnostic and is not based on any hard-coded rules;
 - Has non-trivial metrics and succeeds in the task of improving text readability;
+
+## Installation and Basics
+
+You can basically use our models in 3 flavours:
+
+- Via PyTorch Hub: `torch.hub.load()`;
+- Via pip:  `pip install silero` and then `import silero`;
+- Via caching the required models and utils manually and modifying if necessary;
+
+Models are downloaded on demand both by pip and PyTorch Hub. If you need caching, do it manually or via invoking a necessary model once (it will be downloaded to a cache folder). Please see these [docs](https://pytorch.org/docs/stable/hub.html#loading-models-from-hub) for more information.
+
+PyTorch Hub and pip package are based on the same code. Hence all examples, historically based on `torch.hub.load` can be used with a pip-package via this basic change:
+
+```python3
+# before
+torch.hub.load(repo_or_dir='snakers4/silero-models',
+               model='silero_stt',  # or silero_tts or silero_te
+               **kwargs)
+
+# after
+from silero import silero_stt, silero_tts or silero_te
+
+silero_stt(**kwargs)
+```
 
 ## Speech-To-Text
 
