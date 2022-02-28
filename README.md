@@ -87,8 +87,7 @@ torch.hub.load(repo_or_dir='snakers4/silero-models',
                **kwargs)
 
 # after
-from silero import silero_stt, silero_tts or silero_te
-
+from silero import silero_stt, silero_tts, silero_te
 silero_stt(**kwargs)
 ```
 
