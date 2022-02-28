@@ -4,6 +4,8 @@
 [![Backers](https://opencollective.com/open_stt/tiers/backer/badge.svg?label=backers&color=brightgreen)](https://opencollective.com/open_stt)
 [![Sponsors](https://opencollective.com/open_stt/tiers/sponsor/badge.svg?label=sponsors&color=brightgreen)](https://opencollective.com/open_stt)
 
+[![Build and Deploy to PyPI](https://github.com/snakers4/silero-models/actions/workflows/build_deploy.yml/badge.svg)](https://github.com/snakers4/silero-models/actions/workflows/build_deploy.yml)
+
 ![header](https://user-images.githubusercontent.com/12515440/89997349-b3523080-dc94-11ea-9906-ca2e8bc50535.png)
 
 - [Silero Models](#silero-models)
