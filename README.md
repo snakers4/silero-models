@@ -436,6 +436,7 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
   - High-Quality Text-to-Speech Made Accessible, Simple and Fast - [link](https://habr.com/ru/post/549482/)
 
 - VAD:
+  - One Voice Detector to Rule Them All - [link](https://thegradient.pub/one-voice-detector-to-rule-them-all/)
   - Modern Portable Voice Activity Detector Released - [link](https://habr.com/ru/post/537276/)
 
 - Text Enhancement:
@@ -450,6 +451,7 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
 ### Russian
 
 - STT
+  - Наши сервисы для бесплатного распознавания речи стали лучше и удобнее - [link](https://habr.com/ru/post/654227/) 
   - Telegram-бот Silero бесплатно переводит речь в текст - [link](https://habr.com/ru/post/591563/)
   - Бесплатное распознавание речи для всех желающих - [link](https://habr.com/ru/post/587512/)
   - Последние обновления моделей распознавания речи из Silero Models - [link](https://habr.com/ru/post/577630/) 
