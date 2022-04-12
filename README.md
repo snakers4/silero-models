@@ -365,7 +365,7 @@ audio_paths = model.save_wav(text=example_text,
 ```
 
 ### SSML
-Check out our [TTS Wiki page.]()
+Check out our [TTS Wiki page.](https://github.com/snakers4/silero-models/wiki/SSML)
 
 ## Text-Enhancement
 
