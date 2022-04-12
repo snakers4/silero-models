@@ -336,7 +336,7 @@ audio = model.apply_tts(text=example_text,
 
 ### Standalone Use
 
-- Standalone usage just requires PyTorch 1.9+ and python standard library;
+- Standalone usage just requires PyTorch 1.10+ and python standard library;
 - Please see the detailed examples in Colab;
 
 ```python
