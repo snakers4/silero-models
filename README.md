@@ -20,6 +20,7 @@
     - [Dependencies](#dependencies-1)
     - [PyTorch](#pytorch-1)
     - [Standalone Use](#standalone-use)
+    - [SSML](#SSML)
   - [Text-Enhancement](#text-enhancement)
     - [Dependencies](#dependencies-2)
     - [Standalone Use](#standalone-use-1)
@@ -268,6 +269,12 @@ print(decoder(torch.Tensor(res.numpy())[0]))
 
 All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file. Any meta-data and newer versions will be added there.
 
+#### V3
+| ID       | Speakers |Auto-stress | Language                           | SR              | Colab                                                                                                                                                                        |
+| ------------- | ----------- | ----------- |---------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ru_v3`    | `aidar`, `baya`, `kseniya`, `xenia`, `random` | yes         | `ru` (Russian)                     | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+
+#### V2 (Deprecated)
 Currently we provide the following speakers:
 
 | Speaker       | Auto-stress | Language                           | SR              | Colab                                                                                                                                                                        |
@@ -296,7 +303,7 @@ Currently we provide the following speakers:
 
 Basic dependencies for colab examples:
 
-- `torch`, 1.9+;
+- `torch`, 1.10+;
 - `torchaudio`, latest version bound to PyTorch should work (required only because models are hosted together with STT, not required for work);
 - `omegaconf`,  latest (can be removed as well, if you do not load all of the configs);
 
@@ -307,20 +314,23 @@ Basic dependencies for colab examples:
 [![Open on Torch Hub](https://img.shields.io/badge/Torch-Hub-red?logo=pytorch&style=for-the-badge)](https://pytorch.org/hub/snakers4_silero-models_tts/)
 
 ```python
+# V3
 import torch
 
 language = 'ru'
-speaker = 'kseniya_v2'
-sample_rate = 16000
+model_id = 'ru_v3'
+sample_rate = 48000
+speaker = 'xenia'
 device = torch.device('cpu')
 
 model, example_text = torch.hub.load(repo_or_dir='snakers4/silero-models',
                                      model='silero_tts',
                                      language=language,
-                                     speaker=speaker)
+                                     speaker=model_id)
 model.to(device)  # gpu or cpu
 
-audio = model.apply_tts(texts=[example_text],
+audio = model.apply_tts(text=example_text,
+                        speaker=speaker,
                         sample_rate=sample_rate)
 ```
 
@@ -330,6 +340,7 @@ audio = model.apply_tts(texts=[example_text],
 - Please see the detailed examples in Colab;
 
 ```python
+# V3
 import os
 import torch
 
@@ -338,20 +349,23 @@ torch.set_num_threads(4)
 local_file = 'model.pt'
 
 if not os.path.isfile(local_file):
-    torch.hub.download_url_to_file('https://models.silero.ai/models/tts/ru/v2_kseniya.pt',
+    torch.hub.download_url_to_file('https://models.silero.ai/models/tts/ru/ru_v3.pt',
                                    local_file)  
 
 model = torch.package.PackageImporter(local_file).load_pickle("tts_models", "model")
 model.to(device)
 
-example_batch = ['В недрах тундры выдры в г+етрах т+ырят в вёдра ядра кедров.',
-                 'Котики - это жидкость!',
-                 'М+ама М+илу м+ыла с м+ылом.']
-sample_rate = 16000
+example_text = 'В недрах тундры выдры в г+етрах т+ырят в вёдра ядра кедров.'
+sample_rate = 48000
+speaker='baya'
 
-audio_paths = model.save_wav(texts=example_batch,
+audio_paths = model.save_wav(text=example_text,
+                             speaker=speaker,
                              sample_rate=sample_rate)
 ```
+
+### SSML
+Check out our [TTS Wiki page.]()
 
 ## Text-Enhancement
 
