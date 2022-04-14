@@ -447,6 +447,7 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
   - Modern Google-level STT Models Released - [link](https://habr.com/ru/post/519562/)
 
 - TTS:
+  - Our new public speech synthesis in super-high quality, 10x faster and more stable - [link](https://habr.com/ru/post/660571/) 
   - High-Quality Text-to-Speech Made Accessible, Simple and Fast - [link](https://habr.com/ru/post/549482/)
 
 - VAD:
@@ -479,6 +480,7 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
   - Speech To Text - [link](https://www.silero.ai/tag/speech-to-text/)
 
 - TTS:
+  - Теперь наш публичный синтез в супер-высоком качестве, в 10 раз быстрее и без детских болячек - [link](https://habr.com/ru/post/660565/) 
   - Синтезируем голос бабушки, дедушки и Ленина + новости нашего публичного синтеза - [link](https://habr.com/ru/post/584750/) 
   - Мы сделали наш публичный синтез речи еще лучше - [link](https://habr.com/ru/post/563484/)
   - Мы Опубликовали Качественный, Простой, Доступный и Быстрый Синтез Речи - [link](https://habr.com/ru/post/549480/)
