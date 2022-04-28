@@ -270,6 +270,9 @@ print(decoder(torch.Tensor(res.numpy())[0]))
 All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file. Any meta-data and newer versions will be added there.
 
 #### V3
+
+V3 models support [SSML](https://github.com/snakers4/silero-models/wiki/SSML). Also see Colab examples for main SSML tag usage.
+
 | ID       | Speakers |Auto-stress | Language                           | SR              | Colab                                                                                                                                                                        |
 | ------------- | ----------- | ----------- |---------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `ru_v3`    | `aidar`, `baya`, `kseniya`, `xenia`, `random` | yes         | `ru` (Russian)                     | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
@@ -365,7 +368,8 @@ audio_paths = model.save_wav(text=example_text,
 ```
 
 ### SSML
-Check out our [TTS Wiki page.](https://github.com/snakers4/silero-models/wiki/SSML)
+
+Check out our [TTS Wiki page.](https://github.com/snakers4/silero-models/wiki/SSML).
 
 ## Text-Enhancement
 
