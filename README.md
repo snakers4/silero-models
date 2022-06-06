@@ -1,4 +1,4 @@
- [![Mailing list : test](http://img.shields.io/badge/Email-gray.svg?style=for-the-badge&logo=gmail)](mailto:hello@silero.ai) [![Mailing list : test](http://img.shields.io/badge/Telegram-blue.svg?style=for-the-badge&logo=telegram)](https://t.me/silero_speech) [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-GNU%20AGPL%203.0-lightgrey.svg?style=for-the-badge)](https://github.com/snakers4/silero-models/blob/master/LICENSE)
+ [![Mailing list : test](http://img.shields.io/badge/Email-gray.svg?style=for-the-badge&logo=gmail)](mailto:hello@silero.ai) [![Mailing list : test](http://img.shields.io/badge/Telegram-blue.svg?style=for-the-badge&logo=telegram)](https://t.me/silero_speech) [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?style=for-the-badge)](https://github.com/snakers4/silero-models/blob/master/LICENSE)
 
 [![Donations](https://opencollective.com/open_stt/tiers/donation/badge.svg?label=donations&color=brightgreen)](https://opencollective.com/open_stt)
 [![Backers](https://opencollective.com/open_stt/tiers/backer/badge.svg?label=backers&color=brightgreen)](https://opencollective.com/open_stt)
@@ -271,6 +271,9 @@ print(decoder(torch.Tensor(res.numpy())[0]))
 All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file. Any meta-data and newer versions will be added there.
 
 #### V3
+
+V3 models support [SSML](https://github.com/snakers4/silero-models/wiki/SSML). Also see Colab examples for main SSML tag usage.
+
 | ID       | Speakers |Auto-stress | Language                           | SR              | Colab                                                                                                                                                                        |
 | ------------- | ----------- | ----------- |---------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `v3_1_ru`    | `aidar`, `baya`, `kseniya`, `xenia`, `eugene`, `random` | yes  | `ru` (Russian)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
@@ -324,7 +327,7 @@ audio = model.apply_tts(text=example_text,
 
 ### Standalone Use
 
-- Standalone usage just requires PyTorch 1.9+ and python standard library;
+- Standalone usage just requires PyTorch 1.10+ and python standard library;
 - Please see the detailed examples in Colab;
 
 ```python
@@ -353,6 +356,7 @@ audio_paths = model.save_wav(text=example_text,
 ```
 
 ### SSML
+
 Check out our [TTS Wiki page.](https://github.com/snakers4/silero-models/wiki/SSML)
 
 ### Indic languages
@@ -474,6 +478,7 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
   - Modern Google-level STT Models Released - [link](https://habr.com/ru/post/519562/)
 
 - TTS:
+  - Our new public speech synthesis in super-high quality, 10x faster and more stable - [link](https://habr.com/ru/post/660571/) 
   - High-Quality Text-to-Speech Made Accessible, Simple and Fast - [link](https://habr.com/ru/post/549482/)
 
 - VAD:
@@ -506,6 +511,7 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
   - Speech To Text - [link](https://www.silero.ai/tag/speech-to-text/)
 
 - TTS:
+  - Теперь наш публичный синтез в супер-высоком качестве, в 10 раз быстрее и без детских болячек - [link](https://habr.com/ru/post/660565/) 
   - Синтезируем голос бабушки, дедушки и Ленина + новости нашего публичного синтеза - [link](https://habr.com/ru/post/584750/) 
   - Мы сделали наш публичный синтез речи еще лучше - [link](https://habr.com/ru/post/563484/)
   - Мы Опубликовали Качественный, Простой, Доступный и Быстрый Синтез Речи - [link](https://habr.com/ru/post/549480/)
