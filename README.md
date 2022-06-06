@@ -21,6 +21,7 @@
     - [PyTorch](#pytorch-1)
     - [Standalone Use](#standalone-use)
     - [SSML](#SSML)
+    - [Indic languages](#indic-languages)
   - [Text-Enhancement](#text-enhancement)
     - [Dependencies](#dependencies-2)
     - [Standalone Use](#standalone-use-1)
@@ -272,32 +273,19 @@ All of the provided models are listed in the [models.yml](https://github.com/sna
 #### V3
 | ID       | Speakers |Auto-stress | Language                           | SR              | Colab                                                                                                                                                                        |
 | ------------- | ----------- | ----------- |---------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ru_v3`    | `aidar`, `baya`, `kseniya`, `xenia`, `random` | yes         | `ru` (Russian)                     | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v3_1_ru`    | `aidar`, `baya`, `kseniya`, `xenia`, `eugene`, `random` | yes  | `ru` (Russian)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v3_en`    | `en_0`, `en_1`, ..., `en_117`, `random`                   | no   | `en` (English)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v3_en_indic`   | `tamil_female`, ..., `assamese_male`, `random`       | no   | `en` (English)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v3_de`    | `eva_k`, ..., `karlsson`, `random`                        | no   | `de` (German)    | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v3_es`    | `es_0`, `es_1`, `es_2`, `random`                          | no   | `es` (Spanish)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v3_fr`    | `fr_0`, `fr_1`, `fr_2`, `fr_3`, `fr_4`, `fr_5`, `random`  | no   | `fr` (French)    | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v3_tt`    | `dilyara`                                                 | no   | `tt` (Tatar)     | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v3_ua`    | `mykyta`, `random`                                        | no   | `ua` (Ukrainian) | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v3_uz`    | `dilnavoz`                                                | no   | `uz` (Uzbek)     | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v3_xal`   | `erdni`, `delghir`, `random`                              | no   | `xal` (Kalmyk)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v3_indic`   | `hindi_male`, `hindi_female`, ..., `random`             | no   | `indic` (Hindi, Telugu, ...)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `ru_v3`    | `aidar`, `baya`, `kseniya`, `xenia`, `random`             | yes  | `ru` (Russian)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 
-#### V2 (Deprecated)
-Currently we provide the following speakers:
-
-| Speaker       | Auto-stress | Language                           | SR              | Colab                                                                                                                                                                        |
-| ------------- | ----------- | ---------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `aidar_v2`    | yes         | `ru` (Russian)                     | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `baya_v2`     | yes         | `ru` (Russian)                     | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `irina_v2`    | yes         | `ru` (Russian)                     | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `kseniya_v2`  | yes         | `ru` (Russian)                     | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `natasha_v2`  | yes         | `ru` (Russian)                     | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `ruslan_v2`   | yes         | `ru` (Russian)                     | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `lj_v2`       | no          | `en` (English)                     | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `thorsten_v2` | no          | `de` (German)                      | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `tux_v2`      | no          | `es` (Spanish)                     | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `gilles_v2`   | no          | `fr` (French)                      | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `multi_v2`    | no          | `ru`, `en`, `de`, `es`, `fr`, `tt` | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `aigul_v2`    | no          | `ba` (Bashkir)                     | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `erdni_v2`    | no          | `xal` (Kalmyk)                     | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `dilyara_v2`  | no          | `tt` (Tatar)                       | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `dilnavoz_v2` | no          | `uz` (Uzbek)                       | `8000`, `16000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `mykyta_v2` | no          | `ua` (Ukrainian)                       | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-
-
-(!!!) In `multi_v2` all speakers can speak all of langauges (with various levels of fidelity).
 
 ### Dependencies
 
@@ -318,7 +306,7 @@ Basic dependencies for colab examples:
 import torch
 
 language = 'ru'
-model_id = 'ru_v3'
+model_id = 'v3_1_ru'
 sample_rate = 48000
 speaker = 'xenia'
 device = torch.device('cpu')
@@ -349,7 +337,7 @@ torch.set_num_threads(4)
 local_file = 'model.pt'
 
 if not os.path.isfile(local_file):
-    torch.hub.download_url_to_file('https://models.silero.ai/models/tts/ru/ru_v3.pt',
+    torch.hub.download_url_to_file('https://models.silero.ai/models/tts/ru/v3_1_ru.pt',
                                    local_file)  
 
 model = torch.package.PackageImporter(local_file).load_pickle("tts_models", "model")
@@ -365,7 +353,46 @@ audio_paths = model.save_wav(text=example_text,
 ```
 
 ### SSML
-Check out our [TTS Wiki page.]()
+Check out our [TTS Wiki page.](https://github.com/snakers4/silero-models/wiki/SSML)
+
+### Indic languages
+
+#### Example
+(!!!) All input sentences should be romanized to ISO format using `aksharamukha` tool. An example for `hindi`:
+
+```python
+# V3
+import torch
+from aksharamukha import transliterate
+
+# Loading model
+model, example_text = torch.hub.load(repo_or_dir='snakers4/silero-models',
+                                     model='silero_tts',
+                                     language='indic',
+                                     speaker='v3_indic')
+
+orig_text = "प्रसिद्द कबीर अध्येता, पुरुषोत्तम अग्रवाल का यह शोध आलेख, उस रामानंद की खोज करता है"
+roman_text = transliterate.process('Devanagari', 'ISO', orig_text)
+print(roman_text)
+
+audio = model.apply_tts(roman_text,
+                        speaker='hindi_male')
+```
+
+#### Supported languages
+
+| Language | Speakers | Romanization function
+-- | -- | --
+hindi      | `hindi_female`, `hindi_male`             | `transliterate.process('Devanagari', 'ISO', orig_text)`
+malayalam  | `malayalam_female`, `malayalam_male`     |`transliterate.process('Malayalam', 'ISO', orig_text)`
+manipuri   | `manipuri_female`                        |`transliterate.process('Bengali', 'ISO', orig_text)`
+bengali    | `bengali_female`, `bengali_male`         | `transliterate.process('Bengali', 'ISO', orig_text)`
+rajasthani | `rajasthani_female`, `rajasthani_female` | `transliterate.process('Devanagari', 'ISO', orig_text)`
+tamil      | `tamil_female`, `tamil_male`             |`transliterate.process('Tamil', 'ISO', orig_text, pre_options=['TamilTranscribe'])`
+telugu     | `telugu_female`, `telugu_male`           | `transliterate.process('Telugu', 'ISO', orig_text)`
+gujarati   | `gujarati_female`, `gujarati_male`       | `transliterate.process('Gujarati', 'ISO', orig_text)`
+kannada    | `kannada_female`, `kannada_male`         |`transliterate.process('Kannada', 'ISO', orig_text)`
+
 
 ## Text-Enhancement
 
