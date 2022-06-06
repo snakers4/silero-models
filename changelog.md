@@ -1,5 +1,9 @@
 - [Plans](#plans)
 - [Updates](#updates)
+  - [2022-06-06 Silero TTS in 20 Languages With 174 Speakers](#2022-06-06-silero-tts-in-20-languages-with-174-speakers)
+  - [2022-04-12 Silero TTS in High Resolution, 10x Faster and More Stable](#2022-04-12-silero-tts-in-high-resolution-10x-faster-and-more-stable)
+  - [2022-02-28 Experimental Pip Package](#2022-02-28-experimental-pip-package)
+  - [2022-02-24 English V6 Release](#2022-02-24-english-v6-release)
   - [2021-12-09 Improved Text Recapitalization and Repunctuation Model for 4 Languages](#2021-12-09-improved-text-recapitalization-and-repunctuation-model-for-4-languages)
   - [2021-10-06 Text Recapitalization and Repunctuation Model for 4 Languages](#2021-10-06-text-recapitalization-and-repunctuation-model-for-4-languages)
   - [2021-09-03 German V4 and English V5 Models](#2021-09-03-german-v4-and-english-v5-models)
@@ -34,28 +38,43 @@
 
 # Plans
 
-Current plans w/o any set dates:
-
-- Languages
-  - ~~Focus on huge English model update~~
-  - Cover remaning popular Internet languages for CE and EE editions (in progress) - now thinking only about adding French and updating the existing languages
-  - We decided not to pursue the following languages: Italian, Portugese, Polish, Czech for now
-  - ~~Add some non-core languages only as CE edition~~ Added Ukrainian v1 and v3
-- Speed
-  - ~~Reduce CE model size to 10-20 MB w/o quality degradation~~ Final size is about 30M w/o losing quality, going lower is still possible with losing quality
-  - ~~Add quantized models (x2 speed)~~ Total speed up for smaller models is between 2x and 3x for a `small` models, for `xxsmall` - around 3x
-- New products
-  - Add denoising
-  - ~~Add text capitalization and punctuation models~~
-  - ~~Add a large number of production grade TTS models - close to finish, soon to be released~~ Added Silero TTS models `v1`
-
-New avenues:
-
-- We just made a huge leap with our VAD;
-- Better and even smaller models;
-- Huge improvements to TTS coming soon;
-
 # Updates
+
+## 2022-06-06 Silero TTS in 20 Languages With 174 Speakers
+
+- Huge [release](https://habr.com/ru/post/669910/) - 20 languages, 173 voices;
+- 1 new high quality Russian voice (`eugeny`);
+- The CIS languages: Kalmyk, Russian, Tatar, Uzbek и Ukrainian;
+- Romance and Germanic languages: English, Indic English, Spanish, German, French;
+- 10 Indic languages;
+- Russian automated stress model vastly improved (please see this [link](https://habr.com/ru/post/669910/) for details);
+- All models inherit all of the previous SSML perks;
+
+## 2022-04-12 Silero TTS in High Resolution, 10x Faster and More Stable
+
+- Huge [release](https://habr.com/ru/post/660571/) - Russian only for now;
+- Model size reduced 2x;
+- New models are 10x faster;
+- We added flags to control stress;
+- Now the models can make proper pauses;
+- High quality voice added (and unlimited "random" voices);
+- All speakers squeezed into the same model;
+- Input length limitations lifted, now models can work with paragraphs of text;
+- Pauses, speed and pitch can be controlled via SSML;
+- Sampling rates of 8, 24 or 48 kHz are supported;
+- Models are much more stable — they do not omit words anymore;
+
+## 2022-02-28 Experimental Pip Package
+
+- Models are downloaded on demand both by `pip` and PyTorch Hub;
+- If you need caching, do it manually or via invoking a necessary model once (it will be downloaded to a cache folder);
+- Please see these docs for more information;
+- PyTorch Hub and pip package are based on the same code. Hence all examples, historically based on torch.hub.load can be used with a pip-package;
+
+## 2022-02-24 English V6 Release
+
+- New `en_v6` models;
+- Quality improvements for English models;
 
 ## 2021-12-09 Improved Text Recapitalization and Repunctuation Model for 4 Languages
 
