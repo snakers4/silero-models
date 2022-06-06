@@ -286,7 +286,7 @@ V3 models support [SSML](https://github.com/snakers4/silero-models/wiki/SSML). A
 | `v3_ua`    | `mykyta`, `random`                                        | no   | `ua` (Ukrainian) | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `v3_uz`    | `dilnavoz`                                                | no   | `uz` (Uzbek)     | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `v3_xal`   | `erdni`, `delghir`, `random`                              | no   | `xal` (Kalmyk)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `v3_indic`   | `hindi_male`, `hindi_female`, ..., `random`             | no   | `indic` (Hindi, Telugu, ...)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| [`v3_indic`](#indic-languages)   | `hindi_male`, `hindi_female`, ..., `random`             | no   | `indic` [(Hindi, Telugu, ...)](#indic-languages)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `ru_v3`    | `aidar`, `baya`, `kseniya`, `xenia`, `random`             | yes  | `ru` (Russian)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 
 
@@ -362,7 +362,7 @@ Check out our [TTS Wiki page.](https://github.com/snakers4/silero-models/wiki/SS
 ### Indic languages
 
 #### Example
-(!!!) All input sentences should be romanized to ISO format using `aksharamukha` tool. An example for `hindi`:
+(!!!) All input sentences should be romanized to ISO format using [`aksharamukha` tool](https://aksharamukha.appspot.com/python). An example for `hindi`:
 
 ```python
 # V3
