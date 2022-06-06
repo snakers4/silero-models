@@ -511,6 +511,7 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
   - Speech To Text - [link](https://www.silero.ai/tag/speech-to-text/)
 
 - TTS:
+  - Теперь наш синтез на 20 языках - [link](https://habr.com/ru/post/669910/) 
   - Теперь наш публичный синтез в супер-высоком качестве, в 10 раз быстрее и без детских болячек - [link](https://habr.com/ru/post/660565/) 
   - Синтезируем голос бабушки, дедушки и Ленина + новости нашего публичного синтеза - [link](https://habr.com/ru/post/584750/) 
   - Мы сделали наш публичный синтез речи еще лучше - [link](https://habr.com/ru/post/563484/)
