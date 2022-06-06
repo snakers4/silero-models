@@ -319,12 +319,12 @@ tts_models:
     v3_en:
       latest:
         example: 'Can you can a canned can into an un-canned can like a canner can can a canned can into an un-canned can?'
-        package: 'https://models.silero.ai/models/tts/ru/v3_en.pt'
+        package: 'https://models.silero.ai/models/tts/en/v3_en.pt'
         sample_rate: [8000, 24000, 48000]
     v3_en_indic:
       latest:
         example: 'Can you can a canned can into an un-canned can like a canner can can a canned can into an un-canned can?'
-        package: 'https://models.silero.ai/models/tts/ru/v3_en_indic.pt'
+        package: 'https://models.silero.ai/models/tts/en/v3_en_indic.pt'
         sample_rate: [8000, 24000, 48000]
     lj_v2:
       latest:
@@ -357,7 +357,7 @@ tts_models:
     v3_de:
       latest:
         example: 'Fischers Fritze fischt frische Fische, Frische Fische fischt Fischers Fritze.'
-        package: 'https://models.silero.ai/models/tts/ru/v3_de.pt'
+        package: 'https://models.silero.ai/models/tts/de/v3_de.pt'
         sample_rate: [8000, 24000, 48000]
     thorsten_v2:
       latest:
@@ -390,7 +390,7 @@ tts_models:
     v3_es:
       latest:
         example: 'Hoy ya es ayer y ayer ya es hoy, ya llegó el día, y hoy es hoy.'
-        package: 'https://models.silero.ai/models/tts/ru/v3_es.pt'
+        package: 'https://models.silero.ai/models/tts/es/v3_es.pt'
         sample_rate: [8000, 24000, 48000]
     tux_v2:
       latest:
@@ -423,7 +423,7 @@ tts_models:
     v3_fr:
       latest:
         example: 'Je suis ce que je suis, et si je suis ce que je suis, qu’est ce que je suis.'
-        package: 'https://models.silero.ai/models/tts/ru/v3_fr.pt'
+        package: 'https://models.silero.ai/models/tts/fr/v3_fr.pt'
         sample_rate: [8000, 24000, 48000]
     gilles_v2:
       latest:
@@ -463,7 +463,7 @@ tts_models:
     v3_xal:
       latest:
         example: 'Һорвн, дөрвн күн ирәд, һазань чиңгнв. Байн Цецн хаана һорвн көвүн күүндҗәнә.'
-        package: 'https://models.silero.ai/models/tts/ru/v3_xal.pt'
+        package: 'https://models.silero.ai/models/tts/xal/v3_xal.pt'
         sample_rate: [8000, 24000, 48000]
     erdni_v2:
       latest:
@@ -475,7 +475,7 @@ tts_models:
     v3_tt:
       latest:
         example: 'Исәнмесез, саумысез, нишләп кәҗәгезне саумыйсыз, әтәчегез күкәй салган, нишләп чыгып алмыйсыз.'
-        package: 'https://models.silero.ai/models/tts/ru/v3_tt.pt'
+        package: 'https://models.silero.ai/models/tts/tt/v3_tt.pt'
         sample_rate: [8000, 24000, 48000]
     dilyara_v2:
       latest:
@@ -487,7 +487,7 @@ tts_models:
     v3_uz:
       latest:
         example: 'Tanishganimdan xursandman.'
-        package: 'https://models.silero.ai/models/tts/ru/v3_uz.pt'
+        package: 'https://models.silero.ai/models/tts/uz/v3_uz.pt'
         sample_rate: [8000, 24000, 48000]
     dilnavoz_v2:
       latest:
@@ -499,7 +499,7 @@ tts_models:
     v3_ua:
       latest:
         example: 'К+отики - пухн+асті жив+отики.'
-        package: 'https://models.silero.ai/models/tts/ru/v3_ua.pt'
+        package: 'https://models.silero.ai/models/tts/ua/v3_ua.pt'
         sample_rate: [8000, 24000, 48000]
     mykyta_v2:
       latest:
@@ -511,7 +511,7 @@ tts_models:
     v3_indic:
       latest:
         example: 'prasidda kabīra adhyētā, puruṣōttama agravāla kā yaha śōdha ālēkha, usa rāmānaṁda kī khōja karatā hai'
-        package: 'https://models.silero.ai/models/tts/ru/v3_indic.pt'
+        package: 'https://models.silero.ai/models/tts/indic/v3_indic.pt'
         sample_rate: [8000, 24000, 48000]
   multi:
     multi_v2:
