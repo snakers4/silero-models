@@ -18,7 +18,7 @@ def silero_stt(language='en',
                         split_into_batches,
                         prepare_model_input)
 
-    models_list_file = os.path.join(os.path.dirname(__file__), "models.yml")
+    models_list_file = os.path.join(os.path.dirname(__file__), "..", "..", "models.yml")
     if not os.path.exists(models_list_file):
         models_list_file = 'latest_silero_models.yml'
     if not os.path.exists(models_list_file):
@@ -52,7 +52,7 @@ def silero_tts(language='en',
     from .tts_utils import apply_tts
     from .tts_utils import init_jit_model as init_jit_model_tts
 
-    models_list_file = os.path.join(os.path.dirname(__file__), "models.yml")
+    models_list_file = os.path.join(os.path.dirname(__file__), "..", "..", "models.yml")
     if not os.path.exists(models_list_file):
         models_list_file = 'latest_silero_models.yml'
     if not os.path.exists(models_list_file):
@@ -109,7 +109,7 @@ def silero_te():
     import yaml
     from torch import package
 
-    models_list_file = os.path.join(os.path.dirname(__file__), "models.yml")
+    models_list_file = os.path.join(os.path.dirname(__file__), "..", "..", "models.yml")
     if not os.path.exists(models_list_file):
         models_list_file = 'latest_silero_models.yml'
     if not os.path.exists(models_list_file):
