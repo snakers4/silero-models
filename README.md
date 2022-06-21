@@ -57,7 +57,7 @@ Also we have published TTS models that satisfy the following criteria:
 - One-line usage;
 - A large library of voices;
 - A fully end-to-end pipeline;
-- Naturally sounding speech;
+- Natural-sounding speech;
 - No GPU or training required;
 - Minimalism and lack of dependencies;
 - Faster than real-time on one CPU thread (!!!);
@@ -65,9 +65,9 @@ Also we have published TTS models that satisfy the following criteria:
 
 Also we have published a model for text repunctuation and recapitalization that:
 
-- Inserts capital letters and basic punctuation marks (dot, comma, hyphen, question mark, exclamation mark, dash for Russian);
-- Works for 4 languages (Russian, English, German, Spanish) and can be extended;
-- By design is domain agnostic and is not based on any hard-coded rules;
+- Inserts capital letters and basic punctuation marks, e.g., dots, commas, hyphens, question marks, exclamation points, and dashes (for Russian);
+- Works for 4 languages (Russian, English, German, and Spanish) and can be extended;
+- Domain-agnostic by design and not based on any hard-coded rules;
 - Has non-trivial metrics and succeeds in the task of improving text readability;
 
 ## Installation and Basics
@@ -80,7 +80,7 @@ You can basically use our models in 3 flavours:
 
 Models are downloaded on demand both by pip and PyTorch Hub. If you need caching, do it manually or via invoking a necessary model once (it will be downloaded to a cache folder). Please see these [docs](https://pytorch.org/docs/stable/hub.html#loading-models-from-hub) for more information.
 
-PyTorch Hub and pip package are based on the same code. Hence all examples, historically based on `torch.hub.load` can be used with a pip-package via this basic change:
+PyTorch Hub and pip package are based on the same code. All of the `torch.hub.load` examples can be used with the pip package via this basic change:
 
 ```python3
 # before
@@ -96,7 +96,7 @@ silero_stt(**kwargs)
 ## Speech-To-Text
 
 All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file.
-Any meta-data and newer versions will be added there.
+Any metadata and newer versions will be added there.
 
 ![Screenshot_1](https://user-images.githubusercontent.com/36505480/132320823-f0c5b774-44f7-4375-9c46-3acbcc548b76.png)
 
@@ -131,15 +131,15 @@ Model flavours:
 ### Dependencies
 
 - All examples:
-  - `torch`, 1.8+ (used to clone the repo in tf and onnx examples), breaking changes for version older than 1.6
-  - `torchaudio`, latest version bound to PyTorch should work
-  - `omegaconf`, latest just should work
-- Additional for ONNX examples:
-  - `onnx`, latest just should work
-  - `onnxruntime`, latest just should work
+  - `torch`, 1.8+ (used to clone the repo in TensorFlow and ONNX examples), breaking changes for versions older than 1.6
+  - `torchaudio`, latest version bound to PyTorch should just work
+  - `omegaconf`, latest should just work
+- Additional dependencies for ONNX examples:
+  - `onnx`, latest should just work
+  - `onnxruntime`, latest should just work
 - Additional for TensorFlow examples:
-  - `tensorflow`, latest just should work
-  - `tensorflow_hub`, latest just should work
+  - `tensorflow`, latest should just work
+  - `tensorflow_hub`, latest should just work
 
 Please see the provided Colab for details for each example below. All examples are maintained to work with the latest major packaged versions of the installed libraries.
 
@@ -163,7 +163,7 @@ model, decoder, utils = torch.hub.load(repo_or_dir='snakers4/silero-models',
 (read_batch, split_into_batches,
  read_audio, prepare_model_input) = utils  # see function signature for details
 
-# download a single file, any format compatible with TorchAudio
+# download a single file in any format compatible with TorchAudio
 torch.hub.download_url_to_file('https://opus-codec.org/static/examples/samples/speech_orig.wav',
                                dst ='speech_orig.wav', progress=True)
 test_files = glob('speech_orig.wav')
@@ -180,7 +180,7 @@ for example in output:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples.ipynb)
 
-You can run our model everywhere, where you can import the ONNX model or run ONNX runtime.
+Our model will run anywhere that can import the ONNX model or that supports the ONNX runtime.
 
 ```python
 import onnx
@@ -207,13 +207,13 @@ onnx_model = onnx.load('model.onnx')
 onnx.checker.check_model(onnx_model)
 ort_session = onnxruntime.InferenceSession('model.onnx')
 
-# download a single file, any format compatible with TorchAudio
+# download a single file in any format compatible with TorchAudio
 torch.hub.download_url_to_file('https://opus-codec.org/static/examples/samples/speech_orig.wav', dst ='speech_orig.wav', progress=True)
 test_files = ['speech_orig.wav']
 batches = split_into_batches(test_files, batch_size=10)
 input = prepare_model_input(read_batch(batches[0]))
 
-# actual onnx inference and decoding
+# actual ONNX inference and decoding
 onnx_input = input.detach().cpu().numpy()
 ort_inputs = {'input': onnx_input}
 ort_outs = ort_session.run(None, ort_inputs)
@@ -253,7 +253,7 @@ torch.hub.download_url_to_file(models.stt_models.en.latest.tf, 'tf_model.tar.gz'
 subprocess.run('rm -rf tf_model && mkdir tf_model && tar xzfv tf_model.tar.gz -C tf_model',  shell=True, check=True)
 tf_model = tf.saved_model.load('tf_model')
 
-# download a single file, any format compatible with TorchAudio
+# download a single file in any format compatible with TorchAudio
 torch.hub.download_url_to_file('https://opus-codec.org/static/examples/samples/speech_orig.wav', dst ='speech_orig.wav', progress=True)
 test_files = ['speech_orig.wav']
 batches = split_into_batches(test_files, batch_size=10)
@@ -268,7 +268,7 @@ print(decoder(torch.Tensor(res.numpy())[0]))
 
 ### Models and Speakers
 
-All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file. Any meta-data and newer versions will be added there.
+All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file. Any metadata and newer versions will be added there.
 
 #### V3
 
@@ -292,7 +292,7 @@ V3 models support [SSML](https://github.com/snakers4/silero-models/wiki/SSML). A
 
 ### Dependencies
 
-Basic dependencies for colab examples:
+Basic dependencies for Colab examples:
 
 - `torch`, 1.10+;
 - `torchaudio`, latest version bound to PyTorch should work (required only because models are hosted together with STT, not required for work);
@@ -327,7 +327,7 @@ audio = model.apply_tts(text=example_text,
 
 ### Standalone Use
 
-- Standalone usage just requires PyTorch 1.10+ and python standard library;
+- Standalone usage only requires PyTorch 1.10+ and the Python Standard Library;
 - Please see the detailed examples in Colab;
 
 ```python
@@ -362,7 +362,7 @@ Check out our [TTS Wiki page.](https://github.com/snakers4/silero-models/wiki/SS
 ### Indic languages
 
 #### Example
-(!!!) All input sentences should be romanized to ISO format using [`aksharamukha` tool](https://aksharamukha.appspot.com/python). An example for `hindi`:
+(!!!) All input sentences should be romanized to ISO format using [`aksharamukha`](https://aksharamukha.appspot.com/python). An example for `hindi`:
 
 ```python
 # V3
@@ -406,14 +406,14 @@ kannada    | `kannada_female`, `kannada_male`         |`transliterate.process('K
 
 ### Dependencies
 
-Basic dependencies for colab examples:
+Basic dependencies for Colab examples:
 
 - `torch`, 1.9+;
 - `pyyaml`, but it's installed with torch itself
 
 ### Standalone Use
 
-- Standalone usage just requires PyTorch 1.9+ and python standard library;
+- Standalone usage only requires PyTorch 1.9+ and the Python Standard Library;
 - Please see the detailed examples in [Colab](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_te.ipynb);
 
 ```python
@@ -434,7 +434,7 @@ Also check out our [wiki](https://github.com/snakers4/silero-models/wiki).
 
 ### Performance and Quality
 
-Please refer to this wiki sections:
+Please refer to these wiki sections:
 
 - [Quality Benchmarks](https://github.com/snakers4/silero-models/wiki/Quality-Benchmarks)
 - [Performance Benchmarks](https://github.com/snakers4/silero-models/wiki/Performance-Benchmarks)
@@ -447,11 +447,11 @@ Please refer [here](https://github.com/snakers4/silero-models/wiki/Adding-New-La
 
 ### Get in Touch
 
-Try our models, create an [issue](https://github.com/snakers4/silero-models/issues/new), join our [chat](https://t.me/silero_speech), [email](mailto:hello@silero.ai) us, read our [news](https://t.me/silero_news).
+Try our models, create an [issue](https://github.com/snakers4/silero-models/issues/new), join our [chat](https://t.me/silero_speech), [email](mailto:hello@silero.ai) us, and read the latest [news](https://t.me/silero_news).
 
 ### Commercial Inquiries
 
-Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers](https://github.com/snakers4/silero-models/wiki/Licensing-and-Tiers) for relevant information and [email](mailto:hello@silero.ai) us.
+Please refer to our [wiki](https://github.com/snakers4/silero-models/wiki) and the [Licensing and Tiers](https://github.com/snakers4/silero-models/wiki/Licensing-and-Tiers) page for relevant information, and [email](mailto:hello@silero.ai) us.
 
 ## Citations
 
@@ -508,7 +508,7 @@ Please see our [wiki](https://github.com/snakers4/silero-models/wiki) and [tiers
   - Огромный открытый датасет русской речи версия 1.0 - [link](https://habr.com/ru/post/474462/)
   - Насколько Быстрой Можно Сделать Систему STT? - [link](https://habr.com/ru/post/531524/)
   - Наша система Speech-To-Text - [link](https://www.silero.ai/tag/our-speech-to-text/)
-  - Speech To Text - [link](https://www.silero.ai/tag/speech-to-text/)
+  - Speech-To-Text - [link](https://www.silero.ai/tag/speech-to-text/)
 
 - TTS:
   - Теперь наш синтез на 20 языках - [link](https://habr.com/ru/post/669910/) 
