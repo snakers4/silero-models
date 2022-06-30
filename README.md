@@ -478,6 +478,7 @@ Please refer to our [wiki](https://github.com/snakers4/silero-models/wiki) and t
   - Modern Google-level STT Models Released - [link](https://habr.com/ru/post/519562/)
 
 - TTS:
+  - Multilingual Text-to-Speech Models for Indic Languages - [link](https://www.analyticsvidhya.com/blog/2022/06/multilingual-text-to-speech-models-for-indic-languages/) 
   - Our new public speech synthesis in super-high quality, 10x faster and more stable - [link](https://habr.com/ru/post/660571/) 
   - High-Quality Text-to-Speech Made Accessible, Simple and Fast - [link](https://habr.com/ru/post/549482/)
 
@@ -511,6 +512,7 @@ Please refer to our [wiki](https://github.com/snakers4/silero-models/wiki) and t
   - Speech-To-Text - [link](https://www.silero.ai/tag/speech-to-text/)
 
 - TTS:
+  - Может ли синтез речи обмануть систему биометрической идентификации? - [link](https://habr.com/ru/post/673996/)
   - Теперь наш синтез на 20 языках - [link](https://habr.com/ru/post/669910/) 
   - Теперь наш публичный синтез в супер-высоком качестве, в 10 раз быстрее и без детских болячек - [link](https://habr.com/ru/post/660565/) 
   - Синтезируем голос бабушки, дедушки и Ленина + новости нашего публичного синтеза - [link](https://habr.com/ru/post/584750/) 
