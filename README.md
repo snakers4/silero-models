@@ -498,6 +498,7 @@ Please refer to our [wiki](https://github.com/snakers4/silero-models/wiki) and t
 ### Russian
 
 - STT
+  - OpenAI решили распознавание речи! Разбираемся так ли это … - [link](https://habr.com/ru/post/689572/)
   - Наши сервисы для бесплатного распознавания речи стали лучше и удобнее - [link](https://habr.com/ru/post/654227/) 
   - Telegram-бот Silero бесплатно переводит речь в текст - [link](https://habr.com/ru/post/591563/)
   - Бесплатное распознавание речи для всех желающих - [link](https://habr.com/ru/post/587512/)
@@ -512,6 +513,7 @@ Please refer to our [wiki](https://github.com/snakers4/silero-models/wiki) and t
   - Speech-To-Text - [link](https://www.silero.ai/tag/speech-to-text/)
 
 - TTS:
+  - Теперь наш синтез также доступен в виде бота в Телеграме - [link](https://habr.com/ru/post/682188/) 
   - Может ли синтез речи обмануть систему биометрической идентификации? - [link](https://habr.com/ru/post/673996/)
   - Теперь наш синтез на 20 языках - [link](https://habr.com/ru/post/669910/) 
   - Теперь наш публичный синтез в супер-высоком качестве, в 10 раз быстрее и без детских болячек - [link](https://habr.com/ru/post/660565/) 
@@ -520,6 +522,7 @@ Please refer to our [wiki](https://github.com/snakers4/silero-models/wiki) and t
   - Мы Опубликовали Качественный, Простой, Доступный и Быстрый Синтез Речи - [link](https://habr.com/ru/post/549480/)
 
 - VAD:
+  - Наш публичный детектор голоса стал лучше - [link](https://habr.com/ru/post/695738/)
   - А ты используешь VAD? Что это такое и зачем он нужен - [link](https://habr.com/ru/post/594745/)
   - Модели для Детекции Речи, Чисел и Распознавания Языков - [link](https://www.silero.ai/vad-lang-classifier-number-detector/)
   - Мы опубликовали современный Voice Activity Detector и не только -[link](https://habr.com/ru/post/537274/)
