@@ -1,3 +1,9 @@
+[tool.poetry]
+authors = ["Silero Team"]
+readme = "README.md"
+repository = "https://github.com/snakers4/silero-models"
+
+
 [build-system]
 requires = [
     "setuptools>=42",
