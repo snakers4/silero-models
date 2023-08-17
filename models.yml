@@ -143,6 +143,11 @@ stt_models:
       jit_q: "https://models.silero.ai/models/ua/ua_v1_jit_q.model"
 tts_models:
   ru:
+    v4_ru:
+      latest:
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
+        package: 'https://models.silero.ai/models/tts/ru/v4_ru.pt'
+        sample_rate: [8000, 24000, 48000]
     v3_1_ru:
       latest:
         example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
@@ -484,6 +489,11 @@ tts_models:
         sample_rate: [8000, 16000]
         language_name: 'tatar'
   uz:
+    v4_uz:
+      latest:
+        example: 'Tanishganimdan xursandman.'
+        package: 'https://models.silero.ai/models/tts/uz/v4_uz.pt'
+        sample_rate: [8000, 24000, 48000]
     v3_uz:
       latest:
         example: 'Tanishganimdan xursandman.'
@@ -496,6 +506,11 @@ tts_models:
         sample_rate: [8000, 16000]
         language_name: 'uzbek'
   ua:
+    v4_ua:
+      latest:
+        example: 'К+отики - пухн+асті жив+отики.'
+        package: 'https://models.silero.ai/models/tts/ua/v4_ua.pt'
+        sample_rate: [8000, 24000, 48000]
     v3_ua:
       latest:
         example: 'К+отики - пухн+асті жив+отики.'
@@ -508,10 +523,21 @@ tts_models:
         sample_rate: [8000, 24000, 48000]
         language_name: 'ukrainian'
   indic:
+    v4_indic:
+      latest:
+        example: 'prasidda kabīra adhyētā, puruṣōttama agravāla kā yaha śōdha ālēkha, usa rāmānaṁda kī khōja karatā hai'
+        package: 'https://models.silero.ai/models/tts/indic/v4_indic.pt'
+        sample_rate: [8000, 24000, 48000]
     v3_indic:
       latest:
         example: 'prasidda kabīra adhyētā, puruṣōttama agravāla kā yaha śōdha ālēkha, usa rāmānaṁda kī khōja karatā hai'
         package: 'https://models.silero.ai/models/tts/indic/v3_indic.pt'
+        sample_rate: [8000, 24000, 48000]
+  cyrillic:
+    v4_cyrillic:
+      latest:
+        example: 'Волк слабее льва и тигра, но в цирке он не выступает.'
+        package: 'https://models.silero.ai/models/tts/cyr/v4_cyrillic.pt'
         sample_rate: [8000, 24000, 48000]
   multi:
     multi_v2:
