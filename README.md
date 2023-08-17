@@ -374,7 +374,7 @@ Supported tokenset:
 | Speaker_ID   | Language        | Gender |
 | ------------ | --------------- | ------ |
 | b_ava        | Avar            | F      |
-| b_bashkir    | Bashkort        | M      |
+| b_bashkir    | Bashkir         | M      |
 | b_bulb       | Bulgarian       | M      |
 | b_bulc       | Bulgarian       | M      |
 | b_che        | Chechen         | M      |
