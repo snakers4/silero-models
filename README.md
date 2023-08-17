@@ -21,6 +21,7 @@
     - [PyTorch](#pytorch-1)
     - [Standalone Use](#standalone-use)
     - [SSML](#SSML)
+    - [Cyrillic languages](#cyrillic-languages)
     - [Indic languages](#indic-languages)
   - [Text-Enhancement](#text-enhancement)
     - [Dependencies](#dependencies-2)
@@ -270,31 +271,37 @@ print(decoder(torch.Tensor(res.numpy())[0]))
 
 All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file. Any metadata and newer versions will be added there.
 
+#### V4
+V4 models support [SSML](https://github.com/snakers4/silero-models/wiki/SSML). Also see Colab examples for main SSML tag usage.
+
+| ID       | Speakers |Auto-stress | Language                           | SR              | Colab                                                                                                                                                                        |
+| ------------- | ----------- | ----------- |---------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `v4_ru`    | `aidar`, `baya`, `kseniya`, `xenia`, `eugene`, `random` | yes  | `ru` (Russian)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| [`v4_cyrillic`](#cyrillic-languages)   | `b_ava`, `marat_tt`, `kalmyk_erdni`...             | no   | `cyrillic` [(Avar, Tatar, Kalmyk, ...)](#cyrillic-languages)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v4_ua`    | `mykyta`, `random`                                        | no   | `ua` (Ukrainian) | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v4_uz`    | `dilnavoz`                                                | no   | `uz` (Uzbek)     | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| [`v4_indic`](#indic-languages)   | `hindi_male`, `hindi_female`, ..., `random`             | no   | `indic` [(Hindi, Telugu, ...)](#indic-languages)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+
+
 #### V3
 
 V3 models support [SSML](https://github.com/snakers4/silero-models/wiki/SSML). Also see Colab examples for main SSML tag usage.
 
 | ID       | Speakers |Auto-stress | Language                           | SR              | Colab                                                                                                                                                                        |
 | ------------- | ----------- | ----------- |---------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `v3_1_ru`    | `aidar`, `baya`, `kseniya`, `xenia`, `eugene`, `random` | yes  | `ru` (Russian)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `v3_en`    | `en_0`, `en_1`, ..., `en_117`, `random`                   | no   | `en` (English)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `v3_en_indic`   | `tamil_female`, ..., `assamese_male`, `random`       | no   | `en` (English)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `v3_de`    | `eva_k`, ..., `karlsson`, `random`                        | no   | `de` (German)    | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `v3_es`    | `es_0`, `es_1`, `es_2`, `random`                          | no   | `es` (Spanish)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `v3_fr`    | `fr_0`, ..., `fr_5`, `random`                             | no   | `fr` (French)    | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `v3_tt`    | `dilyara`                                                 | no   | `tt` (Tatar)     | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `v3_ua`    | `mykyta`, `random`                                        | no   | `ua` (Ukrainian) | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `v3_uz`    | `dilnavoz`                                                | no   | `uz` (Uzbek)     | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `v3_xal`   | `erdni`, `delghir`, `random`                              | no   | `xal` (Kalmyk)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | [`v3_indic`](#indic-languages)   | `hindi_male`, `hindi_female`, ..., `random`             | no   | `indic` [(Hindi, Telugu, ...)](#indic-languages)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `ru_v3`    | `aidar`, `baya`, `kseniya`, `xenia`, `random`             | yes  | `ru` (Russian)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 
 
 ### Dependencies
 
 Basic dependencies for Colab examples:
 
-- `torch`, 1.10+;
+- `torch`, 1.10+ for v3 models/ 2.0+ for v4 models;
 - `torchaudio`, latest version bound to PyTorch should work (required only because models are hosted together with STT, not required for work);
 - `omegaconf`,  latest (can be removed as well, if you do not load all of the configs);
 
@@ -305,11 +312,11 @@ Basic dependencies for Colab examples:
 [![Open on Torch Hub](https://img.shields.io/badge/Torch-Hub-red?logo=pytorch&style=for-the-badge)](https://pytorch.org/hub/snakers4_silero-models_tts/)
 
 ```python
-# V3
+# V4
 import torch
 
 language = 'ru'
-model_id = 'v3_1_ru'
+model_id = 'v4_ru'
 sample_rate = 48000
 speaker = 'xenia'
 device = torch.device('cpu')
@@ -331,7 +338,7 @@ audio = model.apply_tts(text=example_text,
 - Please see the detailed examples in Colab;
 
 ```python
-# V3
+# V4
 import os
 import torch
 
@@ -340,7 +347,7 @@ torch.set_num_threads(4)
 local_file = 'model.pt'
 
 if not os.path.isfile(local_file):
-    torch.hub.download_url_to_file('https://models.silero.ai/models/tts/ru/v3_1_ru.pt',
+    torch.hub.download_url_to_file('https://models.silero.ai/models/tts/ru/v4_ru.pt',
                                    local_file)  
 
 model = torch.package.PackageImporter(local_file).load_pickle("tts_models", "model")
@@ -359,6 +366,46 @@ audio_paths = model.save_wav(text=example_text,
 
 Check out our [TTS Wiki page.](https://github.com/snakers4/silero-models/wiki/SSML)
 
+### Cyrillic languages
+
+Supported tokenset:
+`!,-.:?iµöабвгдежзийклмнопрстуфхцчшщъыьэюяёђѓєіјњћќўѳғҕҗҙқҡңҥҫүұҳҷһӏӑӓӕӗәӝӟӥӧөӱӳӵӹ `
+
+| Speaker_ID   | Language        | Gender |
+| ------------ | --------------- | ------ |
+| b_ava        | Avar            | F      |
+| b_bashkir    | Bashkir         | M      |
+| b_bulb       | Bulgarian       | M      |
+| b_bulc       | Bulgarian       | M      |
+| b_che        | Chechen         | M      |
+| b_cv         | Chuvash         | M      |
+| cv_ekaterina | Chuvash         | F      |
+| b_myv        | Erzya           | M      |
+| b_kalmyk     | Kalmyk          | M      |
+| b_krc        | Karachay-Balkar | M      |
+| kz_M1        | Kazakh          | M      |
+| kz_M2        | Kazakh          | M      |
+| kz_F3        | Kazakh          | F      |
+| kz_F1        | Kazakh          | F      |
+| kz_F2        | Kazakh          | F      |
+| b_kjh        | Khakas          | F      |
+| b_kpv        | Komi-Ziryan     | M      |
+| b_lez        | Lezghian        | M      |
+| b_mhr        | Mari            | F      |
+| b_mrj        | Mari High       | M      |
+| b_nog        | Nogai           | F      |
+| b_oss        | Ossetic         | M      |
+| b_ru         | Russian         | M      |
+| b_tat        | Tatar           | M      |
+| marat_tt     | Tatar           | M      |
+| b_tyv        | Tuvinian        | M      |
+| b_udm        | Udmurt          | M      |
+| b_uzb        | Uzbek           | M      |
+| b_sah        | Yakut           | M      |
+| kalmyk_erdni | Kalmyk          | M      |
+| kalmyk_delghir | Kalmyk        | F      |
+
+
 ### Indic languages
 
 #### Example
@@ -373,7 +420,7 @@ from aksharamukha import transliterate
 model, example_text = torch.hub.load(repo_or_dir='snakers4/silero-models',
                                      model='silero_tts',
                                      language='indic',
-                                     speaker='v3_indic')
+                                     speaker='v4_indic')
 
 orig_text = "प्रसिद्द कबीर अध्येता, पुरुषोत्तम अग्रवाल का यह शोध आलेख, उस रामानंद की खोज करता है"
 roman_text = transliterate.process('Devanagari', 'ISO', orig_text)
