@@ -146,3 +146,48 @@ def silero_te():
             languages,
             punct,
             apply_te)
+
+
+def silero_denoise(
+    name='small_slow',
+    version='latest',
+    **kwargs
+):
+    """ Silero Denoise Model(s)
+    name (str): model name, available names (in order of best outputs to worst): ['small_slow', 'large_fast', 'small_fast']
+    version (str): model version
+    Returns a model and a set of utils
+    Please see https://github.com/snakers4/silero-models for usage examples
+    """
+    from omegaconf import OmegaConf    
+    from .denoiser_utils import (
+        init_jit_model,
+        read_audio,
+        save_audio,
+        denoise
+    )
+
+    models_list_file = os.path.join(os.path.dirname(__file__), "..", "..", "models.yml")
+    if not os.path.exists(models_list_file):
+        models_list_file = 'latest_silero_models.yml'
+    if not os.path.exists(models_list_file):
+        torch.hub.download_url_to_file(
+            'https://raw.githubusercontent.com/snakers4/silero-models/master/models.yml',
+            'latest_silero_models.yml',
+            progress=False
+        )
+    assert os.path.exists(models_list_file)
+    models = OmegaConf.load(models_list_file)
+    available_models = models.denoise_models.models
+    samples = models.denoise_models.samples
+    assert name in available_models
+
+    model = init_jit_model(model_url=models.denoise_models.get(name).get(version).get('jit'),
+                                    **kwargs)
+    utils = (
+        read_audio,
+        save_audio,
+        denoise
+    )
+
+    return model, samples, utils

@@ -587,3 +587,24 @@ te_models:
     package: "https://models.silero.ai/te_models/v2_4lang_q.pt"
     languages: ['en', 'de', 'ru', 'es']
     punct: '.,-!?—'
+denoise_models:
+  models: ['small_slow', 'large_fast', 'small_fast']
+  samples: [
+    "https://models.silero.ai/denoise_models/sample0.wav",
+    "https://models.silero.ai/denoise_models/sample1.wav",
+  ]
+  small_slow:
+    latest:
+      jit: "https://models.silero.ai/denoise_models/sns_latest.jit"
+    v0:
+      jit: "https://models.silero.ai/denoise_models/sns_v0.jit"
+  large_fast:
+    latest:
+      jit: "https://models.silero.ai/denoise_models/lnf_latest.jit"
+    v0:
+      jit: "https://models.silero.ai/denoise_models/lnf_v0.jit"
+  small_fast:
+    latest:
+      jit: "https://models.silero.ai/denoise_models/snf_latest.jit"
+    v0:
+      jit: "https://models.silero.ai/denoise_models/snf_v0.jit"
