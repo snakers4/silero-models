@@ -26,6 +26,11 @@
   - [Text-Enhancement](#text-enhancement)
     - [Dependencies](#dependencies-2)
     - [Standalone Use](#standalone-use-1)
+  - [Denoise](#denoise)
+    - [Models](#models)
+    - [Dependencies](#dependencies-3)
+    - [PyTorch](#pytorch-3)
+    - [Standalone Use](#standalone-use-2)
   - [FAQ](#faq)
     - [Wiki](#wiki)
     - [Performance and Quality](#performance-and-quality)
@@ -272,6 +277,7 @@ print(decoder(torch.Tensor(res.numpy())[0]))
 All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file. Any metadata and newer versions will be added there.
 
 #### V4
+
 V4 models support [SSML](https://github.com/snakers4/silero-models/wiki/SSML). Also see Colab examples for main SSML tag usage.
 
 | ID       | Speakers |Auto-stress | Language                           | SR              | Colab                                                                                                                                                                        |
@@ -281,7 +287,6 @@ V4 models support [SSML](https://github.com/snakers4/silero-models/wiki/SSML). A
 | `v4_ua`    | `mykyta`, `random`                                        | no   | `ua` (Ukrainian) | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `v4_uz`    | `dilnavoz`                                                | no   | `uz` (Uzbek)     | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | [`v4_indic`](#indic-languages)   | `hindi_male`, `hindi_female`, ..., `random`             | no   | `indic` [(Hindi, Telugu, ...)](#indic-languages)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-
 
 #### V3
 
@@ -295,7 +300,6 @@ V3 models support [SSML](https://github.com/snakers4/silero-models/wiki/SSML). A
 | `v3_es`    | `es_0`, `es_1`, `es_2`, `random`                          | no   | `es` (Spanish)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | `v3_fr`    | `fr_0`, ..., `fr_5`, `random`                             | no   | `fr` (French)    | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 | [`v3_indic`](#indic-languages)   | `hindi_male`, `hindi_female`, ..., `random`             | no   | `indic` [(Hindi, Telugu, ...)](#indic-languages)   | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-
 
 ### Dependencies
 
@@ -405,10 +409,10 @@ Supported tokenset:
 | kalmyk_erdni | Kalmyk          | M      |
 | kalmyk_delghir | Kalmyk        | F      |
 
-
 ### Indic languages
 
 #### Example
+
 (!!!) All input sentences should be romanized to ISO format using [`aksharamukha`](https://aksharamukha.appspot.com/python). An example for `hindi`:
 
 ```python
@@ -444,7 +448,6 @@ telugu     | `telugu_female`, `telugu_male`           | `transliterate.process('
 gujarati   | `gujarati_female`, `gujarati_male`       | `transliterate.process('Gujarati', 'ISO', orig_text)`
 kannada    | `kannada_female`, `kannada_male`         |`transliterate.process('Kannada', 'ISO', orig_text)`
 
-
 ## Text-Enhancement
 
 | Languages | Quantization  | Quality | Colab |
@@ -471,6 +474,89 @@ model, example_texts, languages, punct, apply_te = torch.hub.load(repo_or_dir='s
 
 input_text = input('Enter input text\n')
 apply_te(input_text, lan='en')
+```
+
+## Denoise
+
+Denoise models attempt to reduce background noise along with various artefacts such as reverb, clipping, high/lowpass filters etc., while trying to preserve and/or enhance speech. They also attempt to enhance audio quality and increase sampling rate of the input up to 48kHz.
+
+### Models
+
+All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file.
+
+| Model | JIT | Real Input SR | Input SR | Output SR | Colab |
+| ----- | --- | ------------- | -------- | --------- | ----- |
+| `small_slow` | :heavy_check_mark: | `8000`, `16000`, `24000`, `44100`, `48000`  | `24000` | `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_denoise.ipynb) |
+| `large_fast` | :heavy_check_mark: | `8000`, `16000`, `24000`, `44100`, `48000`  | `24000` | `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_denoise.ipynb) |
+| `small_fast` | :heavy_check_mark: | `8000`, `16000`, `24000`, `44100`, `48000`  | `24000` | `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_denoise.ipynb) |
+
+### Dependencies
+
+Basic dependencies for Colab examples:
+
+- `torch`, 2.0+;
+- `torchaudio`, latest version bound to PyTorch should work;
+- `omegaconf`,  latest (can be removed as well, if you do not load all of the configs).
+
+### PyTorch
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_denoise.ipynb)
+
+```python
+
+import torch
+
+name = 'small_slow'
+device = torch.device('cpu')
+model, samples, utils = torch.hub.load(
+  repo_or_dir='snakers4/silero-models',
+  model='silero_denoise',
+  name=name,
+  device=device)
+(read_audio, save_audio, denoise) = utils
+
+i = 0
+torch.hub.download_url_to_file(
+  samples[i],
+  dst=f'sample{i}.wav',
+  progress=True
+)
+audio_path = f'sample{i}.wav'
+audio = read_audio(audio_path).to(device)
+output = model(audio)
+save_audio(f'result{i}.wav', output.squeeze(1).cpu())
+
+i = 1
+torch.hub.download_url_to_file(
+  samples[i],
+  dst=f'sample{i}.wav',
+  progress=True
+)
+output, sr = denoise(model, f'sample{i}.wav', f'result{i}.wav', device='cpu')
+```
+
+### Standalone Use
+
+```python
+import os
+import torch
+
+device = torch.device('cpu')
+torch.set_num_threads(4)
+local_file = 'model.pt'
+
+if not os.path.isfile(local_file):
+    torch.hub.download_url_to_file('https://models.silero.ai/denoise_models/sns_latest.jit',
+                                   local_file)  
+
+model = torch.jit.load(local_file)
+torch._C._jit_set_profiling_mode(False) 
+torch.set_grad_enabled(False)
+model.to(device)
+
+a = torch.rand((1, 48000))
+a = a.to(device)
+out = model(a)
 ```
 
 ## FAQ
@@ -525,8 +611,8 @@ Please refer to our [wiki](https://github.com/snakers4/silero-models/wiki) and t
   - Modern Google-level STT Models Released - [link](https://habr.com/ru/post/519562/)
 
 - TTS:
-  - Multilingual Text-to-Speech Models for Indic Languages - [link](https://www.analyticsvidhya.com/blog/2022/06/multilingual-text-to-speech-models-for-indic-languages/) 
-  - Our new public speech synthesis in super-high quality, 10x faster and more stable - [link](https://habr.com/ru/post/660571/) 
+  - Multilingual Text-to-Speech Models for Indic Languages - [link](https://www.analyticsvidhya.com/blog/2022/06/multilingual-text-to-speech-models-for-indic-languages/)
+  - Our new public speech synthesis in super-high quality, 10x faster and more stable - [link](https://habr.com/ru/post/660571/)
   - High-Quality Text-to-Speech Made Accessible, Simple and Fast - [link](https://habr.com/ru/post/549482/)
 
 - VAD:
@@ -534,7 +620,7 @@ Please refer to our [wiki](https://github.com/snakers4/silero-models/wiki) and t
   - Modern Portable Voice Activity Detector Released - [link](https://habr.com/ru/post/537276/)
 
 - Text Enhancement:
-  - We have published a model for text repunctuation and recapitalization for four languages - [link](https://habr.com/ru/post/581960/) 
+  - We have published a model for text repunctuation and recapitalization for four languages - [link](https://habr.com/ru/post/581960/)
 
 ### Chinese
 
@@ -546,10 +632,10 @@ Please refer to our [wiki](https://github.com/snakers4/silero-models/wiki) and t
 
 - STT
   - OpenAI решили распознавание речи! Разбираемся так ли это … - [link](https://habr.com/ru/post/689572/)
-  - Наши сервисы для бесплатного распознавания речи стали лучше и удобнее - [link](https://habr.com/ru/post/654227/) 
+  - Наши сервисы для бесплатного распознавания речи стали лучше и удобнее - [link](https://habr.com/ru/post/654227/)
   - Telegram-бот Silero бесплатно переводит речь в текст - [link](https://habr.com/ru/post/591563/)
   - Бесплатное распознавание речи для всех желающих - [link](https://habr.com/ru/post/587512/)
-  - Последние обновления моделей распознавания речи из Silero Models - [link](https://habr.com/ru/post/577630/) 
+  - Последние обновления моделей распознавания речи из Silero Models - [link](https://habr.com/ru/post/577630/)
   - Сжимаем трансформеры: простые, универсальные и прикладные способы cделать их компактными и быстрыми - [link](https://habr.com/ru/post/563778/)
   - Ультимативное сравнение систем распознавания речи: Ashmanov, Google, Sber, Silero, Tinkoff, Yandex - [link](https://habr.com/ru/post/559640/)
   - Мы опубликовали современные STT модели сравнимые по качеству с Google - [link](https://habr.com/ru/post/519564/)
@@ -560,11 +646,11 @@ Please refer to our [wiki](https://github.com/snakers4/silero-models/wiki) and t
   - Speech-To-Text - [link](https://www.silero.ai/tag/speech-to-text/)
 
 - TTS:
-  - Теперь наш синтез также доступен в виде бота в Телеграме - [link](https://habr.com/ru/post/682188/) 
+  - Теперь наш синтез также доступен в виде бота в Телеграме - [link](https://habr.com/ru/post/682188/)
   - Может ли синтез речи обмануть систему биометрической идентификации? - [link](https://habr.com/ru/post/673996/)
-  - Теперь наш синтез на 20 языках - [link](https://habr.com/ru/post/669910/) 
-  - Теперь наш публичный синтез в супер-высоком качестве, в 10 раз быстрее и без детских болячек - [link](https://habr.com/ru/post/660565/) 
-  - Синтезируем голос бабушки, дедушки и Ленина + новости нашего публичного синтеза - [link](https://habr.com/ru/post/584750/) 
+  - Теперь наш синтез на 20 языках - [link](https://habr.com/ru/post/669910/)
+  - Теперь наш публичный синтез в супер-высоком качестве, в 10 раз быстрее и без детских болячек - [link](https://habr.com/ru/post/660565/)
+  - Синтезируем голос бабушки, дедушки и Ленина + новости нашего публичного синтеза - [link](https://habr.com/ru/post/584750/)
   - Мы сделали наш публичный синтез речи еще лучше - [link](https://habr.com/ru/post/563484/)
   - Мы Опубликовали Качественный, Простой, Доступный и Быстрый Синтез Речи - [link](https://habr.com/ru/post/549480/)
 
@@ -575,7 +661,7 @@ Please refer to our [wiki](https://github.com/snakers4/silero-models/wiki) and t
   - Мы опубликовали современный Voice Activity Detector и не только -[link](https://habr.com/ru/post/537274/)
 
 - Text Enhancement:
-  - Восстановление знаков пунктуации и заглавных букв — теперь и на длинных текстах - [link](https://habr.com/ru/post/594565/)    
+  - Восстановление знаков пунктуации и заглавных букв — теперь и на длинных текстах - [link](https://habr.com/ru/post/594565/)
   - Мы опубликовали модель, расставляющую знаки препинания и заглавные буквы в тексте на четырех языках - [link](https://habr.com/ru/post/581946/)
 
 ## Donations
