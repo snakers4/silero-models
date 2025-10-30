@@ -74,7 +74,7 @@ def silero_tts(language='en',
     assert language == speaker_language[speaker], f"Incorrect language '{language}' for this speaker, please specify '{speaker_language[speaker]}'"
 
     model_conf = models.tts_models[language][speaker].latest
-    if '_v2' in speaker or '_v3' in speaker or 'v3_' in speaker or 'v4_' in speaker:
+    if '_v2' in speaker or '_v3' in speaker or 'v3_' in speaker or 'v4_' in speaker or 'v5_' in speaker:
         from torch import package
         model_url = model_conf.package
         model_dir = os.path.join(os.path.dirname(__file__), "model")
