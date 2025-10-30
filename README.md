@@ -130,11 +130,11 @@ Basic dependencies for Colab examples:
 [![Open on Torch Hub](https://img.shields.io/badge/Torch-Hub-red?logo=pytorch&style=for-the-badge)](https://pytorch.org/hub/snakers4_silero-models_tts/)
 
 ```python
-# V4
+# V5
 import torch
 
 language = 'ru'
-model_id = 'v4_ru'
+model_id = 'v5_ru'
 sample_rate = 48000
 speaker = 'xenia'
 device = torch.device('cpu')
@@ -156,7 +156,7 @@ audio = model.apply_tts(text=example_text,
 - Please see the detailed examples in Colab;
 
 ```python
-# V4
+# V5
 import os
 import torch
 
@@ -165,13 +165,13 @@ torch.set_num_threads(4)
 local_file = 'model.pt'
 
 if not os.path.isfile(local_file):
-    torch.hub.download_url_to_file('https://models.silero.ai/models/tts/ru/v4_ru.pt',
+    torch.hub.download_url_to_file('https://models.silero.ai/models/tts/ru/v5_ru.pt',
                                    local_file)  
 
 model = torch.package.PackageImporter(local_file).load_pickle("tts_models", "model")
 model.to(device)
 
-example_text = 'В недрах тундры выдры в г+етрах т+ырят в вёдра ядра кедров.'
+example_text = 'Меня зовут Лева Королев. Я из готов. И я уже готов открыть все ваши замки любой сложности!'
 sample_rate = 48000
 speaker='baya'
 
