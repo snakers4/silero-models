@@ -49,15 +49,19 @@ Models are downloaded on demand both by pip and PyTorch Hub. If you need caching
 
 PyTorch Hub and pip package are based on the same code. All of the `torch.hub.load` examples can be used with the pip package via this basic change:
 
-```python3
-# before
-torch.hub.load(repo_or_dir='snakers4/silero-models',
-               model='silero_tts',
-               **kwargs)
-
-# after
+```python
 from silero import silero_tts
-silero_tts(**kwargs)
+from IPython.display import Audio
+
+language = 'ru'
+model_id = 'v5_ru'
+
+model, example_text = silero_tts(language=language,
+                                 speaker=model_id)
+
+audio = model.apply_tts(text=example_text)
+
+Audio(audio, rate=48000)
 ```
 
 ## Text-To-Speech
