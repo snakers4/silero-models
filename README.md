@@ -51,13 +51,8 @@ PyTorch Hub and pip package are based on the same code. All of the `torch.hub.lo
 
 ```python
 from silero import silero_tts
-
-language = 'ru'
-model_id = 'v5_ru'
-
-model, example_text = silero_tts(language=language,
-                                 speaker=model_id)
-
+model, example_text = silero_tts(language='ru',
+                                 speaker='v5_ru')
 audio = model.apply_tts(text=example_text)
 ```
 
