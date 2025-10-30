@@ -42,7 +42,7 @@ Our TTS models satisfy the following criteria:
 You can basically use our models in 3 flavours:
 
 - Via PyTorch Hub: `torch.hub.load()`;
-- Via pip:  `pip install silero` and then `import silero`;
+- Via pip:  `pip install silero` and then `from silero import silero_tts`;
 - Via caching the required models and utils manually and modifying if necessary;
 
 Models are downloaded on demand both by pip and PyTorch Hub. If you need caching, do it manually or via invoking a necessary model once (it will be downloaded to a cache folder). Please see these [docs](https://pytorch.org/docs/stable/hub.html#loading-models-from-hub) for more information.
@@ -153,7 +153,7 @@ audio = model.apply_tts(text=example_text,
 
 ### Standalone Use
 
-- Standalone usage only requires PyTorch 1.10+ and the Python Standard Library;
+- Standalone usage only requires PyTorch 1.12+ and the Python Standard Library;
 - Please see the detailed examples in Colab;
 
 ```python
