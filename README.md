@@ -28,9 +28,9 @@
 
 # Silero Models
 
-Currently we support TTS models that satisfy the following criteria:
+Our TTS models satisfy the following criteria:
 
-- A fully end-to-end;
+- Fully end-to-end;
 - Large library of voices;
 - Natural-sounding speech;
 - One-line usage, minimal, portable;
