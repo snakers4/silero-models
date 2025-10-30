@@ -143,6 +143,11 @@ stt_models:
       jit_q: "https://models.silero.ai/models/ua/ua_v1_jit_q.model"
 tts_models:
   ru:
+    v5_ru:
+      latest:
+        example: 'Меня зовут Лева Королев. Я из готов. И я уже готов открыть все ваши замки любой сложности!'
+        package: 'https://models.silero.ai/models/tts/ru/v5_ru.pt'
+        sample_rate: [8000, 24000, 48000]  
     v4_ru:
       latest:
         example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
