@@ -20,6 +20,7 @@
       - [Example](#example)
       - [Supported languages](#supported-languages)
   - [Contact](#contact)
+  - [Licence](#licence) 
   - [Citations](#citations)
   - [Further reading](#further-reading)
     - [English](#english)
@@ -263,6 +264,10 @@ kannada    | `kannada_female`, `kannada_male`         |`transliterate.process('K
 ## Contact
 
 Try our models, create an [issue](https://github.com/snakers4/silero-models/issues/new), join our [chat](https://t.me/silero_speech), [email](mailto:hello@silero.ai) us, and read the latest [news](https://t.me/silero_news).
+
+## Licence
+
+All of the models are published under the main repo license (i.e. CC-NC-BY) except for the `base` cis-tts models, which are under MIT.
 
 ## Citations
 
