@@ -9,6 +9,8 @@
   - [Text-To-Speech](#text-to-speech)
     - [Models and Speakers](#models-and-speakers)
       - [V5](#v5)
+      - [V5 CIS Base Models](#v5-cis-base-models)
+      - [V5 CIS Ext Models](#v5-cis-ext-models)
       - [V4](#v4)
       - [V3](#v3)
     - [Dependencies](#dependencies)
@@ -73,6 +75,57 @@ Russian-only models support automated stress and homographs.
 | ------- | --------------------------------------------- | ----------- | -------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `v5_ru` | `aidar`, `baya`, `kseniya`, `xenia`, `eugene` | yes / yes        | `ru` (Russian) | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 
+#### V5 CIS Base Models
+
+- All of the below models support `8000`, `24000`, `48000` sampling rates and contain no auto-stress or homographs;
+- `v5_cis_base` models assume that proper stress should be added for each word for all languages, i.e. `к+ошка`;
+- `v5_cis_base_nostress` models assume that proper stress should be added for each word ONLY for slavic languages (i.e. `ru`, `bel`, `ukr`); 
+- All of the below models are published under `CC-NC-BY` Licence;
+- V5 models support [SSML](https://github.com/snakers4/silero-models/wiki/SSML). Also see Colab examples for main SSML tag usage.
+
+| ID                                    | Speakers                                     | Language             | Colab |
+| ------------------------------------- | -------------------------------------------- | -------------------- | -------------------- |
+| `v5_cis_base`, `v5_cis_base_nostress` | `aze_gamat`                                  | `aze` (Azerbaijani)  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `hye_zara`                                   | `hye` (Armenian)     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `bak_aigul`, `bak_alfia`, `bak_alfia2`       | `bak` (Bashkir)      | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `bak_miyau`, `bak_ramilia`                   | `bak` (Bashkir)      | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `bel_anatoliy`, `bel_dmitriy`, `bel_larisa`  | `bel` (Belarus)      | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `kat_vika`                                   | `kat` (Georgian)     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `kbd_eduard`                                 | `kbd` (Kab.-Cherkes) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `kaz_zhadyra`, `kaz_zhazira`                 | `kaz` (Kazakh)       | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `xal_kejilgan`, `xal_kermen`                 | `xal` (Kalmyk)       | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `kir_nurgul`                                 | `kir` (Kyrgyz)       | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `mdf_oksana`                                 | `mdf` (Moksha)       | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | all of these speakers, but with `ru_` prefix | `ru`  (Russian)      | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `tgk_onaoy`, `tgk_safarhuja`                 | `tgk` (Tajik)        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `tat_albina`, `tat_marat`                    | `tat` (Tatar)        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `udm_bogdan`                                 | `udm` (Udmurt)       | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `uzb_saida`                                  | `uzb` (Uzbek)        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `ukr_igor`, `ukr_roman`                      | `ukr` (Ukrainian)    | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `kjh_karina`, `kjh_sibday`                   | `kjh` (Khakas)       | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `chv_ekaterina`                              | `chv` (Chuvash)      | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `erz_alexandr`                               | `erz` (Erzya)        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `sah_zinaida`                                | `sah` (Yakut)        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+
+#### V5 CIS Ext Models
+
+- All of the below models support `8000`, `24000`, `48000` sampling rates and contain no auto-stress or homographs;
+- `v5_cis_ext` models assume that proper stress should be added for each word for all languages, i.e. `к+ошка`;
+- `v5_cis_ext_nostress` are coming soon;
+- All of the below models are published under `MIT` Licence;
+- V5 models support [SSML](https://github.com/snakers4/silero-models/wiki/SSML). Also see Colab examples for main SSML tag usage.
+
+| ID           | Speakers                                                              | Language          | Colab |
+| ------------ | --------------------------------------------------------------------- | ----------------- | -------------------- |
+| `v5_cis_ext` | `kaz_abai`, `kaz_aidana`, `kaz_aisha`, `kaz_bakir`, `kaz_danara`      | `kaz` (Kazakh)    | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_ext` | `xal_delghir`, `xal_erdni`                                            | `xal` (Kalmyk)    | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_ext` | `tat_adiba`, `tat_alsou`, `tat_amir`, `tat_azat`, `tat_batir`         | `tat` (Tatar)     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_ext` | `tat_bulat`, `tat_damir`, `tat_guzel`, `tat_ildar`, `tat_ilgiz`       | `tat` (Tatar)     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_ext` | `tat_karim`, `tat_mansur`, `tat_murat`, `tat_rasima`, `tat_rustem`    | `tat` (Tatar)     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_ext` | `tat_timur`, `tat_zifa`, `tat_zufar`, `tat_zulfiya`                   | `tat` (Tatar)     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_ext` | `uzb_anora`, `uzb_dilnavoz`                                           | `uzb` (Uzbek)     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_ext` | `ukr_kateryna`, `ukr_lada`, `ukr_mykyta`, `ukr_oleksa`, `ukr_tetiana` | `ukr` (Ukrainian) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_ext` | `chv_aihwa`, `chv_alima`                                              | `chv` (Chuvash)   | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
 
 #### V4
 
