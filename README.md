@@ -269,8 +269,8 @@ Try our models, create an [issue](https://github.com/snakers4/silero-models/issu
 ```bibtex
 @misc{Silero Models,
   author = {Silero Team},
-  title = {Silero Models: pre-trained enterprise-grade STT / TTS models and benchmarks},
-  year = {2021},
+  title = {Silero Models: pre-trained text-to-speech models made embarrassingly simple},
+  year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/snakers4/silero-models}},
