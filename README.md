@@ -80,7 +80,7 @@ Russian-only models support automated stress and homographs.
 - All of the below models support `8000`, `24000`, `48000` sampling rates and contain no auto-stress or homographs;
 - `v5_cis_base` models assume that proper stress should be added for each word for all languages, i.e. `к+ошка`;
 - `v5_cis_base_nostress` models assume that proper stress should be added for each word ONLY for slavic languages (i.e. `ru`, `bel`, `ukr`); 
-- All of the below models are published under `CC-NC-BY` Licence;
+- All of the below models are published under `MIT` licence;
 - V5 models support [SSML](https://github.com/snakers4/silero-models/wiki/SSML). Also see Colab examples for main SSML tag usage.
 
 | ID                                    | Speakers                                     | Language             | Colab |
@@ -112,7 +112,7 @@ Russian-only models support automated stress and homographs.
 - All of the below models support `8000`, `24000`, `48000` sampling rates and contain no auto-stress or homographs;
 - `v5_cis_ext` models assume that proper stress should be added for each word for all languages, i.e. `к+ошка`;
 - `v5_cis_ext_nostress` are coming soon;
-- All of the below models are published under `MIT` Licence;
+- All of the below models are published under `CC-NC-BY` licence;
 - V5 models support [SSML](https://github.com/snakers4/silero-models/wiki/SSML). Also see Colab examples for main SSML tag usage.
 
 | ID           | Speakers                                                              | Language          | Colab |
