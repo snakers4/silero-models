@@ -148,6 +148,11 @@ tts_models:
         example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
         package: 'https://models.silero.ai/models/tts/ru/v5_cis_base.pt'
         sample_rate: [8000, 24000, 48000]
+    v5_cis_base_nostress_jit:
+      latest:
+        example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
+        package: 'https://models.silero.ai/models/tts/ru/v5_cis_base_nostress.jit'
+        sample_rate: [8000, 24000, 48000]  
     v5_cis_base_nostress:
       latest:
         example: 'В н+едрах т+ундры в+ыдры в г+етрах т+ырят в в+ёдра +ядра к+едров.'
