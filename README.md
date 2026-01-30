@@ -106,7 +106,41 @@ Russian-only models support automated stress and homographs.
 | `v5_cis_base`, `v5_cis_base_nostress` | `kjh_karina`, `kjh_sibday`                   | `kjh` (Khakas)       | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
 | `v5_cis_base`, `v5_cis_base_nostress` | `chv_ekaterina`                              | `chv` (Chuvash)      | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
 | `v5_cis_base`, `v5_cis_base_nostress` | `erz_alexandr`                               | `erz` (Erzya)        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
-| `v5_cis_base`, `v5_cis_base_nostress` | `sah_zinaida`                                | `sah` (Yakut)        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
+| `v5_cis_base`, `v5_cis_base_nostress` | `sah_zinaida`                                | `sah` (Yakut)        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) 
+
+
+<details>
+  <summary>Supported alphabets</summary>
+
+
+ Please note that Georgian and Armenian are in fact internally supported via direct translation into cyrillic script inside of the package. Azerbaijani and Uzbek support both alphabets (Cyrillic and Latin).
+
+| ID  | Название      | Алфавит(ы)                                 |
+|-----|---------------|--------------------------------------------|
+| aze | `aze` (Azerbaijani)    | abcçdeәfgğhxıijkqlmnoöprsştuüvyz           |
+| aze | `aze` (Azerbaijani)    | абвгғдеәжзиыјкҝлмноөпрстуүфхһчҹш           |
+| hye | `hye` (Armenian)      | աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքօֆև    |
+| bak | `bak` (Bashkir)      | абвгдежзийклмнопрстуфхцчшщъыьэюяёғҙҡңҫүһәө |
+| bel | `bel` (Belarus)    | абвгдежзйклмнопрстуфхцчшыьэюяёіў           |
+| kat | `kat` (Georgian)     | აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ        |
+| kbd | `kbd` (Kab.-Cherkes) | абвгдежзийклмнопрстуфхцчшщъыьэюяёӏ         |
+| kaz | `kaz` (Kazakh)        | абвгдежзийклмнопрстуфхцчшщыьэюяіғқңүұһәө   |
+| xal | `xal` (Kalmyk)      | абвгдежзийклмнопрстуфхцчшщъыьэюяҗңүһәө     |
+| kir | `kir` (Kyrgyz)     | абвгдежзийклмнопрстуфхцчшыьэюяёңүө         |
+| mdf | `mdf` (Moksha)     | абвгдежзийклмнопрстуфхцчшщъыьэюяё          |
+| ru  | `ru`  (Russian)        | абвгдеёжзийклмнопрстуфхцчшщъыьэюя          |
+| tgk |  `tgk` (Tajik)      | абвгдежзийклмнопрстуфхчшъэюяёғқҳҷӣӯ        |
+| tat | `tat` (Tatar)      | абвгдежзийклмнопрстуфхцчшъыьэюяҗңүһәө      |
+| udm | `udm` (Udmurt)      | абвгдежзийклмнопрстуфхцчшщъыьэюяёӝӟӥӧӵ     |
+| uzb |  `uzb` (Uzbek)      | абвгдежзийклмнопрстуфхцчшъьэюяёўғқҳ        |
+| uzb |  `uzb` (Uzbek)      | abcdefghijklmnopqrstuvxyz                  |
+| ukr | `ukr` (Ukrainian)    | абвгґдеєжзиіїйклмнопрстуфхцчшщьюя          |
+| kjh | `kjh` (Khakas)       | абвгдежзийклмнопрстуфхцчшщъыьэюяёіғңҷӧӱ    |
+| chv | `chv` (Chuvash)      | абвгдежзийклмнопрстуфхцчшщъыьэюяёҫӑӗӳ      |
+| erz | `erz` (Erzya)       | абвгдежзийклмнопрстуфхцчшщъыьэюяё          |
+| sah | `sah` (Yakut)       | абвгдежзийклмнопрстуфхцчшщъыьэюяёҕҥүһө     |
+  
+</details>
 
 #### V5 CIS Ext Models
 
