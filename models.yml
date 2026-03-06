@@ -162,6 +162,11 @@ tts_models:
       latest:
         example: '+Я з р+аннього дит+инства д+уже любл+ю сл+ухати цік+аві к+азки.'
         package: 'https://models.silero.ai/models/tts/ru/v5_cis_ext.pt'
+        sample_rate: [8000, 24000, 48000]
+    v5_2_ru:
+      latest:
+        example: 'Меня зовут Лева Королев. Я из готов. И я уже готов открыть все ваши замки любой сложности!'
+        package: 'https://models.silero.ai/models/tts/ru/v5_2_ru.pt'
         sample_rate: [8000, 24000, 48000]  
     v5_1_ru:
       latest:
