@@ -73,12 +73,12 @@ Russian-only models support automated stress and homographs. `v5_2_ru` cointains
 
 `v5_3_ru` cointains minor fixes. `v5_4_ru` also supports questions.
 
-| ID      | Speakers                                      | Auto-stress / Homographs | Language       | SR                       | Colab                                                                                                                                                                        |
+| ID      | Speakers                                      | Auto-stress / Homographs / Questions | Language       | SR                       | Colab                                                                                                                                                                        |
 | ------- | --------------------------------------------- | ----------- | -------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `v5_4_ru` | `aidar`, `baya`, `kseniya`, `xenia`  | yes / yes        | `ru` (Russian) | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `v5_3_ru` | `aidar`, `baya`, `kseniya`, `xenia`, `eugene` | yes / yes        | `ru` (Russian) | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `v5_2_ru` | `aidar`, `baya`, `kseniya`, `xenia`, `eugene` | yes / yes        | `ru` (Russian) | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
-| `v5_ru` | `aidar`, `baya`, `kseniya`, `xenia`, `eugene` | yes / yes        | `ru` (Russian) | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v5_4_ru` | `aidar`, `baya`, `kseniya`, `xenia`  | ✅ / ✅ / ✅        | `ru` (Russian) | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v5_3_ru` | `aidar`, `baya`, `kseniya`, `xenia`, `eugene` | ✅ / ✅ / ❌        | `ru` (Russian) | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v5_2_ru` | `aidar`, `baya`, `kseniya`, `xenia`, `eugene` | ✅ / ✅ / ❌       | `ru` (Russian) | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
+| `v5_ru` | `aidar`, `baya`, `kseniya`, `xenia`, `eugene` | ✅ / ✅ / ❌        | `ru` (Russian) | `8000`, `24000`, `48000` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts.ipynb) |
 
 #### V5 CIS Base Models
 
