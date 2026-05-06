@@ -425,7 +425,7 @@ All of the models are published under the main repo license (i.e. CC-NC-BY) exce
   - Speech-To-Text - [link](https://www.silero.ai/tag/speech-to-text/)
 
 - TTS:
-  - Теперь silero-tts v5 на русском языке умеет задавать вопросы - [link]([https://habr.com/ru/articles/872474/](https://habr.com/ru/articles/1015942/))
+  - Теперь silero-tts v5 на русском языке умеет задавать вопросы - [link](https://habr.com/ru/articles/1015942/)
   - Наш синтез для 20 языков теперь работает локально под Windows как экранная читалка (SAPI5) и в Балаболке - [link](https://habr.com/ru/articles/981992/)
   - Мы добавили поддержку ещё 19 языков России и СНГ в проект silero-stress - [link](https://habr.com/ru/articles/969184/)
   - Мы опубликовали стабильный, быстрый, качественный и доступный синтез для 20 языков России - [link](https://habr.com/ru/articles/968988/)
