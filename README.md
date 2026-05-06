@@ -425,8 +425,13 @@ All of the models are published under the main repo license (i.e. CC-NC-BY) exce
   - Speech-To-Text - [link](https://www.silero.ai/tag/speech-to-text/)
 
 - TTS:
-  - Делаем быстрый, качественный и доступный синтез на языках России — нужно ваше участие - [link](https://habr.com/ru/articles/872474/)
+  - Теперь silero-tts v5 на русском языке умеет задавать вопросы - [link]([https://habr.com/ru/articles/872474/](https://habr.com/ru/articles/1015942/))
+  - Наш синтез для 20 языков теперь работает локально под Windows как экранная читалка (SAPI5) и в Балаболке - [link](https://habr.com/ru/articles/981992/)
+  - Мы добавили поддержку ещё 19 языков России и СНГ в проект silero-stress - [link](https://habr.com/ru/articles/969184/)
+  - Мы опубликовали стабильный, быстрый, качественный и доступный синтез для 20 языков России - [link](https://habr.com/ru/articles/968988/)
+  - Мы опубликовали silero-tts v5 на русском языке - [link](https://habr.com/ru/articles/961930/)
   - Мы решили задачу омографов и ударений в русском языке - [link](https://habr.com/ru/articles/955130/)
+  - Делаем быстрый, качественный и доступный синтез на языках России — нужно ваше участие - [link](https://habr.com/ru/articles/872474/)
   - Теперь наш синтез также доступен в виде бота в Телеграме - [link](https://habr.com/ru/post/682188/)
   - Может ли синтез речи обмануть систему биометрической идентификации? - [link](https://habr.com/ru/post/673996/)
   - Теперь наш синтез на 20 языках - [link](https://habr.com/ru/post/669910/)
