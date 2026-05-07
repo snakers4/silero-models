@@ -58,7 +58,8 @@ def prepare_tts_model_input(text: str or list, symbols: str):
     max_input_len = input_lengths[0]
     batch_size = len(text_tensors)
 
-    text_padded = torch.ones(batch_size, max_input_len, dtype=torch.int32)
+    # text_padded = torch.ones(batch_size, max_input_len, dtype=torch.int32)
+    text_padded = torch.ones(batch_size, max_input_len, dtype=torch.long)
 
     for i, idx in enumerate(ids_sorted_decreasing):
         text_tensor = text_tensors[idx]
