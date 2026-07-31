@@ -1,4 +1,4 @@
- [![Mailing list : test](http://img.shields.io/badge/Email-gray.svg?style=for-the-badge&logo=gmail)](mailto:hello@silero.ai) [![Mailing list : test](http://img.shields.io/badge/Telegram-blue.svg?style=for-the-badge&logo=telegram)](https://t.me/silero_speech) [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?style=for-the-badge)](https://github.com/snakers4/silero-models/blob/master/LICENSE)
+<img width="425" height="361" alt="image" src="https://github.com/user-attachments/assets/6aa52f75-c943-40f6-ab06-b97b354e786d" /> [![Mailing list : test](http://img.shields.io/badge/Email-gray.svg?style=for-the-badge&logo=gmail)](mailto:hello@silero.ai) [![Mailing list : test](http://img.shields.io/badge/Telegram-blue.svg?style=for-the-badge&logo=telegram)](https://t.me/silero_speech) [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg?style=for-the-badge)](https://github.com/snakers4/silero-models/blob/master/LICENSE)
 
 [![PyPI version](https://badge.fury.io/py/silero.svg)](https://badge.fury.io/py/silero) [![PyPI Downloads](https://static.pepy.tech/personalized-badge/silero?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/silero)
 
@@ -8,6 +8,8 @@
   - [Installation and Basics](#installation-and-basics)
   - [Text-To-Speech](#text-to-speech)
     - [Models and Speakers](#models-and-speakers)
+      - [V5 Turkic](#v5_turkic)
+      - [V5 Caucasian](#v5_caucasian)
       - [V5](#v5)
       - [V5 CIS Base Models](#v5-cis-base-models)
       - [V5 CIS Ext Models](#v5-cis-ext-models)
@@ -65,6 +67,53 @@ audio = model.apply_tts(text=example_text)
 
 All of the provided models are listed in the [models.yml](https://github.com/snakers4/silero-models/blob/master/models.yml) file. Any metadata and newer versions will be added there.
 
+#### V5 Turkic
+
+- This model does not support stress at all;
+- This model supports [SSML](https://github.com/snakers4/silero-models/wiki/SSML);
+- This model supports `8000`, `24000`, `48000` sampling rates;
+
+| ID        | Speakers                     | Language                | Colab |
+|-----------|------------------------------|-------------------------|-------|
+| v5_turkic | `chv_0`,`chv_1`              | `chv` (Chuvash)         |       |
+| v5_turkic | `crh_0`, `crh_1`, `crh_2`    | `crh` (Crimean Tatar)   |       |
+| v5_turkic | `gag_0`, `gag_1`, `gag_2`    | `gag` (Gagauz)          |       |
+| v5_turkic | `kaa_0`, `kaa_1`             | `kaa` (Karakalpak)      |       |
+| v5_turkic | `kir_0`                      | `kir` (Kyrgyz)          |       |
+| v5_turkic | `kjh_0`                      | `kjh` (Khakas)          |       |
+| v5_turkic | `sah_0`, `sah_1`, `sah_2`    | `sah` (Yakut )          |       |
+| v5_turkic | `sty_0`                      | `sty` (Siberian Tatar)  |       |
+| v5_turkic | `tat_0`                      | `tat` (Tatar)           |       |
+| v5_turkic | `tgk_0`                      | `tgk` (Tajik)           |       |
+| v5_turkic | `tuk_0`, `tuk_1`, `tuk_2`    | `tuk` (Turkmen)         |       |
+| v5_turkic | `tyv_0`                      | `tyv` (Tuvan)           |       |
+| v5_turkic | `uzb_0`                      | `uzb` (Uzbek)           |       |
+| v5_turkic | `xal_0`, `xal_1`, `xal_2`    | `xal` (Kalmyk)          |       |
+
+#### V5 Caucasian
+
+- This model does not support stress at all;
+- This model supports [SSML](https://github.com/snakers4/silero-models/wiki/SSML);
+- This model supports `8000`, `24000`, `48000` sampling rates;
+
+| ID           | Speakers                                    | Language              | Colab |
+|--------------|---------------------------------------------|-----------------------|-------|
+| v5_caucasian | `abq_0`, `abq_1`, `abq_2`                   | `abq` (Abaza)         |       |
+| v5_caucasian | `ady_0`, `ady_1`, `ady_2`, `ady_3`          | `ady` (Adygean)       |       |
+| v5_caucasian | `agx_0`                                     | `agx` (Aghul)         |       |
+| v5_caucasian | `ava_0`                                     | `ava` (Avar)          |       |
+| v5_caucasian | `che_0`, `che_1`, `che_2`, `che_3`, `che_4` | `che` (Chechen)       |       |
+| v5_caucasian | `darg_0`, `darg_1`                          | `darg` (Dargin)       |       |
+| v5_caucasian | `inh_0`, `inh_1`                            | `inh` (Ingush)        |       |
+| v5_caucasian | `kbd_0`, `kbd_1`, `kbd_2`                   | `kbd` (K.-Ciscassian) |       |
+| v5_caucasian | `krc_0`, `krc_1`, `krc_2`                   | `krc` (K.-Balkar)     |       |
+| v5_caucasian | `kum_0`, `kum_1`, `kum_2`                   | `kum` (Kumyk)         |       |
+| v5_caucasian | `lbe_0`                                     | `lbe` (Lak)           |       |
+| v5_caucasian | `lez_0`                                     | `lez` (Lezgin)        |       |
+| v5_caucasian | `oss_0`                                     | `oss` (Ossetian)      |       |
+| v5_caucasian | `tab_0`, `tab_1`                            | `tab` (Tabasaran)     |       |
+| v5_caucasian | `tkr_0`                                     | `tkr` (Tsakhur)       |       |
+
 #### V5
 
 V5 models support [SSML](https://github.com/snakers4/silero-models/wiki/SSML). Also see Colab examples for main SSML tag usage.
@@ -92,7 +141,7 @@ Russian-only models support automated stress and homographs. `v5_2_ru` cointains
 - Use [cases](https://github.com/snakers4/silero-models/wiki/%D0%9D%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D1%80%D0%B8%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B5%D0%B9-%D1%81%D0%B8%D0%BD%D1%82%D0%B5%D0%B7%D0%B0) for the model;
 - Minimal system requirements: a PyTorch-compatible system, a modern processor with AVX2 instruction set for x86/64 platform. 
 
-| ID                                    | Speakers                                     | Language             | Colab |
+ | ID                                    | Speakers                                     | Language             | Colab |
 | ------------------------------------- | -------------------------------------------- | -------------------- | -------------------- |
 | `v5_cis_base`, `v5_cis_base_nostress` | `aze_gamat`                                  | `aze` (Azerbaijani)  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
 | `v5_cis_base`, `v5_cis_base_nostress` | `hye_zara`                                   | `hye` (Armenian)     | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_cis.ipynb) |
