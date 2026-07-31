@@ -75,20 +75,22 @@ All of the provided models are listed in the [models.yml](https://github.com/sna
 
 | ID        | Speakers                     | Language                | Colab |
 |-----------|------------------------------|-------------------------|-------|
-| v5_turkic | `chv_0`,`chv_1`              | `chv` (Chuvash)         |       |
-| v5_turkic | `crh_0`, `crh_1`, `crh_2`    | `crh` (Crimean Tatar)   |       |
-| v5_turkic | `gag_0`, `gag_1`, `gag_2`    | `gag` (Gagauz)          |       |
-| v5_turkic | `kaa_0`, `kaa_1`             | `kaa` (Karakalpak)      |       |
-| v5_turkic | `kir_0`                      | `kir` (Kyrgyz)          |       |
-| v5_turkic | `kjh_0`                      | `kjh` (Khakas)          |       |
-| v5_turkic | `sah_0`, `sah_1`, `sah_2`    | `sah` (Yakut )          |       |
-| v5_turkic | `sty_0`                      | `sty` (Siberian Tatar)  |       |
-| v5_turkic | `tat_0`                      | `tat` (Tatar)           |       |
-| v5_turkic | `tgk_0`                      | `tgk` (Tajik)           |       |
-| v5_turkic | `tuk_0`, `tuk_1`, `tuk_2`    | `tuk` (Turkmen)         |       |
-| v5_turkic | `tyv_0`                      | `tyv` (Tuvan)           |       |
-| v5_turkic | `uzb_0`                      | `uzb` (Uzbek)           |       |
-| v5_turkic | `xal_0`, `xal_1`, `xal_2`    | `xal` (Kalmyk)          |       |
+| `v5_turkic` | `chv_0`,`chv_1`              | `chv` (Chuvash)         |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_turkic` | `crh_0`, `crh_1`, `crh_2`    | `crh` (Crimean Tatar)   |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_turkic` | `gag_0`, `gag_1`, `gag_2`    | `gag` (Gagauz)          |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_turkic` | `kaa_0`, `kaa_1`             | `kaa` (Karakalpak)      |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_turkic` | `kir_0`                      | `kir` (Kyrgyz)          |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_turkic` | `kjh_0`                      | `kjh` (Khakas)          |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_turkic` | `sah_0`, `sah_1`, `sah_2`    | `sah` (Yakut )          |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)    |
+| `v5_turkic` | `sty_0`                      | `sty` (Siberian Tatar)  |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_turkic` | `tat_0`                      | `tat` (Tatar)           |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_turkic` | `tgk_0`                      | `tgk` (Tajik)           |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_turkic` | `tuk_0`, `tuk_1`, `tuk_2`    | `tuk` (Turkmen)         |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_turkic` | `tyv_0`                      | `tyv` (Tuvan)           |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_turkic` | `uzb_0`                      | `uzb` (Uzbek)           |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_turkic` | `xal_0`, `xal_1`, `xal_2`    | `xal` (Kalmyk)          |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+
+
 
 #### V5 Caucasian
 
@@ -98,21 +100,23 @@ All of the provided models are listed in the [models.yml](https://github.com/sna
 
 | ID           | Speakers                                    | Language              | Colab |
 |--------------|---------------------------------------------|-----------------------|-------|
-| v5_caucasian | `abq_0`, `abq_1`, `abq_2`                   | `abq` (Abaza)         |       |
-| v5_caucasian | `ady_0`, `ady_1`, `ady_2`, `ady_3`          | `ady` (Adygean)       |       |
-| v5_caucasian | `agx_0`                                     | `agx` (Aghul)         |       |
-| v5_caucasian | `ava_0`                                     | `ava` (Avar)          |       |
-| v5_caucasian | `che_0`, `che_1`, `che_2`, `che_3`, `che_4` | `che` (Chechen)       |       |
-| v5_caucasian | `darg_0`, `darg_1`                          | `darg` (Dargin)       |       |
-| v5_caucasian | `inh_0`, `inh_1`                            | `inh` (Ingush)        |       |
-| v5_caucasian | `kbd_0`, `kbd_1`, `kbd_2`                   | `kbd` (K.-Ciscassian) |       |
-| v5_caucasian | `krc_0`, `krc_1`, `krc_2`                   | `krc` (K.-Balkar)     |       |
-| v5_caucasian | `kum_0`, `kum_1`, `kum_2`                   | `kum` (Kumyk)         |       |
-| v5_caucasian | `lbe_0`                                     | `lbe` (Lak)           |       |
-| v5_caucasian | `lez_0`                                     | `lez` (Lezgin)        |       |
-| v5_caucasian | `oss_0`                                     | `oss` (Ossetian)      |       |
-| v5_caucasian | `tab_0`, `tab_1`                            | `tab` (Tabasaran)     |       |
-| v5_caucasian | `tkr_0`                                     | `tkr` (Tsakhur)       |       |
+| `v5_caucasian` | `abq_0`, `abq_1`, `abq_2`                   | `abq` (Abaza)         |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_caucasian` | `ady_0`, `ady_1`, `ady_2`, `ady_3`          | `ady` (Adygean)       |   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)    |
+| `v5_caucasian` | `agx_0`                                     | `agx` (Aghul)         |   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)    |
+| `v5_caucasian` | `ava_0`                                     | `ava` (Avar)          |   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)    |
+| `v5_caucasian` | `che_0`, `che_1`, `che_2`, `che_3`, `che_4` | `che` (Chechen)       |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_caucasian` | `darg_0`, `darg_1`                          | `darg` (Dargin)       |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_caucasian` | `inh_0`, `inh_1`                            | `inh` (Ingush)        |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_caucasian` | `kbd_0`, `kbd_1`, `kbd_2`                   | `kbd` (K.-Ciscassian) |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_caucasian` | `krc_0`, `krc_1`, `krc_2`                   | `krc` (K.-Balkar)     |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_caucasian` | `kum_0`, `kum_1`, `kum_2`                   | `kum` (Kumyk)         |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_caucasian` | `lbe_0`                                     | `lbe` (Lak)           |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_caucasian` | `lez_0`                                     | `lez` (Lezgin)        |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_caucasian` | `oss_0`                                     | `oss` (Ossetian)      |  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)     |
+| `v5_caucasian` | `tab_0`, `tab_1`                            | `tab` (Tabasaran)     |   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)    |
+| `v5_caucasian` | `tkr_0`                                     | `tkr` (Tsakhur)       |   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snakers4/silero-models/blob/master/examples_tts_turkic_caucasian.ipynb)    |
+
+examples_tts_turkic_caucasian.ipynb
 
 #### V5
 
